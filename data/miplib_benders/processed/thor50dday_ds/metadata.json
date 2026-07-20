@@ -1,0 +1,264 @@
+{
+  "source_instance": "thor50dday",
+  "downsampled_instance": "thor50dday_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 18,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "EdgeVar0_1": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "EdgeVar0_10": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "EdgeVar0_100": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "EdgeVar0_101": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "EdgeVar0_102": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "EdgeVar0_103": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "EdgeVar0_104": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "EdgeVar0_105": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "EdgeVar0_106": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "EdgeVar0_107": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "EdgeVar0_108": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "EdgeVar0_109": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "EdgeVar0_11": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "EdgeVar0_110": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "EdgeVar0_111": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "EdgeVar0_112": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "EdgeVar0_113": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "EdgeVar0_114": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 262144,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "EdgeConstraintT0": 1,
+      "EdgeConstraintT18": 1,
+      "EdgeConstraintT198": 1,
+      "EdgeConstraintT20": 1,
+      "EdgeConstraintT200": 1,
+      "EdgeConstraintT202": 1,
+      "EdgeConstraintT204": 1,
+      "EdgeConstraintT206": 1,
+      "EdgeConstraintT208": 1,
+      "EdgeConstraintT210": 1,
+      "EdgeConstraintT212": 1,
+      "EdgeConstraintT214": 1,
+      "EdgeConstraintT216": 1,
+      "EdgeConstraintT218": 1,
+      "EdgeConstraintT220": 1,
+      "EdgeConstraintT222": 1,
+      "EdgeConstraintT224": 1,
+      "EdgeConstraintT226": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "EdgeVar0_1",
+      "EdgeVar0_10",
+      "EdgeVar0_100",
+      "EdgeVar0_101"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "EdgeVar0_102"
+        ],
+        "constraints": [
+          "EdgeConstraintT202"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "EdgeVar0_103"
+        ],
+        "constraints": [
+          "EdgeConstraintT204"
+        ]
+      },
+      {
+        "id": 2,
+        "variables": [
+          "EdgeVar0_104"
+        ],
+        "constraints": [
+          "EdgeConstraintT206"
+        ]
+      },
+      {
+        "id": 3,
+        "variables": [
+          "EdgeVar0_105"
+        ],
+        "constraints": [
+          "EdgeConstraintT208"
+        ]
+      },
+      {
+        "id": 4,
+        "variables": [
+          "EdgeVar0_106"
+        ],
+        "constraints": [
+          "EdgeConstraintT210"
+        ]
+      },
+      {
+        "id": 5,
+        "variables": [
+          "EdgeVar0_107"
+        ],
+        "constraints": [
+          "EdgeConstraintT212"
+        ]
+      },
+      {
+        "id": 6,
+        "variables": [
+          "EdgeVar0_108"
+        ],
+        "constraints": [
+          "EdgeConstraintT214"
+        ]
+      },
+      {
+        "id": 7,
+        "variables": [
+          "EdgeVar0_109"
+        ],
+        "constraints": [
+          "EdgeConstraintT216"
+        ]
+      },
+      {
+        "id": 8,
+        "variables": [
+          "EdgeVar0_11"
+        ],
+        "constraints": [
+          "EdgeConstraintT20"
+        ]
+      },
+      {
+        "id": 9,
+        "variables": [
+          "EdgeVar0_110"
+        ],
+        "constraints": [
+          "EdgeConstraintT218"
+        ]
+      },
+      {
+        "id": 10,
+        "variables": [
+          "EdgeVar0_111"
+        ],
+        "constraints": [
+          "EdgeConstraintT220"
+        ]
+      },
+      {
+        "id": 11,
+        "variables": [
+          "EdgeVar0_112"
+        ],
+        "constraints": [
+          "EdgeConstraintT222"
+        ]
+      },
+      {
+        "id": 12,
+        "variables": [
+          "EdgeVar0_113"
+        ],
+        "constraints": [
+          "EdgeConstraintT224"
+        ]
+      },
+      {
+        "id": 13,
+        "variables": [
+          "EdgeVar0_114"
+        ],
+        "constraints": [
+          "EdgeConstraintT226"
+        ]
+      }
+    ]
+  }
+}

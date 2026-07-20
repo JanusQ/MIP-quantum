@@ -1,0 +1,291 @@
+{
+  "source_instance": "mad",
+  "downsampled_instance": "mad_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 30,
+  "n_constraints": 40,
+  "n_binary": 30,
+  "n_integer": 30,
+  "variable_bounds": {
+    "X1": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X10": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X100": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X101": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X102": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X103": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X104": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X105": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X106": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X107": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X108": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X109": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X11": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X110": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X111": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X112": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X113": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X114": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X115": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X116": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X117": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X118": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X119": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X12": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X120": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X121": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X122": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X123": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X124": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X125": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 1073741824,
+  "number_of_feasible_states": null,
+  "feasible_state_count_exact": false,
+  "integerization": {
+    "row_scales": {
+      "F41": 100,
+      "F42": 1000,
+      "F43": 1000000,
+      "F44": 1000000,
+      "F45": 1000000,
+      "F46": 1000000,
+      "F47": 1000,
+      "F48": 1000000,
+      "F49": 1000000,
+      "F50": 1000000,
+      "F51": 1000000,
+      "F53": 100,
+      "F26": 1,
+      "F36": 100,
+      "F27": 1,
+      "F37": 100,
+      "F21": 1,
+      "F31": 100,
+      "F1": 1,
+      "F10": 1,
+      "F11": 1,
+      "F12": 1,
+      "F13": 1,
+      "F18": 1,
+      "F19": 1,
+      "F2": 1,
+      "F20": 1,
+      "F14": 1,
+      "F15": 1,
+      "F16": 1,
+      "F17": 1,
+      "F25": 1,
+      "F3": 1,
+      "F35": 20,
+      "F4": 1,
+      "F5": 1,
+      "F6": 1,
+      "F7": 1,
+      "F8": 1,
+      "F9": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 1.1102230246251565e-16
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "X1",
+      "X10",
+      "X100",
+      "X101",
+      "X102",
+      "X103"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "X104",
+          "X105",
+          "X106",
+          "X107",
+          "X108",
+          "X109",
+          "X11",
+          "X110",
+          "X111",
+          "X112",
+          "X113",
+          "X114",
+          "X115",
+          "X116",
+          "X117",
+          "X118",
+          "X119",
+          "X12",
+          "X120",
+          "X121",
+          "X122",
+          "X123",
+          "X124",
+          "X125"
+        ],
+        "constraints": [
+          "F1",
+          "F10",
+          "F11",
+          "F12",
+          "F13",
+          "F14",
+          "F15",
+          "F16",
+          "F17",
+          "F18",
+          "F19",
+          "F2",
+          "F20",
+          "F21",
+          "F26",
+          "F27",
+          "F3",
+          "F31",
+          "F36",
+          "F37",
+          "F4",
+          "F41",
+          "F42",
+          "F43",
+          "F44",
+          "F45",
+          "F46",
+          "F47",
+          "F48",
+          "F49",
+          "F5",
+          "F50",
+          "F51",
+          "F53",
+          "F6",
+          "F7",
+          "F8",
+          "F9"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "source_instance": "nursesched-medium-hint03",
+  "downsampled_instance": "nursesched-medium-hint03_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 12,
+  "n_binary": 0,
+  "n_integer": 18,
+  "variable_bounds": {
+    "vna_Min(N18)": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "vna_Min(N19)": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "vna_Min(N20)": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "vna_Min(N21)": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "vna_Min(N24)": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "vna_Min(N25)": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "vna_Min(N26)": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "vna_Min(N27)": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "vna_Min(N28)": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "vna_Min(N29)": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "vna_Min(N22)": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "vna_Min(N23)": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "vnw4_Max(N0,1)": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "vnw4_Max(N1,1)": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "vnw4_Max(N10,1)": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "vnw4_Max(N11,1)": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "vnw4_Max(N12,1)": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "vnw4_Max(N13,1)": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 110341894140625,
+  "number_of_feasible_states": null,
+  "feasible_state_count_exact": false,
+  "integerization": {
+    "row_scales": {
+      "minAllocations(N18)": 1,
+      "minAllocations(N19)": 1,
+      "minAllocations(N20)": 1,
+      "minAllocations(N21)": 1,
+      "minAllocations(N22)": 1,
+      "minAllocations(N23)": 1,
+      "minAllocations(N24)": 1,
+      "minAllocations(N25)": 1,
+      "minAllocations(N26)": 1,
+      "minAllocations(N27)": 1,
+      "minAllocations(N28)": 1,
+      "minAllocations(N29)": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "vna_Min(N18)",
+      "vna_Min(N19)",
+      "vna_Min(N20)",
+      "vna_Min(N21)"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "vna_Min(N22)"
+        ],
+        "constraints": [
+          "minAllocations(N22)"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "vna_Min(N23)"
+        ],
+        "constraints": [
+          "minAllocations(N23)"
+        ]
+      },
+      {
+        "id": 2,
+        "variables": [
+          "vna_Min(N24)"
+        ],
+        "constraints": [
+          "minAllocations(N24)"
+        ]
+      },
+      {
+        "id": 3,
+        "variables": [
+          "vna_Min(N25)"
+        ],
+        "constraints": [
+          "minAllocations(N25)"
+        ]
+      },
+      {
+        "id": 4,
+        "variables": [
+          "vna_Min(N26)"
+        ],
+        "constraints": [
+          "minAllocations(N26)"
+        ]
+      },
+      {
+        "id": 5,
+        "variables": [
+          "vna_Min(N27)"
+        ],
+        "constraints": [
+          "minAllocations(N27)"
+        ]
+      },
+      {
+        "id": 6,
+        "variables": [
+          "vna_Min(N28)"
+        ],
+        "constraints": [
+          "minAllocations(N28)"
+        ]
+      },
+      {
+        "id": 7,
+        "variables": [
+          "vna_Min(N29)"
+        ],
+        "constraints": [
+          "minAllocations(N29)"
+        ]
+      },
+      {
+        "id": 8,
+        "variables": [
+          "vnw4_Max(N0,1)"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 9,
+        "variables": [
+          "vnw4_Max(N1,1)"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 10,
+        "variables": [
+          "vnw4_Max(N10,1)"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 11,
+        "variables": [
+          "vnw4_Max(N11,1)"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 12,
+        "variables": [
+          "vnw4_Max(N12,1)"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 13,
+        "variables": [
+          "vnw4_Max(N13,1)"
+        ],
+        "constraints": []
+      }
+    ]
+  }
+}

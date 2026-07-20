@@ -1,0 +1,264 @@
+{
+  "source_instance": "graphdraw-domain",
+  "downsampled_instance": "graphdraw-domain_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "zV[c,lb,CertificateTemplate,CourseSession]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "zV[c,lb,Client,CertificateTemplate]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "zV[c,lb,Client,CourseSession]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "zV[c,lb,Client,Instructor]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "zV[c,lb,Client,Location]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "zV[c,lb,Client,User]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "zV[c,lb,Clinic,Location]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "zV[c,lb,Clinic,Therapist]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "zV[c,lb,Course,CourseSession]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "zV[c,lb,CourseSession,Instructor]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "zV[c,lb,CourseSession,Location]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "zV[c,lb,CourseSession,Therapist]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "zV[c,lb,Location,Instructor]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "zV[c,lb,Location,Therapist]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "zV[c,lb,Role,User]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "zV[c,lb,User,Instructor]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "zV[c,lb,User,Therapist]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "zV[c,rt,CertificateTemplate,CourseSession]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 2,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "DistAxisLB1[r,CertificateTemplate,CourseSession]": 1,
+      "choose1[CertificateTemplate,CourseSession]": 1,
+      "triangle1[Client,CertificateTemplate,CourseSession,c]": 1,
+      "triangle2[CertificateTemplate,Course,CourseSession,c]": 1,
+      "triangle2[CertificateTemplate,CourseSession,Instructor,c]": 1,
+      "triangle2[CertificateTemplate,CourseSession,Location,c]": 1,
+      "triangle2[CertificateTemplate,CourseSession,Therapist,c]": 1,
+      "triangle2[Client,CertificateTemplate,CourseSession,c]": 1,
+      "triangle2[Client,CourseSession,Instructor,c]": 1,
+      "triangle2[Client,CourseSession,Location,c]": 1,
+      "triangle2[Client,CourseSession,Therapist,c]": 1,
+      "triangle2[Client,Location,Instructor,c]": 1,
+      "triangle2[Client,Location,Therapist,c]": 1,
+      "triangle2[Client,User,Instructor,c]": 1,
+      "triangle2[Client,User,Therapist,c]": 1,
+      "triangle2[Clinic,Location,Instructor,c]": 1,
+      "triangle2[Clinic,Location,Therapist,c]": 1,
+      "triangle2[Course,CourseSession,Instructor,c]": 1,
+      "triangle2[Course,CourseSession,Location,c]": 1,
+      "triangle2[Course,CourseSession,Therapist,c]": 1,
+      "triangle2[CourseSession,Location,Instructor,c]": 1,
+      "triangle2[CourseSession,Location,Therapist,c]": 1,
+      "triangle2[Role,User,Instructor,c]": 1,
+      "triangle2[Role,User,Therapist,c]": 1,
+      "DistAxisLB1[r,Client,CertificateTemplate]": 1,
+      "DistAxisLB1[r,Client,CourseSession]": 1,
+      "DistAxisLB1[r,Client,Instructor]": 2,
+      "DistAxisLB1[r,Client,Location]": 1,
+      "DistAxisLB1[r,Client,User]": 1,
+      "DistAxisLB1[r,Clinic,Location]": 2,
+      "DistAxisLB1[r,Clinic,Therapist]": 1,
+      "DistAxisLB1[r,Course,CourseSession]": 2,
+      "DistAxisLB1[r,CourseSession,Instructor]": 2,
+      "DistAxisLB1[r,Instructor,Location]": 2,
+      "DistAxisLB1[r,Location,CourseSession]": 1,
+      "DistAxisLB1[r,Location,Therapist]": 2,
+      "DistAxisLB1[r,Role,User]": 2,
+      "DistAxisLB1[r,Therapist,CourseSession]": 2,
+      "DistAxisLB1[r,User,Instructor]": 2,
+      "DistAxisLB1[r,User,Therapist]": 2
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "zV[c,lb,CertificateTemplate,CourseSession]",
+      "zV[c,lb,Client,CourseSession]",
+      "zV[c,lb,Course,CourseSession]",
+      "zV[c,lb,CourseSession,Location]"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "zV[c,lb,Client,CertificateTemplate]"
+        ],
+        "constraints": [
+          "DistAxisLB1[r,Client,CertificateTemplate]",
+          "triangle2[Client,CertificateTemplate,CourseSession,c]"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "zV[c,lb,Client,Instructor]"
+        ],
+        "constraints": [
+          "DistAxisLB1[r,Client,Instructor]"
+        ]
+      },
+      {
+        "id": 2,
+        "variables": [
+          "zV[c,lb,Client,Location]",
+          "zV[c,lb,Clinic,Location]",
+          "zV[c,lb,Location,Instructor]",
+          "zV[c,lb,Location,Therapist]"
+        ],
+        "constraints": [
+          "DistAxisLB1[r,Client,Location]",
+          "DistAxisLB1[r,Clinic,Location]",
+          "DistAxisLB1[r,Instructor,Location]",
+          "DistAxisLB1[r,Location,Therapist]",
+          "triangle2[Client,Location,Instructor,c]",
+          "triangle2[Client,Location,Therapist,c]",
+          "triangle2[Clinic,Location,Instructor,c]",
+          "triangle2[Clinic,Location,Therapist,c]",
+          "triangle2[CourseSession,Location,Instructor,c]",
+          "triangle2[CourseSession,Location,Therapist,c]"
+        ]
+      },
+      {
+        "id": 3,
+        "variables": [
+          "zV[c,lb,Client,User]",
+          "zV[c,lb,Role,User]",
+          "zV[c,lb,User,Instructor]",
+          "zV[c,lb,User,Therapist]"
+        ],
+        "constraints": [
+          "DistAxisLB1[r,Client,User]",
+          "DistAxisLB1[r,Role,User]",
+          "DistAxisLB1[r,User,Instructor]",
+          "DistAxisLB1[r,User,Therapist]",
+          "triangle2[Client,User,Instructor,c]",
+          "triangle2[Client,User,Therapist,c]",
+          "triangle2[Role,User,Instructor,c]",
+          "triangle2[Role,User,Therapist,c]"
+        ]
+      },
+      {
+        "id": 4,
+        "variables": [
+          "zV[c,lb,Clinic,Therapist]"
+        ],
+        "constraints": [
+          "DistAxisLB1[r,Clinic,Therapist]"
+        ]
+      },
+      {
+        "id": 5,
+        "variables": [
+          "zV[c,lb,CourseSession,Instructor]"
+        ],
+        "constraints": [
+          "DistAxisLB1[r,CourseSession,Instructor]",
+          "triangle2[CertificateTemplate,CourseSession,Instructor,c]",
+          "triangle2[Client,CourseSession,Instructor,c]",
+          "triangle2[Course,CourseSession,Instructor,c]"
+        ]
+      },
+      {
+        "id": 6,
+        "variables": [
+          "zV[c,lb,CourseSession,Therapist]"
+        ],
+        "constraints": [
+          "DistAxisLB1[r,Therapist,CourseSession]",
+          "triangle2[CertificateTemplate,CourseSession,Therapist,c]",
+          "triangle2[Client,CourseSession,Therapist,c]",
+          "triangle2[Course,CourseSession,Therapist,c]"
+        ]
+      },
+      {
+        "id": 7,
+        "variables": [
+          "zV[c,rt,CertificateTemplate,CourseSession]"
+        ],
+        "constraints": [
+          "DistAxisLB1[r,CertificateTemplate,CourseSession]",
+          "choose1[CertificateTemplate,CourseSession]",
+          "triangle1[Client,CertificateTemplate,CourseSession,c]",
+          "triangle2[CertificateTemplate,Course,CourseSession,c]"
+        ]
+      }
+    ]
+  }
+}

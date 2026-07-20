@@ -1,0 +1,228 @@
+{
+  "source_instance": "neos-5052403-cygnet",
+  "downsampled_instance": "neos-5052403-cygnet_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "C10000": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C10001": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C10002": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C10003": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C10004": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C10005": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C10006": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C10007": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C10008": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C10009": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C10010": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C10011": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C10012": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C10013": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C10014": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C10015": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C10016": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C10017": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 261121,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "R10000": 1,
+      "R10003": 1,
+      "R10006": 1,
+      "R10195": 1,
+      "R10198": 1,
+      "R10201": 1,
+      "R10204": 1,
+      "R10207": 1,
+      "R10210": 1,
+      "R10213": 1,
+      "R10216": 1,
+      "R10275": 1,
+      "R10278": 1,
+      "R10281": 1,
+      "R10284": 1,
+      "R10287": 1,
+      "R10290": 1,
+      "R10293": 1,
+      "R10296": 1,
+      "R10485": 1,
+      "R10488": 1,
+      "R10491": 1,
+      "R10494": 1,
+      "R10497": 1,
+      "R10500": 1,
+      "R10503": 1,
+      "R10506": 1,
+      "R10564": 1,
+      "R10567": 1,
+      "R10570": 1,
+      "R10573": 1,
+      "R10576": 1,
+      "R10579": 1,
+      "R10582": 1,
+      "R10585": 1,
+      "R10772": 1,
+      "R10775": 1,
+      "R10778": 1,
+      "R10781": 1,
+      "R10784": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "C10001",
+      "C10003",
+      "C10005",
+      "C10007"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "C10000",
+          "C10002",
+          "C10004",
+          "C10006",
+          "C10008",
+          "C10010",
+          "C10012",
+          "C10014",
+          "C10016"
+        ],
+        "constraints": [
+          "R10000",
+          "R10003",
+          "R10006",
+          "R10275",
+          "R10278",
+          "R10281",
+          "R10284",
+          "R10287",
+          "R10290",
+          "R10293",
+          "R10296",
+          "R10564",
+          "R10567",
+          "R10570",
+          "R10573",
+          "R10576",
+          "R10579",
+          "R10582",
+          "R10585"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "C10009",
+          "C10011",
+          "C10013",
+          "C10015",
+          "C10017"
+        ],
+        "constraints": [
+          "R10195",
+          "R10198",
+          "R10201",
+          "R10204",
+          "R10207",
+          "R10210",
+          "R10213",
+          "R10216",
+          "R10485",
+          "R10488",
+          "R10491",
+          "R10494",
+          "R10497",
+          "R10500",
+          "R10503",
+          "R10506",
+          "R10772",
+          "R10775",
+          "R10778",
+          "R10781",
+          "R10784"
+        ]
+      }
+    ]
+  }
+}

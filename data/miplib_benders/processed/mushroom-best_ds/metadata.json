@@ -1,0 +1,207 @@
+{
+  "source_instance": "mushroom-best",
+  "downsampled_instance": "mushroom-best_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 37,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "alpha_1": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "alpha_10": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "alpha_100": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "alpha_101": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "alpha_102": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "alpha_103": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "alpha_104": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "alpha_105": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "alpha_106": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "alpha_107": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "alpha_108": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "alpha_109": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "alpha_11": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "alpha_110": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "alpha_111": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "alpha_112": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "alpha_113": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "alpha_12": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "total_L0_norm": 1,
+      "L0_norm_lb_1": 1,
+      "L0_norm_lb_10": 1,
+      "L0_norm_lb_100": 1,
+      "L0_norm_lb_101": 1,
+      "L0_norm_lb_102": 1,
+      "L0_norm_lb_103": 1,
+      "L0_norm_lb_104": 1,
+      "L0_norm_lb_105": 1,
+      "L0_norm_lb_106": 1,
+      "L0_norm_lb_107": 1,
+      "L0_norm_lb_108": 1,
+      "L0_norm_lb_109": 1,
+      "L0_norm_lb_11": 1,
+      "L0_norm_lb_110": 1,
+      "L0_norm_lb_111": 1,
+      "L0_norm_lb_112": 1,
+      "L0_norm_lb_113": 1,
+      "L0_norm_lb_12": 1,
+      "L0_norm_ub_1": 1,
+      "L0_norm_ub_10": 1,
+      "L0_norm_ub_100": 1,
+      "L0_norm_ub_101": 1,
+      "L0_norm_ub_102": 1,
+      "L0_norm_ub_103": 1,
+      "L0_norm_ub_104": 1,
+      "L0_norm_ub_105": 1,
+      "L0_norm_ub_106": 1,
+      "L0_norm_ub_107": 1,
+      "L0_norm_ub_108": 1,
+      "L0_norm_ub_109": 1,
+      "L0_norm_ub_11": 1,
+      "L0_norm_ub_110": 1,
+      "L0_norm_ub_111": 1,
+      "L0_norm_ub_112": 1,
+      "L0_norm_ub_113": 1,
+      "L0_norm_ub_12": 1
+    },
+    "objective_scale": 380,
+    "max_abs_approx_error": 3.469446951953614e-18
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "alpha_1",
+      "alpha_10",
+      "alpha_100",
+      "alpha_101"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "alpha_102",
+          "alpha_103",
+          "alpha_104",
+          "alpha_105",
+          "alpha_106",
+          "alpha_107",
+          "alpha_108",
+          "alpha_109",
+          "alpha_11",
+          "alpha_110",
+          "alpha_111",
+          "alpha_112",
+          "alpha_113",
+          "alpha_12"
+        ],
+        "constraints": [
+          "L0_norm_lb_102",
+          "L0_norm_lb_103",
+          "L0_norm_lb_104",
+          "L0_norm_lb_105",
+          "L0_norm_lb_106",
+          "L0_norm_lb_107",
+          "L0_norm_lb_108",
+          "L0_norm_lb_109",
+          "L0_norm_lb_11",
+          "L0_norm_lb_110",
+          "L0_norm_lb_111",
+          "L0_norm_lb_112",
+          "L0_norm_lb_113",
+          "L0_norm_lb_12",
+          "L0_norm_ub_102",
+          "L0_norm_ub_103",
+          "L0_norm_ub_104",
+          "L0_norm_ub_105",
+          "L0_norm_ub_106",
+          "L0_norm_ub_107",
+          "L0_norm_ub_108",
+          "L0_norm_ub_109",
+          "L0_norm_ub_11",
+          "L0_norm_ub_110",
+          "L0_norm_ub_111",
+          "L0_norm_ub_112",
+          "L0_norm_ub_113",
+          "L0_norm_ub_12",
+          "total_L0_norm"
+        ]
+      }
+    ]
+  }
+}

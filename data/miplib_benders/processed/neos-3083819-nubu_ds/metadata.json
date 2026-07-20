@@ -1,0 +1,231 @@
+{
+  "source_instance": "neos-3083819-nubu",
+  "downsampled_instance": "neos-3083819-nubu_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 0,
+  "n_integer": 18,
+  "variable_bounds": {
+    "C0120": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "C0128": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "C4498": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "C4499": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "C4500": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "C4501": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "C4528": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "C4529": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "C4530": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "C4531": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "C4560": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "C4561": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "C4578": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "C4579": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "C4617": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "C4618": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "C4619": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "C4641": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 18014398509481984,
+  "number_of_feasible_states": null,
+  "feasible_state_count_exact": false,
+  "integerization": {
+    "row_scales": {
+      "R0004": 1,
+      "R0005": 1,
+      "R0003": 1,
+      "R0002": 1,
+      "R0008": 1,
+      "R0012": 1,
+      "R0013": 1,
+      "R0014": 1,
+      "R0015": 1,
+      "R0017": 1,
+      "R0018": 1,
+      "R0020": 1,
+      "R0275": 1,
+      "R0276": 1,
+      "R0277": 1,
+      "R0278": 1,
+      "R0280": 1,
+      "R0281": 1,
+      "R0283": 1,
+      "R0007": 1,
+      "R0009": 1,
+      "R0021": 1,
+      "R0022": 1,
+      "R0131": 1,
+      "R0139": 1,
+      "R0284": 1,
+      "R0285": 1,
+      "R0393": 1,
+      "R0394": 1,
+      "R0401": 1,
+      "R0402": 1,
+      "R0579": 1,
+      "R0580": 1,
+      "R0581": 1,
+      "R0582": 1,
+      "R0609": 1,
+      "R0610": 1,
+      "R0611": 1,
+      "R0612": 1,
+      "R0641": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "C0120",
+      "C0128",
+      "C4498",
+      "C4499"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "C4500",
+          "C4530",
+          "C4560",
+          "C4578",
+          "C4618"
+        ],
+        "constraints": [
+          "R0004",
+          "R0014",
+          "R0017",
+          "R0021",
+          "R0277",
+          "R0280",
+          "R0284",
+          "R0581",
+          "R0611",
+          "R0641"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "C4501",
+          "C4531",
+          "C4561",
+          "C4579",
+          "C4619"
+        ],
+        "constraints": [
+          "R0005",
+          "R0015",
+          "R0018",
+          "R0022",
+          "R0278",
+          "R0281",
+          "R0285",
+          "R0582",
+          "R0612"
+        ]
+      },
+      {
+        "id": 2,
+        "variables": [
+          "C4528"
+        ],
+        "constraints": [
+          "R0002",
+          "R0012",
+          "R0275",
+          "R0609"
+        ]
+      },
+      {
+        "id": 3,
+        "variables": [
+          "C4529",
+          "C4617",
+          "C4641"
+        ],
+        "constraints": [
+          "R0003",
+          "R0013",
+          "R0020",
+          "R0276",
+          "R0283",
+          "R0610"
+        ]
+      }
+    ]
+  }
+}

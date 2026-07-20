@@ -1,0 +1,221 @@
+{
+  "source_instance": "neos-3216931-puriri",
+  "downsampled_instance": "neos-3216931-puriri_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "C0303": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0334": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0366": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0398": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0430": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0462": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0672": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0703": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0735": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0767": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0799": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0829": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0861": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0892": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0924": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0956": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0986": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C1018": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "R0002": 1,
+      "R5313": 1,
+      "R5329": 1,
+      "R5696": 1,
+      "R5712": 1,
+      "R5728": 1,
+      "R5744": 1,
+      "R5880": 1,
+      "R5896": 1,
+      "R5897": 1,
+      "R5898": 1,
+      "R5899": 1,
+      "R5900": 1,
+      "R5901": 1,
+      "R5902": 1,
+      "R5903": 1,
+      "R5904": 1,
+      "R5905": 1,
+      "R5906": 1,
+      "R5907": 1,
+      "R5908": 1,
+      "R5909": 1,
+      "R5910": 1,
+      "R5944": 1,
+      "R0311": 1,
+      "R0326": 1,
+      "R0341": 1,
+      "R0356": 1,
+      "R0371": 1,
+      "R0386": 1,
+      "R0491": 1,
+      "R0506": 1,
+      "R0521": 1,
+      "R0536": 1,
+      "R0551": 1,
+      "R0566": 1,
+      "R0581": 1,
+      "R0596": 1,
+      "R0611": 1,
+      "R0626": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "C0303",
+      "C0334",
+      "C0366",
+      "C0398"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "C0430",
+          "C0462",
+          "C0672",
+          "C0703",
+          "C0735",
+          "C0767",
+          "C0799",
+          "C0829",
+          "C0861",
+          "C0892",
+          "C0924",
+          "C0956",
+          "C0986",
+          "C1018"
+        ],
+        "constraints": [
+          "R0002",
+          "R0311",
+          "R0326",
+          "R0341",
+          "R0356",
+          "R0371",
+          "R0386",
+          "R0491",
+          "R0506",
+          "R0521",
+          "R0536",
+          "R0551",
+          "R0566",
+          "R0581",
+          "R0596",
+          "R0611",
+          "R0626",
+          "R5313",
+          "R5329",
+          "R5696",
+          "R5712",
+          "R5728",
+          "R5744",
+          "R5880",
+          "R5896",
+          "R5897",
+          "R5898",
+          "R5899",
+          "R5900",
+          "R5901",
+          "R5902",
+          "R5903",
+          "R5904",
+          "R5905",
+          "R5906",
+          "R5907",
+          "R5908",
+          "R5909",
+          "R5910",
+          "R5944"
+        ]
+      }
+    ]
+  }
+}

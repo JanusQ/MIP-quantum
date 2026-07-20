@@ -1,0 +1,264 @@
+{
+  "source_instance": "p200x1188c",
+  "downsampled_instance": "p200x1188c_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 18,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "y...0001": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y...0002": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y...0003": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y...0004": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y...0005": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y...0006": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y...0007": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y...0008": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y...0009": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y...0010": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y...0011": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y...0012": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y...0013": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y...0014": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y...0015": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y...0016": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y...0017": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y...0018": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 262144,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "UC..0001": 1,
+      "UC..0002": 1,
+      "UC..0003": 1,
+      "UC..0004": 1,
+      "UC..0005": 1,
+      "UC..0006": 1,
+      "UC..0007": 1,
+      "UC..0008": 1,
+      "UC..0009": 1,
+      "UC..0010": 1,
+      "UC..0011": 1,
+      "UC..0012": 1,
+      "UC..0013": 1,
+      "UC..0014": 1,
+      "UC..0015": 1,
+      "UC..0016": 1,
+      "UC..0017": 1,
+      "UC..0018": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "y...0001",
+      "y...0002",
+      "y...0003",
+      "y...0004"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "y...0005"
+        ],
+        "constraints": [
+          "UC..0005"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "y...0006"
+        ],
+        "constraints": [
+          "UC..0006"
+        ]
+      },
+      {
+        "id": 2,
+        "variables": [
+          "y...0007"
+        ],
+        "constraints": [
+          "UC..0007"
+        ]
+      },
+      {
+        "id": 3,
+        "variables": [
+          "y...0008"
+        ],
+        "constraints": [
+          "UC..0008"
+        ]
+      },
+      {
+        "id": 4,
+        "variables": [
+          "y...0009"
+        ],
+        "constraints": [
+          "UC..0009"
+        ]
+      },
+      {
+        "id": 5,
+        "variables": [
+          "y...0010"
+        ],
+        "constraints": [
+          "UC..0010"
+        ]
+      },
+      {
+        "id": 6,
+        "variables": [
+          "y...0011"
+        ],
+        "constraints": [
+          "UC..0011"
+        ]
+      },
+      {
+        "id": 7,
+        "variables": [
+          "y...0012"
+        ],
+        "constraints": [
+          "UC..0012"
+        ]
+      },
+      {
+        "id": 8,
+        "variables": [
+          "y...0013"
+        ],
+        "constraints": [
+          "UC..0013"
+        ]
+      },
+      {
+        "id": 9,
+        "variables": [
+          "y...0014"
+        ],
+        "constraints": [
+          "UC..0014"
+        ]
+      },
+      {
+        "id": 10,
+        "variables": [
+          "y...0015"
+        ],
+        "constraints": [
+          "UC..0015"
+        ]
+      },
+      {
+        "id": 11,
+        "variables": [
+          "y...0016"
+        ],
+        "constraints": [
+          "UC..0016"
+        ]
+      },
+      {
+        "id": 12,
+        "variables": [
+          "y...0017"
+        ],
+        "constraints": [
+          "UC..0017"
+        ]
+      },
+      {
+        "id": 13,
+        "variables": [
+          "y...0018"
+        ],
+        "constraints": [
+          "UC..0018"
+        ]
+      }
+    ]
+  }
+}

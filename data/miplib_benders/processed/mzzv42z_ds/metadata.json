@@ -1,0 +1,229 @@
+{
+  "source_instance": "mzzv42z",
+  "downsampled_instance": "mzzv42z_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 0,
+  "n_integer": 18,
+  "variable_bounds": {
+    "x242": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "x243": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "x244": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "x245": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "x246": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "x247": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "x123": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "x124": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "x125": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "x126": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "x127": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "x128": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "x129": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "x130": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "x131": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "x132": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "x133": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "x134": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 3628410392018944,
+  "number_of_feasible_states": null,
+  "feasible_state_count_exact": false,
+  "integerization": {
+    "row_scales": {
+      "c21": 1,
+      "c22": 1,
+      "c23": 1,
+      "c10263": 1,
+      "c10264": 1,
+      "c10265": 1,
+      "c10266": 1,
+      "c10267": 1,
+      "c10268": 1,
+      "c10305": 1,
+      "c10306": 1,
+      "c10307": 1,
+      "c10308": 1,
+      "c10309": 1,
+      "c10310": 1,
+      "c10346": 1,
+      "c10347": 1,
+      "c10348": 1,
+      "c10349": 1,
+      "c10350": 1,
+      "c10351": 1,
+      "c124": 1,
+      "c125": 1,
+      "c126": 1,
+      "c127": 1,
+      "c128": 1,
+      "c129": 1,
+      "c135": 1,
+      "c136": 1,
+      "c137": 1,
+      "c162": 1,
+      "c163": 1,
+      "c164": 1,
+      "c165": 1,
+      "c166": 1,
+      "c167": 1,
+      "c173": 1,
+      "c174": 1,
+      "c175": 1,
+      "c59": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "x242",
+      "x243",
+      "x244",
+      "x245"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "x123",
+          "x124",
+          "x125",
+          "x126"
+        ],
+        "constraints": [
+          "c135",
+          "c173",
+          "c21",
+          "c59"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "x127",
+          "x128",
+          "x129",
+          "x130"
+        ],
+        "constraints": [
+          "c136",
+          "c174",
+          "c22"
+        ]
+      },
+      {
+        "id": 2,
+        "variables": [
+          "x131",
+          "x132",
+          "x133",
+          "x134"
+        ],
+        "constraints": [
+          "c137",
+          "c175",
+          "c23"
+        ]
+      },
+      {
+        "id": 3,
+        "variables": [
+          "x246"
+        ],
+        "constraints": [
+          "c10267",
+          "c10309",
+          "c10350",
+          "c128",
+          "c166"
+        ]
+      },
+      {
+        "id": 4,
+        "variables": [
+          "x247"
+        ],
+        "constraints": [
+          "c10268",
+          "c10310",
+          "c10351",
+          "c129",
+          "c167"
+        ]
+      }
+    ]
+  }
+}

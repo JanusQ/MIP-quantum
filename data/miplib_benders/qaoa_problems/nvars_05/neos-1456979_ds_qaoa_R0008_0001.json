@@ -1,0 +1,116 @@
+{
+  "name": "neos-1456979_ds_qaoa_R0008_0001",
+  "source_mps": "neos-1456979_ds",
+  "decomposition": "benders",
+  "benders_subproblem_id": 0,
+  "benders_subproblem_variables": [
+    "C0185",
+    "C0186",
+    "C0187",
+    "C0188",
+    "C0189",
+    "C0190",
+    "C0191",
+    "C0192",
+    "C0193",
+    "C0194",
+    "C0195",
+    "C0196",
+    "C0197",
+    "C0198"
+  ],
+  "benders_subproblem_constraints": [
+    "R0001",
+    "R0002",
+    "R0003",
+    "R0004",
+    "R0005",
+    "R0006",
+    "R0007",
+    "R0008",
+    "R0009",
+    "R0046",
+    "R0047",
+    "R0048",
+    "R0049",
+    "R0050",
+    "R0055",
+    "R0056",
+    "R0057",
+    "R0058",
+    "R0059",
+    "R0060",
+    "R0061",
+    "R0062",
+    "R0063",
+    "R0064",
+    "R0065",
+    "R0066",
+    "R0067",
+    "R0068",
+    "R0230",
+    "R0231",
+    "R0232",
+    "R0233"
+  ],
+  "source_rows": [
+    {
+      "name": "R0008",
+      "sense": "E"
+    }
+  ],
+  "variables": [
+    "C0191",
+    "C0192",
+    "C0193",
+    "C0194",
+    "C0195"
+  ],
+  "A": [
+    [
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "b": [
+    1
+  ],
+  "c": [
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "N": 8,
+  "variable_bounds": {
+    "C0191": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0192": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0193": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0194": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0195": {
+      "lb": 0,
+      "ub": 7
+    }
+  },
+  "encoding": "Exported benchmark variables are normalized experimental variables with domain 0..N-1. Coefficients and row provenance come from the source MIP row.",
+  "candidate_state_space_size": 32768,
+  "feasible_states_in_qaoa_truncation": 5,
+  "feasible_state_count_exact": true,
+  "adapter": "strict Benders subproblem export; variables and source rows are selected only from one benders_blocks.subproblems entry; exported variables use domain 0..N-1; <=/>= rows use one nonnegative row slack each"
+}

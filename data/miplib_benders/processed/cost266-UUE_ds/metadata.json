@@ -1,0 +1,296 @@
+{
+  "source_instance": "cost266-UUE",
+  "downsampled_instance": "cost266-UUE_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 36,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "XHC(LD_LD_120960.000000__L1)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "XHC(LD_LD_120960.000000__L10)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "XHC(LD_LD_120960.000000__L11)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "XHC(LD_LD_120960.000000__L12)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "XHC(LD_LD_120960.000000__L13)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "XHC(LD_LD_120960.000000__L14)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "XHC(LD_LD_120960.000000__L15)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "XHC(LD_LD_120960.000000__L16)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "XHC(LD_LD_120960.000000__L17)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "XHC(LD_LD_120960.000000__L18)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "XHC(LD_LD_120960.000000__L19)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "XHC(LD_LD_120960.000000__L2)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "XHC(LD_LD_120960.000000__L20)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "XHC(LD_LD_120960.000000__L21)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "XHC(LD_LD_120960.000000__L22)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "XHC(LD_LD_120960.000000__L23)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "XHC(LD_LD_120960.000000__L24)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "XHC(LD_LD_120960.000000__L25)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "CAP(NOS__L10__U__4)": 1,
+      "CAP(NOS__L11__U__4)": 1,
+      "CAP(NOS__L12__U__4)": 1,
+      "CAP(NOS__L13__U__4)": 1,
+      "CAP(NOS__L14__U__4)": 1,
+      "CAP(NOS__L15__U__4)": 1,
+      "CAP(NOS__L16__U__4)": 1,
+      "CAP(NOS__L17__U__4)": 1,
+      "CAP(NOS__L18__U__4)": 1,
+      "CAP(NOS__L19__U__4)": 1,
+      "CAP(NOS__L1__U__4)": 1,
+      "CAP(NOS__L20__U__4)": 1,
+      "CAP(NOS__L21__U__4)": 1,
+      "CAP(NOS__L22__U__4)": 1,
+      "CAP(NOS__L23__U__4)": 1,
+      "CAP(NOS__L24__U__4)": 1,
+      "CAP(NOS__L25__U__4)": 1,
+      "CAP(NOS__L2__U__4)": 1,
+      "HRC(CNR_Default_edge_designs__L1)": 1,
+      "HRC(CNR_Default_edge_designs__L10)": 1,
+      "HRC(CNR_Default_edge_designs__L11)": 1,
+      "HRC(CNR_Default_edge_designs__L12)": 1,
+      "HRC(CNR_Default_edge_designs__L13)": 1,
+      "HRC(CNR_Default_edge_designs__L14)": 1,
+      "HRC(CNR_Default_edge_designs__L15)": 1,
+      "HRC(CNR_Default_edge_designs__L16)": 1,
+      "HRC(CNR_Default_edge_designs__L17)": 1,
+      "HRC(CNR_Default_edge_designs__L18)": 1,
+      "HRC(CNR_Default_edge_designs__L19)": 1,
+      "HRC(CNR_Default_edge_designs__L2)": 1,
+      "HRC(CNR_Default_edge_designs__L20)": 1,
+      "HRC(CNR_Default_edge_designs__L21)": 1,
+      "HRC(CNR_Default_edge_designs__L22)": 1,
+      "HRC(CNR_Default_edge_designs__L23)": 1,
+      "HRC(CNR_Default_edge_designs__L24)": 1,
+      "HRC(CNR_Default_edge_designs__L25)": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "XHC(LD_LD_120960.000000__L1)",
+      "XHC(LD_LD_120960.000000__L10)",
+      "XHC(LD_LD_120960.000000__L11)",
+      "XHC(LD_LD_120960.000000__L12)"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "XHC(LD_LD_120960.000000__L13)"
+        ],
+        "constraints": [
+          "CAP(NOS__L13__U__4)",
+          "HRC(CNR_Default_edge_designs__L13)"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "XHC(LD_LD_120960.000000__L14)"
+        ],
+        "constraints": [
+          "CAP(NOS__L14__U__4)",
+          "HRC(CNR_Default_edge_designs__L14)"
+        ]
+      },
+      {
+        "id": 2,
+        "variables": [
+          "XHC(LD_LD_120960.000000__L15)"
+        ],
+        "constraints": [
+          "CAP(NOS__L15__U__4)",
+          "HRC(CNR_Default_edge_designs__L15)"
+        ]
+      },
+      {
+        "id": 3,
+        "variables": [
+          "XHC(LD_LD_120960.000000__L16)"
+        ],
+        "constraints": [
+          "CAP(NOS__L16__U__4)",
+          "HRC(CNR_Default_edge_designs__L16)"
+        ]
+      },
+      {
+        "id": 4,
+        "variables": [
+          "XHC(LD_LD_120960.000000__L17)"
+        ],
+        "constraints": [
+          "CAP(NOS__L17__U__4)",
+          "HRC(CNR_Default_edge_designs__L17)"
+        ]
+      },
+      {
+        "id": 5,
+        "variables": [
+          "XHC(LD_LD_120960.000000__L18)"
+        ],
+        "constraints": [
+          "CAP(NOS__L18__U__4)",
+          "HRC(CNR_Default_edge_designs__L18)"
+        ]
+      },
+      {
+        "id": 6,
+        "variables": [
+          "XHC(LD_LD_120960.000000__L19)"
+        ],
+        "constraints": [
+          "CAP(NOS__L19__U__4)",
+          "HRC(CNR_Default_edge_designs__L19)"
+        ]
+      },
+      {
+        "id": 7,
+        "variables": [
+          "XHC(LD_LD_120960.000000__L2)"
+        ],
+        "constraints": [
+          "CAP(NOS__L2__U__4)",
+          "HRC(CNR_Default_edge_designs__L2)"
+        ]
+      },
+      {
+        "id": 8,
+        "variables": [
+          "XHC(LD_LD_120960.000000__L20)"
+        ],
+        "constraints": [
+          "CAP(NOS__L20__U__4)",
+          "HRC(CNR_Default_edge_designs__L20)"
+        ]
+      },
+      {
+        "id": 9,
+        "variables": [
+          "XHC(LD_LD_120960.000000__L21)"
+        ],
+        "constraints": [
+          "CAP(NOS__L21__U__4)",
+          "HRC(CNR_Default_edge_designs__L21)"
+        ]
+      },
+      {
+        "id": 10,
+        "variables": [
+          "XHC(LD_LD_120960.000000__L22)"
+        ],
+        "constraints": [
+          "CAP(NOS__L22__U__4)",
+          "HRC(CNR_Default_edge_designs__L22)"
+        ]
+      },
+      {
+        "id": 11,
+        "variables": [
+          "XHC(LD_LD_120960.000000__L23)"
+        ],
+        "constraints": [
+          "CAP(NOS__L23__U__4)",
+          "HRC(CNR_Default_edge_designs__L23)"
+        ]
+      },
+      {
+        "id": 12,
+        "variables": [
+          "XHC(LD_LD_120960.000000__L24)"
+        ],
+        "constraints": [
+          "CAP(NOS__L24__U__4)",
+          "HRC(CNR_Default_edge_designs__L24)"
+        ]
+      },
+      {
+        "id": 13,
+        "variables": [
+          "XHC(LD_LD_120960.000000__L25)"
+        ],
+        "constraints": [
+          "CAP(NOS__L25__U__4)",
+          "HRC(CNR_Default_edge_designs__L25)"
+        ]
+      }
+    ]
+  }
+}

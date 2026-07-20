@@ -1,0 +1,197 @@
+{
+  "source_instance": "blp-ic98",
+  "downsampled_instance": "blp-ic98_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 28,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "x(Es.Vs.2.1.0)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Es.Vs.2.1.1)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Es.Vs.2.1.10)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Es.Vs.2.1.11)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Es.Vs.2.1.12)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Es.Vs.2.1.2)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Es.Vs.2.1.3)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Es.Vs.2.1.4)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Es.Vs.2.1.5)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Es.Vs.2.1.6)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Es.Vs.2.1.7)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Es.Vs.2.1.8)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Es.Vs.2.1.9)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Es.Vs.2.2.0)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Es.Vs.2.2.1)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Es.Vs.2.2.10)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Es.Vs.2.2.2)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Es.Vs.2.2.3)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "defblpfreq(AmfApdC)": 1,
+      "defblpfreq(AmfUtC)": 1,
+      "defblpfreq(AmlDvC)": 1,
+      "defblpfreq(AmlHglC)": 1,
+      "defblpfreq(ApdDvC)": 1,
+      "defblpfreq(BgnRsdC)": 1,
+      "defblpfreq(BgnVsC)": 1,
+      "defblpfreq(DdrRsdC)": 1,
+      "defblpfreq(DdrRtdC)": 1,
+      "defblpfreq(EsHglC)": 1,
+      "defblpfreq(GvGvcC)": 1,
+      "defblpfreq(GvRtdC)": 1,
+      "defblpfreq(GvcUtC)": 1,
+      "defblpobj": 1000000,
+      "defblpreq(AmfApdC)": 1,
+      "defblpreq(AmfUtC)": 1,
+      "defblpreq(AmlDvC)": 1,
+      "defblpreq(AmlHglC)": 1,
+      "defblpreq(ApdDvC)": 1,
+      "defblpreq(BgnRsdC)": 1,
+      "defblpreq(BgnVsC)": 1,
+      "defblpreq(DdrRsdC)": 1,
+      "defblpreq(DdrRtdC)": 1,
+      "defblpreq(EsHglC)": 1,
+      "defblpreq(GvGvcC)": 1,
+      "defblpreq(GvRtdC)": 1,
+      "defblpreq(GvcUtC)": 1,
+      "oneblpline(Es.Vs.2)": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 4.0000008993956726e-07
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "x(Es.Vs.2.1.0)",
+      "x(Es.Vs.2.1.1)",
+      "x(Es.Vs.2.1.10)",
+      "x(Es.Vs.2.1.11)"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "x(Es.Vs.2.1.12)",
+          "x(Es.Vs.2.1.2)",
+          "x(Es.Vs.2.1.3)",
+          "x(Es.Vs.2.1.4)",
+          "x(Es.Vs.2.1.5)",
+          "x(Es.Vs.2.1.6)",
+          "x(Es.Vs.2.1.7)",
+          "x(Es.Vs.2.1.8)",
+          "x(Es.Vs.2.1.9)",
+          "x(Es.Vs.2.2.0)",
+          "x(Es.Vs.2.2.1)",
+          "x(Es.Vs.2.2.10)",
+          "x(Es.Vs.2.2.2)",
+          "x(Es.Vs.2.2.3)"
+        ],
+        "constraints": [
+          "defblpfreq(AmfApdC)",
+          "defblpfreq(AmfUtC)",
+          "defblpfreq(AmlDvC)",
+          "defblpfreq(AmlHglC)",
+          "defblpfreq(ApdDvC)",
+          "defblpfreq(BgnRsdC)",
+          "defblpfreq(BgnVsC)",
+          "defblpfreq(DdrRsdC)",
+          "defblpfreq(DdrRtdC)",
+          "defblpfreq(EsHglC)",
+          "defblpfreq(GvGvcC)",
+          "defblpfreq(GvRtdC)",
+          "defblpfreq(GvcUtC)",
+          "defblpobj",
+          "defblpreq(AmfApdC)",
+          "defblpreq(AmfUtC)",
+          "defblpreq(AmlDvC)",
+          "defblpreq(AmlHglC)",
+          "defblpreq(ApdDvC)",
+          "defblpreq(BgnRsdC)",
+          "defblpreq(BgnVsC)",
+          "defblpreq(DdrRsdC)",
+          "defblpreq(DdrRtdC)",
+          "defblpreq(EsHglC)",
+          "defblpreq(GvGvcC)",
+          "defblpreq(GvRtdC)",
+          "defblpreq(GvcUtC)",
+          "oneblpline(Es.Vs.2)"
+        ]
+      }
+    ]
+  }
+}

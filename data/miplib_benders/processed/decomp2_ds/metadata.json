@@ -1,0 +1,199 @@
+{
+  "source_instance": "decomp2",
+  "downsampled_instance": "decomp2_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "y(201,0)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "y(201,1)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "y(201,10)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "y(201,11)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "y(201,12)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "y(201,13)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "y(201,14)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "y(201,15)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "y(201,2)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "y(201,3)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "y(201,4)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "y(201,5)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "y(201,6)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "y(201,7)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "y(201,8)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "y(201,9)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "y(196,0)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "y(196,1)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "varsizelb_": 1,
+      "passon_201_lhs": 1,
+      "passon_201_rhs": 1,
+      "passon_196_lhs": 1,
+      "passon_196_rhs": 1,
+      "row2var_112_0_1": 1,
+      "row2var_112_0_2": 1,
+      "row2var_112_1_1": 1,
+      "row2var_112_1_2": 1,
+      "row2var_150_0_1": 1,
+      "row2var_150_0_2": 1,
+      "row2var_150_1_1": 1,
+      "row2var_150_1_2": 1,
+      "row2var_151_0_1": 1,
+      "row2var_151_0_2": 1,
+      "row2var_151_1_1": 1,
+      "row2var_151_1_2": 1,
+      "row2var_153_0_1": 1,
+      "row2var_153_0_2": 1,
+      "row2var_153_1_1": 1,
+      "row2var_153_1_2": 1,
+      "row2var_218_0_1": 1,
+      "row2var_218_0_2": 1,
+      "row2var_218_10_1": 1,
+      "row2var_218_10_2": 1,
+      "row2var_218_11_1": 1,
+      "row2var_218_11_2": 1,
+      "row2var_218_12_1": 1,
+      "row2var_218_12_2": 1,
+      "row2var_218_13_1": 1,
+      "row2var_218_13_2": 1,
+      "row2var_218_14_1": 1,
+      "row2var_218_14_2": 1,
+      "row2var_218_15_1": 1,
+      "row2var_218_15_2": 1,
+      "row2var_218_1_1": 1,
+      "row2var_218_1_2": 1,
+      "row2var_218_2_1": 1,
+      "row2var_218_2_2": 1,
+      "row2var_218_3_1": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "y(196,0)",
+      "y(196,1)",
+      "y(201,0)",
+      "y(201,1)"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "y(201,10)",
+          "y(201,11)",
+          "y(201,12)",
+          "y(201,13)",
+          "y(201,14)",
+          "y(201,15)",
+          "y(201,2)",
+          "y(201,3)",
+          "y(201,4)",
+          "y(201,5)",
+          "y(201,6)",
+          "y(201,7)",
+          "y(201,8)",
+          "y(201,9)"
+        ],
+        "constraints": [
+          "passon_201_lhs",
+          "passon_201_rhs",
+          "row2var_218_10_1",
+          "row2var_218_10_2",
+          "row2var_218_11_1",
+          "row2var_218_11_2",
+          "row2var_218_12_1",
+          "row2var_218_12_2",
+          "row2var_218_13_1",
+          "row2var_218_13_2",
+          "row2var_218_14_1",
+          "row2var_218_14_2",
+          "row2var_218_15_1",
+          "row2var_218_15_2",
+          "row2var_218_2_1",
+          "row2var_218_2_2",
+          "row2var_218_3_1",
+          "varsizelb_"
+        ]
+      }
+    ]
+  }
+}

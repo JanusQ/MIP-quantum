@@ -1,0 +1,264 @@
+{
+  "source_instance": "icir97_tension",
+  "downsampled_instance": "icir97_tension_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 18,
+  "n_binary": 0,
+  "n_integer": 18,
+  "variable_bounds": {
+    "q1065": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "q62": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "q89": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "q1062": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "q1063": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "q1064": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "q233": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "q235": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "q241": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "q244": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "q246": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "q389": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "q390": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "q391": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "q392": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "q434": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "q435": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "q436": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 2430751493090816,
+  "number_of_feasible_states": null,
+  "feasible_state_count_exact": false,
+  "integerization": {
+    "row_scales": {
+      "cycle1062": 1,
+      "cycle1063": 1,
+      "cycle1064": 1,
+      "cycle1065": 1,
+      "cycle233": 1,
+      "cycle235": 1,
+      "cycle241": 1,
+      "cycle244": 1,
+      "cycle246": 1,
+      "cycle389": 1,
+      "cycle390": 1,
+      "cycle391": 1,
+      "cycle392": 1,
+      "cycle434": 1,
+      "cycle435": 1,
+      "cycle436": 1,
+      "cycle62": 1,
+      "cycle89": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "q1062",
+      "q1063",
+      "q1064",
+      "q1065"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "q233"
+        ],
+        "constraints": [
+          "cycle233"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "q235"
+        ],
+        "constraints": [
+          "cycle235"
+        ]
+      },
+      {
+        "id": 2,
+        "variables": [
+          "q241"
+        ],
+        "constraints": [
+          "cycle241"
+        ]
+      },
+      {
+        "id": 3,
+        "variables": [
+          "q244"
+        ],
+        "constraints": [
+          "cycle244"
+        ]
+      },
+      {
+        "id": 4,
+        "variables": [
+          "q246"
+        ],
+        "constraints": [
+          "cycle246"
+        ]
+      },
+      {
+        "id": 5,
+        "variables": [
+          "q389"
+        ],
+        "constraints": [
+          "cycle389"
+        ]
+      },
+      {
+        "id": 6,
+        "variables": [
+          "q390"
+        ],
+        "constraints": [
+          "cycle390"
+        ]
+      },
+      {
+        "id": 7,
+        "variables": [
+          "q391"
+        ],
+        "constraints": [
+          "cycle391"
+        ]
+      },
+      {
+        "id": 8,
+        "variables": [
+          "q392"
+        ],
+        "constraints": [
+          "cycle392"
+        ]
+      },
+      {
+        "id": 9,
+        "variables": [
+          "q434"
+        ],
+        "constraints": [
+          "cycle434"
+        ]
+      },
+      {
+        "id": 10,
+        "variables": [
+          "q435"
+        ],
+        "constraints": [
+          "cycle435"
+        ]
+      },
+      {
+        "id": 11,
+        "variables": [
+          "q436"
+        ],
+        "constraints": [
+          "cycle436"
+        ]
+      },
+      {
+        "id": 12,
+        "variables": [
+          "q62"
+        ],
+        "constraints": [
+          "cycle62"
+        ]
+      },
+      {
+        "id": 13,
+        "variables": [
+          "q89"
+        ],
+        "constraints": [
+          "cycle89"
+        ]
+      }
+    ]
+  }
+}

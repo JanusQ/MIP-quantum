@@ -1,0 +1,258 @@
+{
+  "source_instance": "neos-3555904-turama",
+  "downsampled_instance": "neos-3555904-turama_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "x35202": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x33763": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x33875": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x35745": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x34462": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x29991": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x35197": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x29913": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x29914": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x29915": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x29992": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x29993": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x30737": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x30738": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x30814": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x30815": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x35198": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x35199": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 16384,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "c101455": 1,
+      "c101456": 1,
+      "c101457": 1,
+      "c101458": 1,
+      "c101459": 1,
+      "c101460": 1,
+      "c101461": 1,
+      "c101462": 1,
+      "c101463": 1,
+      "c101464": 1,
+      "c101465": 1,
+      "c101466": 1,
+      "c101467": 1,
+      "c101468": 1,
+      "c101469": 1,
+      "c101470": 1,
+      "c101471": 1,
+      "c101472": 1,
+      "c101473": 1,
+      "c101474": 1,
+      "c101475": 1,
+      "c101476": 1,
+      "c101477": 1,
+      "c101478": 1,
+      "c101479": 1,
+      "c101480": 1,
+      "c101481": 1,
+      "c101482": 1,
+      "c101483": 1,
+      "c101484": 1,
+      "c101485": 1,
+      "c101486": 1,
+      "c101487": 1,
+      "c101488": 1,
+      "c101489": 1,
+      "c101490": 1,
+      "c101491": 1,
+      "c101492": 1,
+      "c101493": 1,
+      "c101494": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "x35197",
+      "x35198",
+      "x35199",
+      "x35202"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "x29913"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 1,
+        "variables": [
+          "x29914"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 2,
+        "variables": [
+          "x29915"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 3,
+        "variables": [
+          "x29991"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 4,
+        "variables": [
+          "x29992"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 5,
+        "variables": [
+          "x29993"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 6,
+        "variables": [
+          "x30737"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 7,
+        "variables": [
+          "x30738"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 8,
+        "variables": [
+          "x30814"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 9,
+        "variables": [
+          "x30815"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 10,
+        "variables": [
+          "x33763"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 11,
+        "variables": [
+          "x33875"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 12,
+        "variables": [
+          "x34462"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 13,
+        "variables": [
+          "x35745"
+        ],
+        "constraints": []
+      }
+    ]
+  }
+}

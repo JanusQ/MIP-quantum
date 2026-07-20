@@ -1,0 +1,97 @@
+{
+  "name": "ns1830653_ds_qaoa_R0880_0002",
+  "source_mps": "ns1830653_ds",
+  "decomposition": "benders",
+  "benders_subproblem_id": 0,
+  "benders_subproblem_variables": [
+    "C0234",
+    "C0252",
+    "C0270",
+    "C0288",
+    "C0306",
+    "C0504"
+  ],
+  "benders_subproblem_constraints": [
+    "R0880",
+    "R1399",
+    "R1400",
+    "R1401",
+    "R1402",
+    "R1534",
+    "R1535",
+    "R1536",
+    "R1537",
+    "R1668",
+    "R1669",
+    "R1670",
+    "R1671",
+    "R1672",
+    "R1794",
+    "R1795",
+    "R1796",
+    "R1797",
+    "R1798",
+    "R2209",
+    "R2210"
+  ],
+  "source_rows": [
+    {
+      "name": "R0880",
+      "sense": "E"
+    }
+  ],
+  "variables": [
+    "C0252",
+    "C0270",
+    "C0288",
+    "C0306",
+    "C0504"
+  ],
+  "A": [
+    [
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "b": [
+    1
+  ],
+  "c": [
+    69,
+    142,
+    121,
+    224,
+    127
+  ],
+  "N": 8,
+  "variable_bounds": {
+    "C0252": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0270": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0288": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0306": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0504": {
+      "lb": 0,
+      "ub": 7
+    }
+  },
+  "encoding": "Exported benchmark variables are normalized experimental variables with domain 0..N-1. Coefficients and row provenance come from the source MIP row.",
+  "candidate_state_space_size": 32768,
+  "feasible_states_in_qaoa_truncation": 5,
+  "feasible_state_count_exact": true,
+  "adapter": "strict Benders subproblem export; variables and source rows are selected only from one benders_blocks.subproblems entry; exported variables use domain 0..N-1; <=/>= rows use one nonnegative row slack each"
+}

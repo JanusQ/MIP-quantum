@@ -1,0 +1,234 @@
+{
+  "source_instance": "air05",
+  "downsampled_instance": "air05_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "x7116": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x1053": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x3102": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x7118": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x1021": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x1063": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x1064": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x1203": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x2029": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x2453": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x2569": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x2798": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x3175": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x340": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x3907": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x3909": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x3910": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x4166": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 2,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "c93": 1,
+      "c94": 1,
+      "c95": 1,
+      "c96": 1,
+      "c149": 1,
+      "c150": 1,
+      "c217": 1,
+      "c218": 1,
+      "c395": 1,
+      "c396": 1,
+      "c30": 1,
+      "c397": 1,
+      "c398": 1,
+      "c68": 1,
+      "c69": 1,
+      "c70": 1,
+      "c71": 1,
+      "c132": 1,
+      "c133": 1,
+      "c22": 1,
+      "c23": 1,
+      "c24": 1,
+      "c25": 1,
+      "c31": 1,
+      "c32": 1,
+      "c389": 1,
+      "c399": 1,
+      "c66": 1,
+      "c67": 1,
+      "c91": 1,
+      "c92": 1,
+      "c11": 1,
+      "c12": 1,
+      "c134": 1,
+      "c135": 1,
+      "c163": 1,
+      "c17": 1,
+      "c181": 1,
+      "c182": 1,
+      "c19": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "x1053",
+      "x2029",
+      "x2798",
+      "x3907"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "x1021",
+          "x1063",
+          "x1064",
+          "x2453",
+          "x2569",
+          "x3102",
+          "x3909",
+          "x3910",
+          "x4166",
+          "x7116",
+          "x7118"
+        ],
+        "constraints": [
+          "c11",
+          "c12",
+          "c132",
+          "c133",
+          "c149",
+          "c150",
+          "c181",
+          "c182",
+          "c217",
+          "c218",
+          "c22",
+          "c23",
+          "c24",
+          "c25",
+          "c30",
+          "c31",
+          "c32",
+          "c389",
+          "c395",
+          "c396",
+          "c397",
+          "c398",
+          "c399",
+          "c66",
+          "c67",
+          "c68",
+          "c69",
+          "c70",
+          "c71",
+          "c91",
+          "c92",
+          "c93",
+          "c94",
+          "c95",
+          "c96"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "x1203",
+          "x3175"
+        ],
+        "constraints": [
+          "c134",
+          "c135",
+          "c163",
+          "c17",
+          "c19"
+        ]
+      },
+      {
+        "id": 2,
+        "variables": [
+          "x340"
+        ],
+        "constraints": []
+      }
+    ]
+  }
+}

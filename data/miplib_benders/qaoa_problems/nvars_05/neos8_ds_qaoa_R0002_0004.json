@@ -1,0 +1,127 @@
+{
+  "name": "neos8_ds_qaoa_R0002_0004",
+  "source_mps": "neos8_ds",
+  "decomposition": "benders",
+  "benders_subproblem_id": 0,
+  "benders_subproblem_variables": [
+    "C0001",
+    "C0002",
+    "C0005",
+    "C0006",
+    "C0009",
+    "C0013",
+    "C0014",
+    "C0017",
+    "C0018",
+    "C0022",
+    "C0023",
+    "C0024",
+    "C0025",
+    "C0026"
+  ],
+  "benders_subproblem_constraints": [
+    "R0001",
+    "R0002",
+    "R0003",
+    "R0004",
+    "R0065",
+    "R0066",
+    "R0067",
+    "R0068",
+    "R10002",
+    "R10003",
+    "R10004",
+    "R10005",
+    "R10006",
+    "R10009",
+    "R10010",
+    "R10013",
+    "R10014",
+    "R10017",
+    "R10021",
+    "R10022",
+    "R10025",
+    "R10026",
+    "R10030",
+    "R10031",
+    "R10032",
+    "R10033",
+    "R10034",
+    "R10037",
+    "R10038",
+    "R10041",
+    "R10042",
+    "R10045",
+    "R10049",
+    "R10050",
+    "R10053",
+    "R10054"
+  ],
+  "source_rows": [
+    {
+      "name": "R0002",
+      "sense": "L"
+    }
+  ],
+  "variables": [
+    "C0006",
+    "C0013",
+    "C0014",
+    "C0017",
+    "row_slack_R0002"
+  ],
+  "A": [
+    [
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "b": [
+    1
+  ],
+  "c": [
+    -2200,
+    -2600,
+    -2700,
+    -1500,
+    0
+  ],
+  "N": 8,
+  "variable_bounds": {
+    "C0006": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0013": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0014": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0017": {
+      "lb": 0,
+      "ub": 7
+    },
+    "row_slack_R0002": {
+      "lb": 0,
+      "ub": 7
+    }
+  },
+  "encoding": "Exported benchmark variables are normalized experimental variables with domain 0..N-1. Coefficients and row provenance come from the source MIP row.",
+  "candidate_state_space_size": 32768,
+  "feasible_states_in_qaoa_truncation": 5,
+  "feasible_state_count_exact": true,
+  "adapter": "strict Benders subproblem export; variables and source rows are selected only from one benders_blocks.subproblems entry; exported variables use domain 0..N-1; <=/>= rows use one nonnegative row slack each",
+  "slack_variables": [
+    {
+      "name": "row_slack_R0002",
+      "source_row": "R0002",
+      "type": "row_slack_for_le"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "name": "neos-4300652-rahue_ds_qaoa_R14653_0002",
+  "source_mps": "neos-4300652-rahue_ds",
+  "decomposition": "benders",
+  "benders_subproblem_id": 0,
+  "benders_subproblem_variables": [
+    "C12149",
+    "C12150",
+    "C12152",
+    "C12153",
+    "C12155",
+    "C12156",
+    "C12158",
+    "C12159",
+    "C12161",
+    "C12162",
+    "C12164",
+    "C12165",
+    "C12167",
+    "C12168"
+  ],
+  "benders_subproblem_constraints": [
+    "R14653",
+    "R14655",
+    "R14656",
+    "R14658",
+    "R14659",
+    "R14661",
+    "R14662",
+    "R14664",
+    "R14665",
+    "R14667",
+    "R14668",
+    "R14713",
+    "R14714",
+    "R14715",
+    "R14716",
+    "R14717",
+    "R14718",
+    "R14719"
+  ],
+  "source_rows": [
+    {
+      "name": "R14653",
+      "sense": "L"
+    }
+  ],
+  "variables": [
+    "C12150",
+    "C12152",
+    "C12153",
+    "row_slack_R14653"
+  ],
+  "A": [
+    [
+      3,
+      -2,
+      2,
+      1
+    ]
+  ],
+  "b": [
+    40
+  ],
+  "c": [
+    1,
+    2,
+    3,
+    0
+  ],
+  "N": 8,
+  "variable_bounds": {
+    "C12150": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C12152": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C12153": {
+      "lb": 0,
+      "ub": 7
+    },
+    "row_slack_R14653": {
+      "lb": 0,
+      "ub": 7
+    }
+  },
+  "encoding": "Exported benchmark variables are normalized experimental variables with domain 0..N-1. Coefficients and row provenance come from the source MIP row.",
+  "candidate_state_space_size": 4096,
+  "feasible_states_in_qaoa_truncation": 3,
+  "feasible_state_count_exact": true,
+  "adapter": "strict Benders subproblem export; variables and source rows are selected only from one benders_blocks.subproblems entry; exported variables use domain 0..N-1; <=/>= rows use one nonnegative row slack each",
+  "slack_variables": [
+    {
+      "name": "row_slack_R14653",
+      "source_row": "R14653",
+      "type": "row_slack_for_le"
+    }
+  ]
+}

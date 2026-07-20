@@ -1,0 +1,169 @@
+{
+  "name": "supportcase6_ds_qaoa_c726_c733_c745_0003",
+  "source_mps": "supportcase6_ds",
+  "decomposition": "benders",
+  "benders_subproblem_id": 0,
+  "benders_subproblem_variables": [
+    "B100166(7)",
+    "B100594(7)",
+    "B100600(7)",
+    "B100602(7)",
+    "B100608(7)",
+    "B100623(7)",
+    "B101029(7)",
+    "B101035(7)",
+    "B101037(7)",
+    "B101043(7)",
+    "B101058(7)",
+    "B101479(7)",
+    "B101485(7)",
+    "B101487(7)"
+  ],
+  "benders_subproblem_constraints": [
+    "c436",
+    "c442",
+    "c444",
+    "c450",
+    "c465",
+    "c536",
+    "c537",
+    "c538",
+    "c539",
+    "c722",
+    "c726",
+    "c733",
+    "c745",
+    "c747",
+    "c759",
+    "c762"
+  ],
+  "source_rows": [
+    {
+      "name": "c726",
+      "sense": "E"
+    },
+    {
+      "name": "c733",
+      "sense": "E"
+    },
+    {
+      "name": "c745",
+      "sense": "E"
+    }
+  ],
+  "variables": [
+    "B100600(7)",
+    "B100602(7)",
+    "B100608(7)",
+    "B100623(7)",
+    "B101029(7)",
+    "B101035(7)",
+    "B101037(7)",
+    "B101043(7)",
+    "B101058(7)",
+    "B101479(7)"
+  ],
+  "A": [
+    [
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ]
+  ],
+  "b": [
+    1,
+    1,
+    1
+  ],
+  "c": [
+    134333000,
+    145944000,
+    144887000,
+    151847000,
+    150892000,
+    134333000,
+    145944000,
+    144887000,
+    151847000,
+    150892000
+  ],
+  "N": 8,
+  "variable_bounds": {
+    "B100600(7)": {
+      "lb": 0,
+      "ub": 7
+    },
+    "B100602(7)": {
+      "lb": 0,
+      "ub": 7
+    },
+    "B100608(7)": {
+      "lb": 0,
+      "ub": 7
+    },
+    "B100623(7)": {
+      "lb": 0,
+      "ub": 7
+    },
+    "B101029(7)": {
+      "lb": 0,
+      "ub": 7
+    },
+    "B101035(7)": {
+      "lb": 0,
+      "ub": 7
+    },
+    "B101037(7)": {
+      "lb": 0,
+      "ub": 7
+    },
+    "B101043(7)": {
+      "lb": 0,
+      "ub": 7
+    },
+    "B101058(7)": {
+      "lb": 0,
+      "ub": 7
+    },
+    "B101479(7)": {
+      "lb": 0,
+      "ub": 7
+    }
+  },
+  "encoding": "Exported benchmark variables are normalized experimental variables with domain 0..N-1. Coefficients and row provenance come from the source MIP row.",
+  "candidate_state_space_size": 1073741824,
+  "feasible_states_in_qaoa_truncation": 6,
+  "feasible_state_count_exact": true,
+  "adapter": "strict Benders subproblem export; variables and source rows are selected only from one benders_blocks.subproblems entry; exported variables use domain 0..N-1; <=/>= rows use one nonnegative row slack each"
+}

@@ -1,0 +1,217 @@
+{
+  "source_instance": "physiciansched6-2",
+  "downsampled_instance": "physiciansched6-2_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "c13431": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "c13497": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "c13512": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "c13578": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "c13593": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "c13659": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "c13674": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "c13740": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "c13755": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "c13821": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "c13836": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "c13902": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "c13917": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "c13983": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "c13998": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "c14064": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "c14079": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "c13484": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 0,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "r128931": 1,
+      "r128932": 1,
+      "r128933": 1,
+      "r128934": 1,
+      "r129809": 1,
+      "r129810": 1,
+      "r129849": 1,
+      "r129850": 1,
+      "r54866": 1,
+      "r54867": 1,
+      "r61600": 1,
+      "r61601": 1,
+      "r54831": 1,
+      "r54832": 1,
+      "r54836": 1,
+      "r54837": 1,
+      "r54841": 1,
+      "r54842": 1,
+      "r54846": 1,
+      "r54847": 1,
+      "r54851": 1,
+      "r54852": 1,
+      "r54856": 1,
+      "r54857": 1,
+      "r54861": 1,
+      "r54862": 1,
+      "r61544": 1,
+      "r61545": 1,
+      "r61552": 1,
+      "r61553": 1,
+      "r61560": 1,
+      "r61561": 1,
+      "r61568": 1,
+      "r61569": 1,
+      "r61576": 1,
+      "r61577": 1,
+      "r61584": 1,
+      "r61585": 1,
+      "r61592": 1,
+      "r61593": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "c13484",
+      "c13497",
+      "c13512",
+      "c13578"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "c13431",
+          "c13593",
+          "c13659",
+          "c13674",
+          "c13740",
+          "c13755",
+          "c13821",
+          "c13836",
+          "c13902",
+          "c13917",
+          "c13983",
+          "c13998",
+          "c14064",
+          "c14079"
+        ],
+        "constraints": [
+          "r128931",
+          "r128932",
+          "r128933",
+          "r128934",
+          "r129809",
+          "r129810",
+          "r129849",
+          "r129850",
+          "r54831",
+          "r54832",
+          "r54836",
+          "r54837",
+          "r54841",
+          "r54842",
+          "r54846",
+          "r54847",
+          "r54851",
+          "r54852",
+          "r54856",
+          "r54857",
+          "r54861",
+          "r54862",
+          "r61544",
+          "r61545",
+          "r61552",
+          "r61553",
+          "r61560",
+          "r61561",
+          "r61568",
+          "r61569",
+          "r61576",
+          "r61577",
+          "r61584",
+          "r61585",
+          "r61592",
+          "r61593"
+        ]
+      }
+    ]
+  }
+}

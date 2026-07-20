@@ -1,0 +1,220 @@
+{
+  "source_instance": "uct-subprob",
+  "downsampled_instance": "uct-subprob_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "xPalLat_Day_2_P_2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xPalLat_Day_2_P_3": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xPalLat_Day_2_P_4": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xPalLat_Day_2_P_5": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xStoLibSta_Day_2_P_2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xStoLibSta_Day_2_P_3": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xStoLibSta_Day_2_P_4": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xStoLibSta_Day_2_P_5": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xStoRom_Day_2_P_5": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xLinLetLat2_Day_2_P_2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xLinLetLat2_Day_2_P_3": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xLinLetLat2_Day_2_P_4": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xLinLetLat2_Day_2_P_5": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xInfDoc_Day_2_P_2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xInfDoc_Day_2_P_3": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xInfDoc_Day_2_P_4": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xAntCul_Day_2_P_2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xAntCul_Day_2_P_3": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 262144,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "SingleDayCons_C_35_Day_1_TS_6_lhs": 1,
+      "SingleDayCons_C_48_Day_1_TS_4_lhs": 1,
+      "SingleDayCons_C_59_Day_1_TS_6_lhs": 1,
+      "compactSetCoverCons_q063_Day_2_Period_3": 1,
+      "compactSetCoverCons_q064_Day_2_Period_3": 1,
+      "compactSetCoverCons_q065_Day_2_Period_3": 1,
+      "compactSetCoverCons_q069_Day_2_Period_3": 1,
+      "compactSetCoverCons_q069_Day_2_Period_4": 1,
+      "compactSetCoverCons_q070_Day_2_Period_3": 1,
+      "compactSetCoverCons_q070_Day_2_Period_4": 1,
+      "compactSetCoverCons_q071_Day_2_Period_3": 1,
+      "compactSetCoverCons_q071_Day_2_Period_4": 1,
+      "compactSetCoverCons_q073_Day_2_Period_3": 1,
+      "compactSetCoverCons_q075_Day_2_Period_3": 1,
+      "compactSetCoverCons_q077_Day_2_Period_3": 1,
+      "compactSetCoverCons_q119_Day_2_Period_3": 1,
+      "compactSetCoverCons_q119_Day_2_Period_4": 1,
+      "compactSetCoverCons_q120_Day_2_Period_3": 1,
+      "compactSetCoverCons_q120_Day_2_Period_4": 1,
+      "compactSetCoverCons_q121_Day_2_Period_3": 1,
+      "compactSetCoverCons_q121_Day_2_Period_4": 1,
+      "compactSetCoverCons_q123_Day_2_Period_3": 1,
+      "compactSetCoverCons_q123_Day_2_Period_4": 1,
+      "compactSetCoverCons_q124_Day_2_Period_3": 1,
+      "compactSetCoverCons_q124_Day_2_Period_4": 1,
+      "compactSetCoverCons_q126_Day_2_Period_3": 1,
+      "compactSetCoverCons_q126_Day_2_Period_4": 1,
+      "SingleDayCons_C_28_Day_1_TS_4_lhs": 1,
+      "compactSetCoverCons_q008_Day_2_Period_4": 1,
+      "compactSetCoverCons_q057_Day_2_Period_3": 1,
+      "compactSetCoverCons_q061_Day_2_Period_3": 1,
+      "compactSetCoverCons_q063_Day_2_Period_4": 1,
+      "compactSetCoverCons_q064_Day_2_Period_4": 1,
+      "compactSetCoverCons_q065_Day_2_Period_4": 1,
+      "compactSetCoverCons_q073_Day_2_Period_4": 1,
+      "compactSetCoverCons_q075_Day_2_Period_4": 1,
+      "compactSetCoverCons_q077_Day_2_Period_4": 1,
+      "compactSetCoverCons_q081_Day_2_Period_3": 1,
+      "compactSetCoverCons_q081_Day_2_Period_4": 1,
+      "compactSetCoverCons_q083_Day_2_Period_3": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "xPalLat_Day_2_P_2",
+      "xPalLat_Day_2_P_3",
+      "xPalLat_Day_2_P_4",
+      "xPalLat_Day_2_P_5"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "xAntCul_Day_2_P_2",
+          "xAntCul_Day_2_P_3",
+          "xInfDoc_Day_2_P_2",
+          "xInfDoc_Day_2_P_3",
+          "xInfDoc_Day_2_P_4",
+          "xLinLetLat2_Day_2_P_2",
+          "xLinLetLat2_Day_2_P_3",
+          "xLinLetLat2_Day_2_P_4",
+          "xLinLetLat2_Day_2_P_5",
+          "xStoLibSta_Day_2_P_2",
+          "xStoLibSta_Day_2_P_3",
+          "xStoLibSta_Day_2_P_4",
+          "xStoLibSta_Day_2_P_5",
+          "xStoRom_Day_2_P_5"
+        ],
+        "constraints": [
+          "SingleDayCons_C_28_Day_1_TS_4_lhs",
+          "SingleDayCons_C_35_Day_1_TS_6_lhs",
+          "SingleDayCons_C_59_Day_1_TS_6_lhs",
+          "compactSetCoverCons_q008_Day_2_Period_4",
+          "compactSetCoverCons_q057_Day_2_Period_3",
+          "compactSetCoverCons_q061_Day_2_Period_3",
+          "compactSetCoverCons_q063_Day_2_Period_3",
+          "compactSetCoverCons_q063_Day_2_Period_4",
+          "compactSetCoverCons_q064_Day_2_Period_3",
+          "compactSetCoverCons_q064_Day_2_Period_4",
+          "compactSetCoverCons_q065_Day_2_Period_3",
+          "compactSetCoverCons_q065_Day_2_Period_4",
+          "compactSetCoverCons_q069_Day_2_Period_3",
+          "compactSetCoverCons_q069_Day_2_Period_4",
+          "compactSetCoverCons_q070_Day_2_Period_3",
+          "compactSetCoverCons_q070_Day_2_Period_4",
+          "compactSetCoverCons_q071_Day_2_Period_3",
+          "compactSetCoverCons_q071_Day_2_Period_4",
+          "compactSetCoverCons_q073_Day_2_Period_3",
+          "compactSetCoverCons_q073_Day_2_Period_4",
+          "compactSetCoverCons_q075_Day_2_Period_3",
+          "compactSetCoverCons_q075_Day_2_Period_4",
+          "compactSetCoverCons_q077_Day_2_Period_3",
+          "compactSetCoverCons_q077_Day_2_Period_4",
+          "compactSetCoverCons_q081_Day_2_Period_3",
+          "compactSetCoverCons_q081_Day_2_Period_4",
+          "compactSetCoverCons_q083_Day_2_Period_3",
+          "compactSetCoverCons_q119_Day_2_Period_3",
+          "compactSetCoverCons_q119_Day_2_Period_4",
+          "compactSetCoverCons_q120_Day_2_Period_3",
+          "compactSetCoverCons_q120_Day_2_Period_4",
+          "compactSetCoverCons_q121_Day_2_Period_3",
+          "compactSetCoverCons_q121_Day_2_Period_4",
+          "compactSetCoverCons_q123_Day_2_Period_3",
+          "compactSetCoverCons_q123_Day_2_Period_4",
+          "compactSetCoverCons_q124_Day_2_Period_3",
+          "compactSetCoverCons_q124_Day_2_Period_4",
+          "compactSetCoverCons_q126_Day_2_Period_3",
+          "compactSetCoverCons_q126_Day_2_Period_4"
+        ]
+      }
+    ]
+  }
+}

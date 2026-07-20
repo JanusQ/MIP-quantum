@@ -1,0 +1,113 @@
+{
+  "name": "satellites2-60-fs_ds_qaoa_R13541_0001",
+  "source_mps": "satellites2-60-fs_ds",
+  "decomposition": "benders",
+  "benders_subproblem_id": 0,
+  "benders_subproblem_variables": [
+    "C34179",
+    "C34180",
+    "C34181",
+    "C34182",
+    "C34183",
+    "C34184",
+    "C34185",
+    "C34186",
+    "C34187",
+    "C34188",
+    "C34189",
+    "C34190",
+    "C34191",
+    "C34192"
+  ],
+  "benders_subproblem_constraints": [
+    "R13541",
+    "R13578",
+    "R13580",
+    "R13581",
+    "R13582",
+    "R13583",
+    "R13584",
+    "R13586",
+    "R13587",
+    "R13588",
+    "R13590",
+    "R13591",
+    "R13592",
+    "R13594",
+    "R13595",
+    "R13727",
+    "R13758",
+    "R14192",
+    "R14254",
+    "R14285",
+    "R14316",
+    "R14347",
+    "R14378",
+    "R14440",
+    "R14471",
+    "R14502",
+    "R14564",
+    "R14595",
+    "R14626"
+  ],
+  "source_rows": [
+    {
+      "name": "R13541",
+      "sense": "L"
+    }
+  ],
+  "variables": [
+    "C34179",
+    "C34180",
+    "C34181",
+    "row_slack_R13541"
+  ],
+  "A": [
+    [
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "b": [
+    1
+  ],
+  "c": [
+    -1,
+    -1,
+    -1,
+    0
+  ],
+  "N": 8,
+  "variable_bounds": {
+    "C34179": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C34180": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C34181": {
+      "lb": 0,
+      "ub": 7
+    },
+    "row_slack_R13541": {
+      "lb": 0,
+      "ub": 7
+    }
+  },
+  "encoding": "Exported benchmark variables are normalized experimental variables with domain 0..N-1. Coefficients and row provenance come from the source MIP row.",
+  "candidate_state_space_size": 4096,
+  "feasible_states_in_qaoa_truncation": 4,
+  "feasible_state_count_exact": true,
+  "adapter": "strict Benders subproblem export; variables and source rows are selected only from one benders_blocks.subproblems entry; exported variables use domain 0..N-1; <=/>= rows use one nonnegative row slack each",
+  "slack_variables": [
+    {
+      "name": "row_slack_R13541",
+      "source_row": "R13541",
+      "type": "row_slack_for_le"
+    }
+  ]
+}
