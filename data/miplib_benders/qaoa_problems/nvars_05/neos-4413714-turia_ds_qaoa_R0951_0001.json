@@ -1,0 +1,114 @@
+{
+  "name": "neos-4413714-turia_ds_qaoa_R0951_0001",
+  "source_mps": "neos-4413714-turia_ds",
+  "decomposition": "benders",
+  "benders_subproblem_id": 0,
+  "benders_subproblem_variables": [
+    "C0206",
+    "C0207",
+    "C0208",
+    "C0209",
+    "C0210",
+    "C0211",
+    "C0212",
+    "C0213",
+    "C0214",
+    "C0215",
+    "C0216",
+    "C0217",
+    "C0218",
+    "C0219"
+  ],
+  "benders_subproblem_constraints": [
+    "R0001",
+    "R0951",
+    "R1905",
+    "R1906",
+    "R1907",
+    "R1908",
+    "R1909",
+    "R1910",
+    "R1911",
+    "R1912",
+    "R1913",
+    "R1914",
+    "R1915",
+    "R1916",
+    "R1917",
+    "R1918",
+    "R2105",
+    "R2106",
+    "R2107",
+    "R2108",
+    "R2109",
+    "R2110",
+    "R2111",
+    "R2112",
+    "R2113",
+    "R2114",
+    "R2115",
+    "R2116",
+    "R2117",
+    "R2118"
+  ],
+  "source_rows": [
+    {
+      "name": "R0951",
+      "sense": "E"
+    }
+  ],
+  "variables": [
+    "C0206",
+    "C0207",
+    "C0208",
+    "C0209",
+    "C0210"
+  ],
+  "A": [
+    [
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "b": [
+    1
+  ],
+  "c": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "N": 8,
+  "variable_bounds": {
+    "C0206": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0207": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0208": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0209": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0210": {
+      "lb": 0,
+      "ub": 7
+    }
+  },
+  "encoding": "Exported benchmark variables are normalized experimental variables with domain 0..N-1. Coefficients and row provenance come from the source MIP row.",
+  "candidate_state_space_size": 32768,
+  "feasible_states_in_qaoa_truncation": 5,
+  "feasible_state_count_exact": true,
+  "adapter": "strict Benders subproblem export; variables and source rows are selected only from one benders_blocks.subproblems entry; exported variables use domain 0..N-1; <=/>= rows use one nonnegative row slack each"
+}

@@ -1,0 +1,204 @@
+{
+  "source_instance": "triptim1",
+  "downsampled_instance": "triptim1_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 23,
+  "n_binary": 0,
+  "n_integer": 18,
+  "variable_bounds": {
+    "x#379": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "sumx": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "sumxa": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "sumxb": {
+      "lb": 0,
+      "ub": 6,
+      "type": "I"
+    },
+    "fyb#100#101": {
+      "lb": 0,
+      "ub": 5,
+      "type": "I"
+    },
+    "fyb#1000#1001": {
+      "lb": 0,
+      "ub": 5,
+      "type": "I"
+    },
+    "fyb#1001#1002": {
+      "lb": 0,
+      "ub": 5,
+      "type": "I"
+    },
+    "fyb#1002#1003": {
+      "lb": 0,
+      "ub": 5,
+      "type": "I"
+    },
+    "fyb#1003#1004": {
+      "lb": 0,
+      "ub": 5,
+      "type": "I"
+    },
+    "fyb#1004#1005": {
+      "lb": 0,
+      "ub": 5,
+      "type": "I"
+    },
+    "fyb#1005#1006": {
+      "lb": 0,
+      "ub": 5,
+      "type": "I"
+    },
+    "fyb#1006#1007": {
+      "lb": 0,
+      "ub": 5,
+      "type": "I"
+    },
+    "fyb#1007#1008": {
+      "lb": 0,
+      "ub": 5,
+      "type": "I"
+    },
+    "fyb#1008#1009": {
+      "lb": 0,
+      "ub": 5,
+      "type": "I"
+    },
+    "fyb#1009#1010": {
+      "lb": 0,
+      "ub": 5,
+      "type": "I"
+    },
+    "fyb#101#102": {
+      "lb": 0,
+      "ub": 5,
+      "type": "I"
+    },
+    "fyb#1010#1011": {
+      "lb": 0,
+      "ub": 5,
+      "type": "I"
+    },
+    "fyb#1011#1012": {
+      "lb": 0,
+      "ub": 5,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 188152357994496,
+  "number_of_feasible_states": null,
+  "feasible_state_count_exact": false,
+  "integerization": {
+    "row_scales": {
+      "turnhy#379": 1,
+      "floyb#1001": 1,
+      "floyb#1002": 1,
+      "floyb#1003": 1,
+      "floyb#1004": 1,
+      "floyb#1005": 1,
+      "floyb#1006": 1,
+      "floyb#1007": 1,
+      "floyb#1008": 1,
+      "floyb#1009": 1,
+      "floyb#101": 1,
+      "floyb#1010": 1,
+      "floyb#1011": 1,
+      "setsumx": 1,
+      "floyb#100": 1,
+      "floyb#1000": 1,
+      "floyb#1012": 1,
+      "floyb#102": 1,
+      "setsumw": 1,
+      "setsumxa": 1,
+      "setsumxb": 1,
+      "setx#379": 1,
+      "usex#379": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "fyb#100#101",
+      "fyb#1000#1001",
+      "fyb#1001#1002",
+      "fyb#1002#1003"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "fyb#1003#1004",
+          "fyb#1004#1005",
+          "fyb#1005#1006",
+          "fyb#1006#1007",
+          "fyb#1007#1008",
+          "fyb#1008#1009",
+          "fyb#1009#1010",
+          "fyb#101#102",
+          "fyb#1010#1011",
+          "fyb#1011#1012"
+        ],
+        "constraints": [
+          "floyb#1003",
+          "floyb#1004",
+          "floyb#1005",
+          "floyb#1006",
+          "floyb#1007",
+          "floyb#1008",
+          "floyb#1009",
+          "floyb#101",
+          "floyb#1010",
+          "floyb#1011",
+          "floyb#1012",
+          "floyb#102",
+          "turnhy#379"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "sumx",
+          "x#379"
+        ],
+        "constraints": [
+          "setsumw",
+          "setsumx",
+          "setx#379",
+          "usex#379"
+        ]
+      },
+      {
+        "id": 2,
+        "variables": [
+          "sumxa"
+        ],
+        "constraints": [
+          "setsumxa"
+        ]
+      },
+      {
+        "id": 3,
+        "variables": [
+          "sumxb"
+        ],
+        "constraints": [
+          "setsumxb"
+        ]
+      }
+    ]
+  }
+}

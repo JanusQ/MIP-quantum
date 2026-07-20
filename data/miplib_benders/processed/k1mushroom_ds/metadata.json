@@ -1,0 +1,221 @@
+{
+  "source_instance": "k1mushroom",
+  "downsampled_instance": "k1mushroom_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "X_INTRODUCED_24495_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_24510_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_24511_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_24551_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_24498_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_24505_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_24585_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_24591_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_24595_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_24597_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_24599_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_24540_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_24545_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_24535_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_24558_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_24567_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_24576_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_24577_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 262143,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "p_lin_1000": 1,
+      "p_lin_10000": 1,
+      "p_lin_10001": 1,
+      "p_lin_10002": 1,
+      "p_lin_10003": 1,
+      "p_lin_10004": 1,
+      "p_lin_10005": 1,
+      "p_lin_10006": 1,
+      "p_lin_10007": 1,
+      "p_lin_10008": 1,
+      "p_lin_10009": 1,
+      "p_lin_1001": 1,
+      "p_lin_10010": 1,
+      "p_lin_10011": 1,
+      "p_lin_10012": 1,
+      "p_lin_10013": 1,
+      "p_lin_10014": 1,
+      "p_lin_10015": 1,
+      "p_lin_10016": 1,
+      "p_lin_10017": 1,
+      "p_lin_10018": 1,
+      "p_lin_10019": 1,
+      "p_lin_1002": 1,
+      "p_lin_10020": 1,
+      "p_lin_10021": 1,
+      "p_lin_10022": 1,
+      "p_lin_10023": 1,
+      "p_lin_10024": 1,
+      "p_lin_10025": 1,
+      "p_lin_10026": 1,
+      "p_lin_10027": 1,
+      "p_lin_10028": 1,
+      "p_lin_10029": 1,
+      "p_lin_1003": 1,
+      "p_lin_10030": 1,
+      "p_lin_10031": 1,
+      "p_lin_10032": 1,
+      "p_lin_10033": 1,
+      "p_lin_10034": 1,
+      "p_lin_10035": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "X_INTRODUCED_24495_",
+      "X_INTRODUCED_24498_",
+      "X_INTRODUCED_24505_",
+      "X_INTRODUCED_24510_"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "X_INTRODUCED_24511_",
+          "X_INTRODUCED_24535_",
+          "X_INTRODUCED_24540_",
+          "X_INTRODUCED_24545_",
+          "X_INTRODUCED_24551_",
+          "X_INTRODUCED_24558_",
+          "X_INTRODUCED_24567_",
+          "X_INTRODUCED_24576_",
+          "X_INTRODUCED_24577_",
+          "X_INTRODUCED_24585_",
+          "X_INTRODUCED_24591_",
+          "X_INTRODUCED_24595_",
+          "X_INTRODUCED_24597_",
+          "X_INTRODUCED_24599_"
+        ],
+        "constraints": [
+          "p_lin_1000",
+          "p_lin_10000",
+          "p_lin_10001",
+          "p_lin_10002",
+          "p_lin_10003",
+          "p_lin_10004",
+          "p_lin_10005",
+          "p_lin_10006",
+          "p_lin_10007",
+          "p_lin_10008",
+          "p_lin_10009",
+          "p_lin_1001",
+          "p_lin_10010",
+          "p_lin_10011",
+          "p_lin_10012",
+          "p_lin_10013",
+          "p_lin_10014",
+          "p_lin_10015",
+          "p_lin_10016",
+          "p_lin_10017",
+          "p_lin_10018",
+          "p_lin_10019",
+          "p_lin_1002",
+          "p_lin_10020",
+          "p_lin_10021",
+          "p_lin_10022",
+          "p_lin_10023",
+          "p_lin_10024",
+          "p_lin_10025",
+          "p_lin_10026",
+          "p_lin_10027",
+          "p_lin_10028",
+          "p_lin_10029",
+          "p_lin_1003",
+          "p_lin_10030",
+          "p_lin_10031",
+          "p_lin_10032",
+          "p_lin_10033",
+          "p_lin_10034",
+          "p_lin_10035"
+        ]
+      }
+    ]
+  }
+}

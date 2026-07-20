@@ -1,0 +1,258 @@
+{
+  "source_instance": "rail02",
+  "downsampled_instance": "rail02_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "x10967": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x10976": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x10985": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x10994": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x11003": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x11241": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x11250": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x11259": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x11268": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x11277": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x12306": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x12315": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x12324": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x12333": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x12342": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x12351": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x12360": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x12369": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 32,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "c93351": 1,
+      "c93352": 1,
+      "c93353": 1,
+      "c93354": 1,
+      "c93355": 1,
+      "c93356": 1,
+      "c93357": 1,
+      "c93358": 1,
+      "c93359": 1,
+      "c93360": 1,
+      "c93361": 1,
+      "c93362": 1,
+      "c93363": 1,
+      "c93364": 1,
+      "c93365": 1,
+      "c93366": 1,
+      "c93367": 1,
+      "c93368": 1,
+      "c93346": 1,
+      "c93347": 1,
+      "c93348": 1,
+      "c93349": 1,
+      "c93350": 1,
+      "c93369": 1,
+      "c93370": 1,
+      "c93371": 1,
+      "c93372": 1,
+      "c93373": 1,
+      "c93341": 1,
+      "c93342": 1,
+      "c93343": 1,
+      "c93344": 1,
+      "c93345": 1,
+      "c93374": 1,
+      "c93375": 1,
+      "c93376": 1,
+      "c93377": 1,
+      "c93378": 1,
+      "c93181": 1,
+      "c93182": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 1.76666666666667e-05
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "x12324",
+      "x12333",
+      "x12342",
+      "x12351"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "x10967",
+          "x10976",
+          "x10985",
+          "x10994",
+          "x11003"
+        ],
+        "constraints": [
+          "c93181",
+          "c93182"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "x11241"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 2,
+        "variables": [
+          "x11250"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 3,
+        "variables": [
+          "x11259"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 4,
+        "variables": [
+          "x11268"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 5,
+        "variables": [
+          "x11277"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 6,
+        "variables": [
+          "x12306",
+          "x12315",
+          "x12360",
+          "x12369"
+        ],
+        "constraints": [
+          "c93341",
+          "c93342",
+          "c93343",
+          "c93344",
+          "c93345",
+          "c93346",
+          "c93347",
+          "c93348",
+          "c93349",
+          "c93350",
+          "c93351",
+          "c93352",
+          "c93353",
+          "c93354",
+          "c93355",
+          "c93356",
+          "c93357",
+          "c93358",
+          "c93359",
+          "c93360",
+          "c93361",
+          "c93362",
+          "c93363",
+          "c93364",
+          "c93365",
+          "c93366",
+          "c93367",
+          "c93368",
+          "c93369",
+          "c93370",
+          "c93371",
+          "c93372",
+          "c93373",
+          "c93374",
+          "c93375",
+          "c93376",
+          "c93377",
+          "c93378"
+        ]
+      }
+    ]
+  }
+}

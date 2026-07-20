@@ -1,0 +1,156 @@
+{
+  "name": "leo2_ds_qaoa_R0000091_R0000095_0010",
+  "source_mps": "leo2_ds",
+  "decomposition": "benders",
+  "benders_subproblem_id": 0,
+  "benders_subproblem_variables": [
+    "C0005731",
+    "C0005732",
+    "C0005733",
+    "C0005734",
+    "C0005735",
+    "C0005736",
+    "C0005737",
+    "C0005738",
+    "C0005739",
+    "C0005740",
+    "C0005788",
+    "C0005789",
+    "C0005790",
+    "C0005791"
+  ],
+  "benders_subproblem_constraints": [
+    "R0000001",
+    "R0000002",
+    "R0000004",
+    "R0000010",
+    "R0000011",
+    "R0000027",
+    "R0000030",
+    "R0000031",
+    "R0000042",
+    "R0000043",
+    "R0000047",
+    "R0000048",
+    "R0000049",
+    "R0000050",
+    "R0000052",
+    "R0000058",
+    "R0000059",
+    "R0000075",
+    "R0000078",
+    "R0000079",
+    "R0000090",
+    "R0000091",
+    "R0000095",
+    "R0000096",
+    "R0000097",
+    "R0000335",
+    "R0000535",
+    "R0000538",
+    "R0000541",
+    "R0000542",
+    "R0000544",
+    "R0000550",
+    "R0000551",
+    "R0000567",
+    "R0000570",
+    "R0000571",
+    "R0000582",
+    "R0000583",
+    "R0000588",
+    "R0000589"
+  ],
+  "source_rows": [
+    {
+      "name": "R0000091",
+      "sense": "G"
+    },
+    {
+      "name": "R0000095",
+      "sense": "G"
+    }
+  ],
+  "variables": [
+    "C0005740",
+    "C0005788",
+    "C0005789",
+    "C0005790",
+    "row_slack_R0000091",
+    "row_slack_R0000095"
+  ],
+  "A": [
+    [
+      -2,
+      -1,
+      -1,
+      -1,
+      1,
+      0
+    ],
+    [
+      0,
+      -1,
+      -1,
+      -1,
+      0,
+      1
+    ]
+  ],
+  "b": [
+    -2,
+    -2
+  ],
+  "c": [
+    1,
+    2,
+    3,
+    4,
+    0,
+    0
+  ],
+  "N": 8,
+  "variable_bounds": {
+    "C0005740": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0005788": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0005789": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0005790": {
+      "lb": 0,
+      "ub": 7
+    },
+    "row_slack_R0000091": {
+      "lb": 0,
+      "ub": 7
+    },
+    "row_slack_R0000095": {
+      "lb": 0,
+      "ub": 7
+    }
+  },
+  "encoding": "Exported benchmark variables are normalized experimental variables with domain 0..N-1. Coefficients and row provenance come from the source MIP row.",
+  "candidate_state_space_size": 262144,
+  "feasible_states_in_qaoa_truncation": 388,
+  "feasible_state_count_exact": true,
+  "adapter": "strict Benders subproblem export; variables and source rows are selected only from one benders_blocks.subproblems entry; exported variables use domain 0..N-1; <=/>= rows use one nonnegative row slack each",
+  "slack_variables": [
+    {
+      "name": "row_slack_R0000091",
+      "source_row": "R0000091",
+      "type": "row_slack_for_ge"
+    },
+    {
+      "name": "row_slack_R0000095",
+      "source_row": "R0000095",
+      "type": "row_slack_for_ge"
+    }
+  ]
+}

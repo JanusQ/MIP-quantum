@@ -1,0 +1,216 @@
+{
+  "source_instance": "ex10",
+  "downsampled_instance": "ex10_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "b26_220": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b26_221": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b26_222": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b26_223": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b26_230": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b26_231": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b26_232": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b26_233": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b26_240": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b26_241": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b26_242": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b26_243": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b26_250": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b26_251": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b26_252": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b26_253": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b26_260": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b26_261": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 0,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "NOD26": 1,
+      "NOD2X2": 1,
+      "NOD2X3": 1,
+      "NOD2X4": 1,
+      "NOD2X5": 1,
+      "EQ17595": 1,
+      "EQ17599": 1,
+      "EQ17611": 1,
+      "EQ17615": 1,
+      "EQ17618": 1,
+      "EQ17622": 1,
+      "EQ17627": 1,
+      "EQ17631": 1,
+      "EQ17634": 1,
+      "EQ17638": 1,
+      "EQ17650": 1,
+      "EQ17654": 1,
+      "EQ11857": 1,
+      "EQ11873": 1,
+      "EQ11889": 1,
+      "EQ11905": 1,
+      "EQ11975": 1,
+      "EQ11991": 1,
+      "EQ12007": 1,
+      "EQ12014": 1,
+      "EQ12023": 1,
+      "EQ12030": 1,
+      "EQ12046": 1,
+      "EQ12062": 1,
+      "EQ12078": 1,
+      "EQ12120": 1,
+      "EQ12136": 1,
+      "EQ12152": 1,
+      "EQ12168": 1,
+      "EQ16349": 1,
+      "EQ16365": 1,
+      "EQ16381": 1,
+      "EQ16397": 1,
+      "EQ16467": 1,
+      "EQ16483": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "b26_221",
+      "b26_231",
+      "b26_232",
+      "b26_233"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "b26_220",
+          "b26_222",
+          "b26_223",
+          "b26_230",
+          "b26_240",
+          "b26_241",
+          "b26_242",
+          "b26_243",
+          "b26_250",
+          "b26_251",
+          "b26_252",
+          "b26_253",
+          "b26_260",
+          "b26_261"
+        ],
+        "constraints": [
+          "EQ11857",
+          "EQ11889",
+          "EQ11905",
+          "EQ11975",
+          "EQ12007",
+          "EQ12014",
+          "EQ12023",
+          "EQ12030",
+          "EQ12046",
+          "EQ12062",
+          "EQ12078",
+          "EQ12120",
+          "EQ12136",
+          "EQ12152",
+          "EQ12168",
+          "EQ16349",
+          "EQ16381",
+          "EQ16397",
+          "EQ16467",
+          "EQ17595",
+          "EQ17611",
+          "EQ17615",
+          "EQ17618",
+          "EQ17622",
+          "EQ17627",
+          "EQ17631",
+          "EQ17634",
+          "EQ17638",
+          "EQ17650",
+          "EQ17654",
+          "NOD26",
+          "NOD2X2",
+          "NOD2X3",
+          "NOD2X4",
+          "NOD2X5"
+        ]
+      }
+    ]
+  }
+}

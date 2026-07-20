@@ -1,0 +1,203 @@
+{
+  "source_instance": "tbfp-network",
+  "downsampled_instance": "tbfp-network_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 34,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "UseArc[0,1000]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "UseArc[0,1001]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "UseArc[0,1002]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "UseArc[0,1003]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "UseArc[0,1004]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "UseArc[0,1005]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "UseArc[0,1006]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "UseArc[0,1007]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "UseArc[0,1008]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "UseArc[0,1009]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "UseArc[0,100]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "UseArc[0,1010]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "UseArc[0,1011]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "UseArc[0,1012]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "UseArc[0,1013]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "UseArc[0,1014]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "UseArc[0,1015]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "UseArc[0,1016]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 0,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "Balance[0]": 1,
+      "Visit_Once_Network['AT&T_Park']": 1,
+      "Visit_Once_Network['Minute_Maid_Park']": 1,
+      "Visit_Once_Network['U.S._Cellular_Field']": 1,
+      "Balance[1000]": 1,
+      "Balance[1001]": 1,
+      "Balance[1002]": 1,
+      "Balance[1003]": 1,
+      "Balance[1004]": 1,
+      "Balance[1005]": 1,
+      "Balance[1006]": 1,
+      "Balance[1007]": 1,
+      "Balance[1008]": 1,
+      "Balance[1009]": 1,
+      "Balance[100]": 1,
+      "Balance[1010]": 1,
+      "Balance[1011]": 1,
+      "Balance[1012]": 1,
+      "Balance[1013]": 1,
+      "Balance[1014]": 1,
+      "Balance[1015]": 1,
+      "Balance[1016]": 1,
+      "Visit_Once_Network['Busch_Stadium']": 1,
+      "Visit_Once_Network['Citi_Field']": 1,
+      "Visit_Once_Network['Citizens_Bank_Park']": 1,
+      "Visit_Once_Network['Comerica_Park']": 1,
+      "Visit_Once_Network['Dodger_Stadium']": 1,
+      "Visit_Once_Network['Fenway_Park']": 1,
+      "Visit_Once_Network['Marlins_Park']": 1,
+      "Visit_Once_Network['Miller_Park']": 1,
+      "Visit_Once_Network['O.co_Coliseum']": 1,
+      "Visit_Once_Network['Oriole_Park_at_Camden_Yards']": 1,
+      "Visit_Once_Network['Progressive_Field']": 1,
+      "Visit_Once_Network['Safeco_Field']": 1
+    },
+    "objective_scale": 6,
+    "max_abs_approx_error": 3.33333360913457e-11
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "UseArc[0,1000]",
+      "UseArc[0,1001]",
+      "UseArc[0,1002]",
+      "UseArc[0,1003]"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "UseArc[0,1004]",
+          "UseArc[0,1005]",
+          "UseArc[0,1006]",
+          "UseArc[0,1007]",
+          "UseArc[0,1008]",
+          "UseArc[0,1009]",
+          "UseArc[0,100]",
+          "UseArc[0,1010]",
+          "UseArc[0,1011]",
+          "UseArc[0,1012]",
+          "UseArc[0,1013]",
+          "UseArc[0,1014]",
+          "UseArc[0,1015]",
+          "UseArc[0,1016]"
+        ],
+        "constraints": [
+          "Balance[0]",
+          "Balance[1004]",
+          "Balance[1005]",
+          "Balance[1006]",
+          "Balance[1007]",
+          "Balance[1008]",
+          "Balance[1009]",
+          "Balance[100]",
+          "Balance[1010]",
+          "Balance[1011]",
+          "Balance[1012]",
+          "Balance[1013]",
+          "Balance[1014]",
+          "Balance[1015]",
+          "Balance[1016]",
+          "Visit_Once_Network['AT&T_Park']",
+          "Visit_Once_Network['Citi_Field']",
+          "Visit_Once_Network['Citizens_Bank_Park']",
+          "Visit_Once_Network['Comerica_Park']",
+          "Visit_Once_Network['Dodger_Stadium']",
+          "Visit_Once_Network['Fenway_Park']",
+          "Visit_Once_Network['Marlins_Park']",
+          "Visit_Once_Network['Minute_Maid_Park']",
+          "Visit_Once_Network['O.co_Coliseum']",
+          "Visit_Once_Network['Oriole_Park_at_Camden_Yards']",
+          "Visit_Once_Network['Progressive_Field']",
+          "Visit_Once_Network['Safeco_Field']",
+          "Visit_Once_Network['U.S._Cellular_Field']"
+        ]
+      }
+    ]
+  }
+}

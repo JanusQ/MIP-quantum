@@ -1,0 +1,210 @@
+{
+  "source_instance": "dano3_3",
+  "downsampled_instance": "dano3_3_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "xbo": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xcm": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xbw": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xcw": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xam": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xah": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xbh": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xbn": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xch": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xbc": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xbm": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xac": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xae": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xan": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xau": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xbe": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xbg": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "xbl": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "OUTb": 1,
+      "TOTb": 1,
+      "OUTa": 1,
+      "TOTa": 1,
+      "INh": 1,
+      "INm": 1,
+      "OUTc": 1,
+      "TOTc": 1,
+      "c3023": 1,
+      "c3033": 1,
+      "c3055": 1,
+      "c3063": 1,
+      "c3072": 1,
+      "c3081": 1,
+      "c3090": 1,
+      "c3098": 1,
+      "c3100": 1,
+      "c3108": 1,
+      "c3111": 1,
+      "c3126": 1,
+      "c3133": 1,
+      "c3187": 1,
+      "c3191": 1,
+      "INc": 1,
+      "INe": 1,
+      "INn": 1,
+      "INw": 1,
+      "c3022": 1,
+      "c3025": 1,
+      "c3031": 1,
+      "c3035": 1,
+      "c3040": 1,
+      "c3046": 1,
+      "c3050": 1,
+      "c3054": 1,
+      "c3064": 1,
+      "c3065": 1,
+      "c3068": 1,
+      "c3070": 1,
+      "c3073": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "xah",
+      "xbh",
+      "xch",
+      "xcm"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "xac",
+          "xae",
+          "xam",
+          "xan",
+          "xau",
+          "xbc",
+          "xbe",
+          "xbg",
+          "xbl",
+          "xbm",
+          "xbn",
+          "xbo",
+          "xbw",
+          "xcw"
+        ],
+        "constraints": [
+          "INc",
+          "INe",
+          "INm",
+          "INn",
+          "INw",
+          "OUTa",
+          "OUTb",
+          "OUTc",
+          "TOTa",
+          "TOTb",
+          "TOTc",
+          "c3022",
+          "c3025",
+          "c3031",
+          "c3035",
+          "c3040",
+          "c3046",
+          "c3050",
+          "c3054",
+          "c3064",
+          "c3065",
+          "c3068",
+          "c3070",
+          "c3072",
+          "c3073",
+          "c3100",
+          "c3111",
+          "c3133",
+          "c3187"
+        ]
+      }
+    ]
+  }
+}

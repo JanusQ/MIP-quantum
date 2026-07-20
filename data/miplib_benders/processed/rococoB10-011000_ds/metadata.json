@@ -1,0 +1,241 @@
+{
+  "source_instance": "rococoB10-011000",
+  "downsampled_instance": "rococoB10-011000_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "id10016": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "id10018": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "id10020": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "id10039": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "id10041": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "id10043": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "id10062": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "id10064": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "id10066": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "id10085": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "id10087": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "id10089": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "id10108": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "id10110": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "id10112": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "id10131": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "id10133": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "id10135": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "id10028": 1,
+      "id10029": 1,
+      "id10030": 1,
+      "id10051": 1,
+      "id10052": 1,
+      "id10053": 1,
+      "id10074": 1,
+      "id10075": 1,
+      "id10076": 1,
+      "id10097": 1,
+      "id10098": 1,
+      "id10099": 1,
+      "id10120": 1,
+      "id10121": 1,
+      "id10122": 1,
+      "id10143": 1,
+      "id10144": 1,
+      "id10145": 1,
+      "id10019": 1,
+      "id10021": 1,
+      "id10042": 1,
+      "id10044": 1,
+      "id10065": 1,
+      "id10067": 1,
+      "id10088": 1,
+      "id10090": 1,
+      "id10111": 1,
+      "id10113": 1,
+      "id10134": 1,
+      "id10136": 1,
+      "id10017": 1,
+      "id10023": 1,
+      "id10040": 1,
+      "id10046": 1,
+      "id10063": 1,
+      "id10069": 1,
+      "id10086": 1,
+      "id10092": 1,
+      "id10109": 1,
+      "id10115": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "id10016",
+      "id10018",
+      "id10020",
+      "id10039"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "id10041",
+          "id10043"
+        ],
+        "constraints": [
+          "id10042",
+          "id10044",
+          "id10046",
+          "id10051",
+          "id10052",
+          "id10053"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "id10062",
+          "id10064",
+          "id10066"
+        ],
+        "constraints": [
+          "id10063",
+          "id10065",
+          "id10067",
+          "id10069",
+          "id10074",
+          "id10075",
+          "id10076"
+        ]
+      },
+      {
+        "id": 2,
+        "variables": [
+          "id10085",
+          "id10087",
+          "id10089"
+        ],
+        "constraints": [
+          "id10086",
+          "id10088",
+          "id10090",
+          "id10092",
+          "id10097",
+          "id10098",
+          "id10099"
+        ]
+      },
+      {
+        "id": 3,
+        "variables": [
+          "id10108",
+          "id10110",
+          "id10112"
+        ],
+        "constraints": [
+          "id10109",
+          "id10111",
+          "id10113",
+          "id10115",
+          "id10120",
+          "id10121",
+          "id10122"
+        ]
+      },
+      {
+        "id": 4,
+        "variables": [
+          "id10131",
+          "id10133",
+          "id10135"
+        ],
+        "constraints": [
+          "id10134",
+          "id10136",
+          "id10143",
+          "id10144",
+          "id10145"
+        ]
+      }
+    ]
+  }
+}

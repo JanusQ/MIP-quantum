@@ -1,0 +1,247 @@
+{
+  "source_instance": "fhnw-binpack4-4",
+  "downsampled_instance": "fhnw-binpack4-4_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "C0": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "C1": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "C2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "C3": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "C4": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "C5": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "C6": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "C7": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "C8": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "C9": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "C10": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "C11": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "C12": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "C100": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "C101": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "C102": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "C103": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "C104": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 2816,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "R90": 1,
+      "R125": 1,
+      "R133": 1,
+      "R141": 1,
+      "R149": 1,
+      "R157": 1,
+      "R165": 1,
+      "R173": 1,
+      "R181": 1,
+      "R210": 1,
+      "R218": 1,
+      "R226": 1,
+      "R234": 1,
+      "R242": 1,
+      "R250": 1,
+      "R258": 1,
+      "R287": 1,
+      "R295": 1,
+      "R303": 1,
+      "R311": 1,
+      "R319": 1,
+      "R32": 1,
+      "R327": 1,
+      "R356": 1,
+      "R364": 1,
+      "R372": 1,
+      "R380": 1,
+      "R388": 1,
+      "R40": 1,
+      "R417": 1,
+      "R425": 1,
+      "R433": 1,
+      "R441": 1,
+      "R470": 1,
+      "R478": 1,
+      "R48": 1,
+      "R486": 1,
+      "R515": 1,
+      "R523": 1,
+      "R552": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "C0"
+        ],
+        "constraints": [
+          "R32",
+          "R40",
+          "R48"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "C10"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 2,
+        "variables": [
+          "C100",
+          "C101",
+          "C102",
+          "C103",
+          "C104"
+        ],
+        "constraints": [
+          "R90"
+        ]
+      },
+      {
+        "id": 3,
+        "variables": [
+          "C11"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 4,
+        "variables": [
+          "C12"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 5,
+        "variables": [
+          "C5",
+          "C6",
+          "C7",
+          "C8",
+          "C9"
+        ],
+        "constraints": [
+          "R149",
+          "R157",
+          "R165",
+          "R173",
+          "R181",
+          "R226",
+          "R234",
+          "R242",
+          "R250",
+          "R258",
+          "R295",
+          "R303",
+          "R311",
+          "R319",
+          "R327",
+          "R356",
+          "R364",
+          "R372",
+          "R380",
+          "R388",
+          "R417",
+          "R425",
+          "R433",
+          "R441",
+          "R470",
+          "R478",
+          "R486",
+          "R515",
+          "R523",
+          "R552"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "source_instance": "neos-2987310-joes",
+  "downsampled_instance": "neos-2987310-joes_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "C25814": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C25815": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C25816": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C25817": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C25818": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C25819": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C25820": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C25821": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C25822": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C25823": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C25824": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C25825": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C25826": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C25827": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C25828": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C25829": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C25830": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C25831": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "R27034": 1,
+      "R27035": 1,
+      "R27036": 1,
+      "R27037": 1,
+      "R27038": 1,
+      "R27039": 1,
+      "R27040": 1,
+      "R27041": 1,
+      "R27042": 1,
+      "R27043": 1,
+      "R27044": 1,
+      "R27045": 1,
+      "R27046": 1,
+      "R27047": 1,
+      "R27048": 1,
+      "R27049": 1,
+      "R27050": 1,
+      "R13880": 1,
+      "R13881": 1,
+      "R13882": 1,
+      "R13883": 1,
+      "R13884": 1,
+      "R13885": 1,
+      "R13886": 1,
+      "R13887": 1,
+      "R13888": 1,
+      "R13889": 1,
+      "R13890": 1,
+      "R13891": 1,
+      "R13892": 1,
+      "R13893": 1,
+      "R13894": 1,
+      "R13895": 1,
+      "R13896": 1,
+      "R13897": 1,
+      "R13907": 1,
+      "R13908": 1,
+      "R13909": 1,
+      "R13910": 1,
+      "R13911": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "C25815",
+      "C25816",
+      "C25817",
+      "C25818"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "C25814"
+        ],
+        "constraints": [
+          "R13880",
+          "R13907",
+          "R27034"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "C25819",
+          "C25820",
+          "C25821",
+          "C25822",
+          "C25823",
+          "C25824",
+          "C25825",
+          "C25826",
+          "C25827",
+          "C25828",
+          "C25829",
+          "C25830",
+          "C25831"
+        ],
+        "constraints": [
+          "R13885",
+          "R13886",
+          "R13887",
+          "R13888",
+          "R13889",
+          "R13890",
+          "R13891",
+          "R13892",
+          "R13893",
+          "R13894",
+          "R13895",
+          "R13896",
+          "R13897",
+          "R27038",
+          "R27039",
+          "R27040",
+          "R27041",
+          "R27042",
+          "R27043",
+          "R27044",
+          "R27045",
+          "R27046",
+          "R27047",
+          "R27048",
+          "R27049",
+          "R27050"
+        ]
+      }
+    ]
+  }
+}

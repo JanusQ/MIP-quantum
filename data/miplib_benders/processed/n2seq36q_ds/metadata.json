@@ -1,0 +1,213 @@
+{
+  "source_instance": "n2seq36q",
+  "downsampled_instance": "n2seq36q_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "x#new13_15_I183;;U1": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#new13_15_I183;;U10": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#new13_15_I183;;U11": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#new13_15_I183;;U12": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#new13_15_I183;;U13": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#new13_15_I183;;U14": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#new13_15_I183;;U15": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#new13_15_I183;;U16": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#new13_15_I183;;U17": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#new13_15_I183;;U18": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#new13_15_I183;;U19": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#new13_15_I183;;U2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#new13_15_I183;;U20": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#new13_15_I183;;U21": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#new13_15_I183;;U22": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#new13_15_I183;;U23": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#new13_15_I183;;U24": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#new13_15_I183;;U25": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "setcover10": 1,
+      "setcover11": 1,
+      "setcover4": 1,
+      "setcover44": 1,
+      "setcover45": 1,
+      "setcover46": 1,
+      "setcover47": 1,
+      "setcover48": 1,
+      "setcover49": 1,
+      "setcover5": 1,
+      "setcover50": 1,
+      "setcover51": 1,
+      "setcover6": 1,
+      "setcover7": 1,
+      "unique_frequency_new13_15_I183;;U": 1,
+      "link#e10#f1": 1,
+      "link#e10#f10": 1,
+      "link#e10#f11": 1,
+      "link#e10#f12": 1,
+      "link#e10#f13": 1,
+      "link#e10#f14": 1,
+      "link#e10#f15": 1,
+      "link#e10#f16": 1,
+      "link#e10#f17": 1,
+      "link#e10#f18": 1,
+      "link#e10#f19": 1,
+      "link#e10#f2": 1,
+      "link#e10#f20": 1,
+      "link#e10#f21": 1,
+      "link#e10#f22": 1,
+      "link#e10#f23": 1,
+      "link#e10#f24": 1,
+      "link#e10#f25": 1,
+      "link#e11#f1": 1,
+      "link#e11#f10": 1,
+      "link#e11#f11": 1,
+      "link#e11#f12": 1,
+      "link#e11#f13": 1,
+      "link#e11#f14": 1,
+      "link#e11#f15": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "x#new13_15_I183;;U1",
+      "x#new13_15_I183;;U10",
+      "x#new13_15_I183;;U11",
+      "x#new13_15_I183;;U12"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "x#new13_15_I183;;U13",
+          "x#new13_15_I183;;U14",
+          "x#new13_15_I183;;U15",
+          "x#new13_15_I183;;U16",
+          "x#new13_15_I183;;U17",
+          "x#new13_15_I183;;U18",
+          "x#new13_15_I183;;U19",
+          "x#new13_15_I183;;U2",
+          "x#new13_15_I183;;U20",
+          "x#new13_15_I183;;U21",
+          "x#new13_15_I183;;U22",
+          "x#new13_15_I183;;U23",
+          "x#new13_15_I183;;U24",
+          "x#new13_15_I183;;U25"
+        ],
+        "constraints": [
+          "link#e10#f13",
+          "link#e10#f14",
+          "link#e10#f15",
+          "link#e10#f16",
+          "link#e10#f17",
+          "link#e10#f18",
+          "link#e10#f19",
+          "link#e10#f2",
+          "link#e10#f20",
+          "link#e10#f21",
+          "link#e10#f22",
+          "link#e10#f23",
+          "link#e10#f24",
+          "link#e10#f25",
+          "link#e11#f13",
+          "link#e11#f14",
+          "link#e11#f15",
+          "setcover10",
+          "setcover11",
+          "setcover4",
+          "setcover44",
+          "setcover45",
+          "setcover46",
+          "setcover47",
+          "setcover48",
+          "setcover49",
+          "setcover5",
+          "setcover50",
+          "setcover51",
+          "setcover6",
+          "setcover7",
+          "unique_frequency_new13_15_I183;;U"
+        ]
+      }
+    ]
+  }
+}

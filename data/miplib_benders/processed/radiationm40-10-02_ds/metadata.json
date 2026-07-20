@@ -1,0 +1,203 @@
+{
+  "source_instance": "radiationm40-10-02",
+  "downsampled_instance": "radiationm40-10-02_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 23,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "X_INTRODUCED_100005_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_100006_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_100008_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_100012_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_100024_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_100025_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_100027_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_100031_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_100043_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_100044_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_100046_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_100050_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_100062_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_100063_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_100065_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_100069_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_100081_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_100082_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 0,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "p_lin_137460": 1,
+      "p_lin_137461": 1,
+      "p_lin_137463": 1,
+      "p_lin_137464": 1,
+      "p_lin_137466": 1,
+      "p_lin_137467": 1,
+      "p_lin_137469": 1,
+      "p_lin_137470": 1,
+      "p_lin_30111": 1,
+      "p_lin_30119": 1,
+      "p_lin_30127": 1,
+      "p_lin_30135": 1,
+      "p_lin_30143": 1,
+      "p_eq_30113": 1,
+      "p_eq_30115": 1,
+      "p_eq_30121": 1,
+      "p_eq_30123": 1,
+      "p_eq_30129": 1,
+      "p_eq_30131": 1,
+      "p_eq_30137": 1,
+      "p_eq_30139": 1,
+      "p_lin_137472": 1,
+      "p_lin_137473": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "X_INTRODUCED_100005_",
+      "X_INTRODUCED_100006_",
+      "X_INTRODUCED_100008_",
+      "X_INTRODUCED_100012_"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "X_INTRODUCED_100024_",
+          "X_INTRODUCED_100025_",
+          "X_INTRODUCED_100027_",
+          "X_INTRODUCED_100031_"
+        ],
+        "constraints": [
+          "p_eq_30121",
+          "p_eq_30123",
+          "p_lin_137463",
+          "p_lin_137464",
+          "p_lin_30119"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "X_INTRODUCED_100043_",
+          "X_INTRODUCED_100044_",
+          "X_INTRODUCED_100046_",
+          "X_INTRODUCED_100050_"
+        ],
+        "constraints": [
+          "p_eq_30129",
+          "p_eq_30131",
+          "p_lin_137466",
+          "p_lin_137467",
+          "p_lin_30127"
+        ]
+      },
+      {
+        "id": 2,
+        "variables": [
+          "X_INTRODUCED_100062_",
+          "X_INTRODUCED_100063_",
+          "X_INTRODUCED_100065_",
+          "X_INTRODUCED_100069_"
+        ],
+        "constraints": [
+          "p_eq_30137",
+          "p_eq_30139",
+          "p_lin_137469",
+          "p_lin_137470",
+          "p_lin_30135"
+        ]
+      },
+      {
+        "id": 3,
+        "variables": [
+          "X_INTRODUCED_100081_",
+          "X_INTRODUCED_100082_"
+        ],
+        "constraints": [
+          "p_lin_137472",
+          "p_lin_137473",
+          "p_lin_30143"
+        ]
+      }
+    ]
+  }
+}

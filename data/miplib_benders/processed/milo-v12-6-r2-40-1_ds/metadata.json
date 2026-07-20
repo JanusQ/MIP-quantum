@@ -1,0 +1,241 @@
+{
+  "source_instance": "milo-v12-6-r2-40-1",
+  "downsampled_instance": "milo-v12-6-r2-40-1_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "z_0_1": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_0_2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_100_1": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_100_2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_101_1": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_101_2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_102_1": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_102_2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_103_1": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_103_2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_104_1": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_104_2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_105_1": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_105_2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_106_1": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_106_2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_107_1": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_107_2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 0,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "R211": 1,
+      "R511": 1,
+      "R514": 1,
+      "R517": 1,
+      "R520": 1,
+      "R523": 1,
+      "R526": 1,
+      "R529": 1,
+      "R532": 1,
+      "x0": 1,
+      "x100": 1,
+      "x101": 1,
+      "x102": 1,
+      "x103": 1,
+      "x104": 1,
+      "x105": 1,
+      "x106": 1,
+      "x107": 1,
+      "R210": 1,
+      "R212": 1,
+      "R2272": 471,
+      "R2273": 471,
+      "R2274": 471,
+      "R2275": 471,
+      "R2276": 471,
+      "R2277": 471,
+      "R2278": 471,
+      "R2279": 471,
+      "R3872": 471,
+      "R3873": 471,
+      "R3874": 471,
+      "R3875": 471,
+      "R3876": 471,
+      "R3877": 471,
+      "R3878": 471,
+      "R3879": 471,
+      "R3888": 471,
+      "R3889": 471,
+      "R3890": 471,
+      "R3891": 471
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 8.492569002101213e-07
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "z_0_1",
+      "z_0_2",
+      "z_100_1",
+      "z_100_2"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "z_101_1",
+          "z_101_2"
+        ],
+        "constraints": [
+          "R3888",
+          "R3889",
+          "R3890",
+          "R3891",
+          "R514",
+          "x101"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "z_102_1",
+          "z_102_2"
+        ],
+        "constraints": [
+          "R517",
+          "x102"
+        ]
+      },
+      {
+        "id": 2,
+        "variables": [
+          "z_103_1",
+          "z_103_2"
+        ],
+        "constraints": [
+          "R520",
+          "x103"
+        ]
+      },
+      {
+        "id": 3,
+        "variables": [
+          "z_104_1",
+          "z_104_2"
+        ],
+        "constraints": [
+          "R523",
+          "x104"
+        ]
+      },
+      {
+        "id": 4,
+        "variables": [
+          "z_105_1",
+          "z_105_2"
+        ],
+        "constraints": [
+          "R526",
+          "x105"
+        ]
+      },
+      {
+        "id": 5,
+        "variables": [
+          "z_106_1",
+          "z_106_2"
+        ],
+        "constraints": [
+          "R529",
+          "x106"
+        ]
+      },
+      {
+        "id": 6,
+        "variables": [
+          "z_107_1",
+          "z_107_2"
+        ],
+        "constraints": [
+          "R532",
+          "x107"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "source_instance": "ex9",
+  "downsampled_instance": "ex9_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "b37_220": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b37_221": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b37_222": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b37_223": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b37_230": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b37_231": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b37_232": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b37_233": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b37_240": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b37_241": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b37_242": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b37_243": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b37_250": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b37_251": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b37_252": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b37_253": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b37_260": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "b37_261": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 0,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "NOD37": 1,
+      "NOD2X2": 1,
+      "NOD2X3": 1,
+      "NOD2X4": 1,
+      "NOD2X5": 1,
+      "EQ19263": 1,
+      "EQ19267": 1,
+      "EQ19279": 1,
+      "EQ19283": 1,
+      "EQ19286": 1,
+      "EQ19290": 1,
+      "EQ19295": 1,
+      "EQ19299": 1,
+      "EQ19302": 1,
+      "EQ19306": 1,
+      "EQ19318": 1,
+      "EQ19322": 1,
+      "EQ119": 1,
+      "EQ135": 1,
+      "EQ151": 1,
+      "EQ15153": 1,
+      "EQ15169": 1,
+      "EQ15185": 1,
+      "EQ15201": 1,
+      "EQ15255": 1,
+      "EQ15271": 1,
+      "EQ15278": 1,
+      "EQ15287": 1,
+      "EQ15294": 1,
+      "EQ15303": 1,
+      "EQ15310": 1,
+      "EQ15326": 1,
+      "EQ15342": 1,
+      "EQ15368": 1,
+      "EQ15384": 1,
+      "EQ15400": 1,
+      "EQ15416": 1,
+      "EQ158": 1,
+      "EQ16017": 1,
+      "EQ16033": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "b37_220",
+      "b37_221",
+      "b37_231",
+      "b37_232"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "b37_222",
+          "b37_223",
+          "b37_230",
+          "b37_233",
+          "b37_240",
+          "b37_241",
+          "b37_242",
+          "b37_243",
+          "b37_250",
+          "b37_251",
+          "b37_252",
+          "b37_253",
+          "b37_260",
+          "b37_261"
+        ],
+        "constraints": [
+          "EQ119",
+          "EQ135",
+          "EQ151",
+          "EQ15153",
+          "EQ15185",
+          "EQ15201",
+          "EQ15255",
+          "EQ15271",
+          "EQ15287",
+          "EQ15294",
+          "EQ15303",
+          "EQ15310",
+          "EQ15326",
+          "EQ15342",
+          "EQ15368",
+          "EQ15384",
+          "EQ15400",
+          "EQ15416",
+          "EQ16017",
+          "EQ19263",
+          "EQ19267",
+          "EQ19279",
+          "EQ19283",
+          "EQ19290",
+          "EQ19295",
+          "EQ19299",
+          "EQ19302",
+          "EQ19306",
+          "EQ19318",
+          "EQ19322",
+          "NOD2X2",
+          "NOD2X3",
+          "NOD2X4",
+          "NOD2X5",
+          "NOD37"
+        ]
+      }
+    ]
+  }
+}

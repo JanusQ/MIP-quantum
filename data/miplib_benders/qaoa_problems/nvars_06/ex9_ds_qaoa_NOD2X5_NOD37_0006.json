@@ -1,0 +1,139 @@
+{
+  "name": "ex9_ds_qaoa_NOD2X5_NOD37_0006",
+  "source_mps": "ex9_ds",
+  "decomposition": "benders",
+  "benders_subproblem_id": 0,
+  "benders_subproblem_variables": [
+    "b37_222",
+    "b37_223",
+    "b37_230",
+    "b37_233",
+    "b37_240",
+    "b37_241",
+    "b37_242",
+    "b37_243",
+    "b37_250",
+    "b37_251",
+    "b37_252",
+    "b37_253",
+    "b37_260",
+    "b37_261"
+  ],
+  "benders_subproblem_constraints": [
+    "EQ119",
+    "EQ135",
+    "EQ151",
+    "EQ15153",
+    "EQ15185",
+    "EQ15201",
+    "EQ15255",
+    "EQ15271",
+    "EQ15287",
+    "EQ15294",
+    "EQ15303",
+    "EQ15310",
+    "EQ15326",
+    "EQ15342",
+    "EQ15368",
+    "EQ15384",
+    "EQ15400",
+    "EQ15416",
+    "EQ16017",
+    "EQ19263",
+    "EQ19267",
+    "EQ19279",
+    "EQ19283",
+    "EQ19290",
+    "EQ19295",
+    "EQ19299",
+    "EQ19302",
+    "EQ19306",
+    "EQ19318",
+    "EQ19322",
+    "NOD2X2",
+    "NOD2X3",
+    "NOD2X4",
+    "NOD2X5",
+    "NOD37"
+  ],
+  "source_rows": [
+    {
+      "name": "NOD2X5",
+      "sense": "E"
+    },
+    {
+      "name": "NOD37",
+      "sense": "E"
+    }
+  ],
+  "variables": [
+    "b37_241",
+    "b37_242",
+    "b37_243",
+    "b37_250",
+    "b37_251",
+    "b37_252"
+  ],
+  "A": [
+    [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "b": [
+    1,
+    1
+  ],
+  "c": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "N": 8,
+  "variable_bounds": {
+    "b37_241": {
+      "lb": 0,
+      "ub": 7
+    },
+    "b37_242": {
+      "lb": 0,
+      "ub": 7
+    },
+    "b37_243": {
+      "lb": 0,
+      "ub": 7
+    },
+    "b37_250": {
+      "lb": 0,
+      "ub": 7
+    },
+    "b37_251": {
+      "lb": 0,
+      "ub": 7
+    },
+    "b37_252": {
+      "lb": 0,
+      "ub": 7
+    }
+  },
+  "encoding": "Exported benchmark variables are normalized experimental variables with domain 0..N-1. Coefficients and row provenance come from the source MIP row.",
+  "candidate_state_space_size": 262144,
+  "feasible_states_in_qaoa_truncation": 3,
+  "feasible_state_count_exact": true,
+  "adapter": "strict Benders subproblem export; variables and source rows are selected only from one benders_blocks.subproblems entry; exported variables use domain 0..N-1; <=/>= rows use one nonnegative row slack each"
+}

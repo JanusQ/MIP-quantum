@@ -1,0 +1,238 @@
+{
+  "source_instance": "savsched1",
+  "downsampled_instance": "savsched1_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "x160449": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x160454": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x160459": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x160464": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x160482": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x174969": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x176531": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x176541": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x176566": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x176570": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x176574": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x178285": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x178324": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x181285": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x181286": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x181287": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x181288": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "x181291": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "c116202": 1,
+      "c116213": 1,
+      "c17543": 1,
+      "c52389": 1,
+      "c116216": 1,
+      "c36545": 1,
+      "c36547": 1,
+      "c37917": 1,
+      "c37919": 1,
+      "c116217": 1,
+      "c116218": 1,
+      "c116219": 1,
+      "c14368": 1,
+      "c14369": 1,
+      "c14370": 1,
+      "c14371": 1,
+      "c14373": 1,
+      "c16666": 1,
+      "c16883": 1,
+      "c16886": 1,
+      "c16890": 1,
+      "c16891": 1,
+      "c16892": 1,
+      "c17142": 1,
+      "c17146": 1,
+      "c17545": 1,
+      "c212032": 1,
+      "c212033": 1,
+      "c212034": 1,
+      "c212035": 1,
+      "c212036": 1,
+      "c212037": 1,
+      "c212038": 1,
+      "c212039": 1,
+      "c212040": 1,
+      "c212041": 1,
+      "c212042": 1,
+      "c212043": 1,
+      "c212044": 1,
+      "c212045": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "x160449",
+      "x160454",
+      "x181286",
+      "x181288"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "x160459",
+          "x160464",
+          "x160482"
+        ],
+        "constraints": [
+          "c116202",
+          "c14370",
+          "c14371",
+          "c14373"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "x174969"
+        ],
+        "constraints": [
+          "c16666",
+          "c36547",
+          "c37919"
+        ]
+      },
+      {
+        "id": 2,
+        "variables": [
+          "x176531",
+          "x176541",
+          "x176566",
+          "x176570",
+          "x176574"
+        ],
+        "constraints": [
+          "c116213",
+          "c16883",
+          "c16886",
+          "c16890",
+          "c16891",
+          "c16892",
+          "c36545",
+          "c37917"
+        ]
+      },
+      {
+        "id": 3,
+        "variables": [
+          "x178285"
+        ],
+        "constraints": [
+          "c17142"
+        ]
+      },
+      {
+        "id": 4,
+        "variables": [
+          "x178324"
+        ],
+        "constraints": [
+          "c17146"
+        ]
+      },
+      {
+        "id": 5,
+        "variables": [
+          "x181285",
+          "x181287",
+          "x181291"
+        ],
+        "constraints": [
+          "c116216",
+          "c116218",
+          "c17543",
+          "c17545",
+          "c52389"
+        ]
+      }
+    ]
+  }
+}

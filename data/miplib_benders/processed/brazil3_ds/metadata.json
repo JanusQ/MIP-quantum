@@ -1,0 +1,258 @@
+{
+  "source_instance": "brazil3",
+  "downsampled_instance": "brazil3_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "p(S1,gr_TimesDurationTwo)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "p(S2,gr_TimesDurationTwo)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "p(S3,gr_TimesDurationTwo)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "p(S4,gr_TimesDurationTwo)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "p(S5,gr_TimesDurationTwo)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "p(S6,gr_TimesDurationTwo)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "p(S7,gr_TimesDurationTwo)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "p(S8,gr_TimesDurationTwo)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "p(T1,gr_TimesDurationTwo)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "p(T10,gr_TimesDurationTwo)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "p(T11,gr_TimesDurationTwo)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "p(T12,gr_TimesDurationTwo)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "p(T13,gr_TimesDurationTwo)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "p(T14,gr_TimesDurationTwo)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "p(T15,gr_TimesDurationTwo)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "p(T16,gr_TimesDurationTwo)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "p(T2,gr_TimesDurationTwo)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "p(T3,gr_TimesDurationTwo)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 262144,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "linkQP(S1,gr_TimesDurationTwo,Fr_1)": 1,
+      "linkQP(S1,gr_TimesDurationTwo,Fr_2)": 1,
+      "linkQP(S1,gr_TimesDurationTwo,Fr_3)": 1,
+      "linkQP(S1,gr_TimesDurationTwo,Fr_4)": 1,
+      "linkQP(S1,gr_TimesDurationTwo,Mo_1)": 1,
+      "linkQP(S1,gr_TimesDurationTwo,Mo_2)": 1,
+      "linkQP(S1,gr_TimesDurationTwo,Mo_3)": 1,
+      "linkQP(S1,gr_TimesDurationTwo,Mo_4)": 1,
+      "linkQP(S1,gr_TimesDurationTwo,Th_1)": 1,
+      "linkQP(S1,gr_TimesDurationTwo,Th_2)": 1,
+      "linkQP(S1,gr_TimesDurationTwo,Th_3)": 1,
+      "linkQP(S1,gr_TimesDurationTwo,Th_4)": 1,
+      "linkQP(S1,gr_TimesDurationTwo,Tu_1)": 1,
+      "linkQP(S1,gr_TimesDurationTwo,Tu_2)": 1,
+      "linkQP(S1,gr_TimesDurationTwo,Tu_3)": 1,
+      "linkQP(S1,gr_TimesDurationTwo,Tu_4)": 1,
+      "linkQP(S1,gr_TimesDurationTwo,We_1)": 1,
+      "linkQP(S1,gr_TimesDurationTwo,We_2)": 1,
+      "linkQP(S1,gr_TimesDurationTwo,We_3)": 1,
+      "linkQP(S1,gr_TimesDurationTwo,We_4)": 1,
+      "linkQP(S2,gr_TimesDurationTwo,Fr_1)": 1,
+      "linkQP(S2,gr_TimesDurationTwo,Fr_2)": 1,
+      "linkQP(S2,gr_TimesDurationTwo,Fr_3)": 1,
+      "linkQP(S2,gr_TimesDurationTwo,Fr_4)": 1,
+      "linkQP(S2,gr_TimesDurationTwo,Mo_1)": 1,
+      "linkQP(S2,gr_TimesDurationTwo,Mo_2)": 1,
+      "linkQP(S2,gr_TimesDurationTwo,Mo_3)": 1,
+      "linkQP(S2,gr_TimesDurationTwo,Mo_4)": 1,
+      "linkQP(S2,gr_TimesDurationTwo,Th_1)": 1,
+      "linkQP(S2,gr_TimesDurationTwo,Th_2)": 1,
+      "linkQP(S2,gr_TimesDurationTwo,Th_3)": 1,
+      "linkQP(S2,gr_TimesDurationTwo,Th_4)": 1,
+      "linkQP(S2,gr_TimesDurationTwo,Tu_1)": 1,
+      "linkQP(S2,gr_TimesDurationTwo,Tu_2)": 1,
+      "linkQP(S2,gr_TimesDurationTwo,Tu_3)": 1,
+      "linkQP(S2,gr_TimesDurationTwo,Tu_4)": 1,
+      "linkQP(S2,gr_TimesDurationTwo,We_1)": 1,
+      "linkQP(S2,gr_TimesDurationTwo,We_2)": 1,
+      "linkQP(S2,gr_TimesDurationTwo,We_3)": 1,
+      "linkQP(S2,gr_TimesDurationTwo,We_4)": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "p(S1,gr_TimesDurationTwo)",
+      "p(S2,gr_TimesDurationTwo)",
+      "p(S3,gr_TimesDurationTwo)",
+      "p(S4,gr_TimesDurationTwo)"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "p(S5,gr_TimesDurationTwo)"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 1,
+        "variables": [
+          "p(S6,gr_TimesDurationTwo)"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 2,
+        "variables": [
+          "p(S7,gr_TimesDurationTwo)"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 3,
+        "variables": [
+          "p(S8,gr_TimesDurationTwo)"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 4,
+        "variables": [
+          "p(T1,gr_TimesDurationTwo)"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 5,
+        "variables": [
+          "p(T10,gr_TimesDurationTwo)"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 6,
+        "variables": [
+          "p(T11,gr_TimesDurationTwo)"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 7,
+        "variables": [
+          "p(T12,gr_TimesDurationTwo)"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 8,
+        "variables": [
+          "p(T13,gr_TimesDurationTwo)"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 9,
+        "variables": [
+          "p(T14,gr_TimesDurationTwo)"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 10,
+        "variables": [
+          "p(T15,gr_TimesDurationTwo)"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 11,
+        "variables": [
+          "p(T16,gr_TimesDurationTwo)"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 12,
+        "variables": [
+          "p(T2,gr_TimesDurationTwo)"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 13,
+        "variables": [
+          "p(T3,gr_TimesDurationTwo)"
+        ],
+        "constraints": []
+      }
+    ]
+  }
+}

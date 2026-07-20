@@ -1,0 +1,228 @@
+{
+  "source_instance": "ns1830653",
+  "downsampled_instance": "ns1830653_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "C0180": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0198": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0216": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0234": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0252": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0270": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0288": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0306": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0342": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0360": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0378": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0396": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0414": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0432": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0450": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0468": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0504": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0522": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 66,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "R0880": 1,
+      "R0898": 1,
+      "R1399": 1,
+      "R1400": 1,
+      "R1401": 1,
+      "R1402": 1,
+      "R1414": 1,
+      "R1415": 1,
+      "R1416": 1,
+      "R1417": 1,
+      "R1534": 1,
+      "R1535": 1,
+      "R1536": 1,
+      "R1537": 1,
+      "R1549": 1,
+      "R1550": 1,
+      "R1551": 1,
+      "R1552": 1,
+      "R1668": 1,
+      "R1669": 1,
+      "R1670": 1,
+      "R1671": 1,
+      "R1672": 1,
+      "R1682": 1,
+      "R1683": 1,
+      "R1684": 1,
+      "R1685": 1,
+      "R1686": 1,
+      "R1794": 1,
+      "R1795": 1,
+      "R1796": 1,
+      "R1797": 1,
+      "R1798": 1,
+      "R1808": 1,
+      "R1809": 1,
+      "R1810": 1,
+      "R1811": 1,
+      "R1812": 1,
+      "R2209": 1,
+      "R2210": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "C0180",
+      "C0198",
+      "C0216",
+      "C0342"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "C0234",
+          "C0252",
+          "C0270",
+          "C0288",
+          "C0306",
+          "C0504"
+        ],
+        "constraints": [
+          "R0880",
+          "R1399",
+          "R1400",
+          "R1401",
+          "R1402",
+          "R1534",
+          "R1535",
+          "R1536",
+          "R1537",
+          "R1668",
+          "R1669",
+          "R1670",
+          "R1671",
+          "R1672",
+          "R1794",
+          "R1795",
+          "R1796",
+          "R1797",
+          "R1798",
+          "R2209",
+          "R2210"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "C0360",
+          "C0378",
+          "C0396",
+          "C0414",
+          "C0432",
+          "C0450",
+          "C0468",
+          "C0522"
+        ],
+        "constraints": [
+          "R0898",
+          "R1414",
+          "R1415",
+          "R1416",
+          "R1417",
+          "R1549",
+          "R1550",
+          "R1551",
+          "R1552",
+          "R1682",
+          "R1683",
+          "R1684",
+          "R1685",
+          "R1686",
+          "R1808",
+          "R1809",
+          "R1810",
+          "R1811",
+          "R1812"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "source_instance": "highschool1-aigio",
+  "downsampled_instance": "highschool1-aigio_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "y(108#1#1,Fr_4)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y(108#1#1,Fr_5)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y(108#1#1,Fr_6)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y(108#1#1,Mo_4)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y(108#1#1,Mo_5)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y(108#1#1,Mo_6)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y(108#1#1,Th_4)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y(108#1#1,Th_5)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y(108#1#1,Th_6)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y(108#1#2,Fr_4)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y(108#1#2,Fr_5)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y(108#1#2,Fr_6)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y(108#1#2,Mo_4)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y(108#1#2,Mo_5)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y(108#1#2,Mo_6)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y(108#1#2,Th_4)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y(108#1#2,Th_5)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "y(108#1#2,Th_6)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 0,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "assignTimes(AssignTimes,108)": 1,
+      "preferTimes(PreferTimesConstraint_T16,108)": 1,
+      "linkYU(108#1#1)": 1,
+      "linkYU(108#1#2)": 1,
+      "subeventsNotActive(108#1#1)": 1,
+      "subeventsNotActive(108#1#2)": 1,
+      "spreadEventsLB(SpreadEvents1,108,Fr)": 1,
+      "spreadEventsLB(SpreadEvents1,108,Mo)": 1,
+      "spreadEventsLB(SpreadEvents1,108,Th)": 1,
+      "spreadEventsUB(SpreadEvents1,108,Fr)": 1,
+      "spreadEventsUB(SpreadEvents1,108,Mo)": 1,
+      "spreadEventsUB(SpreadEvents1,108,Th)": 1,
+      "linkYQCut(C2_ARXA_GGA,Fr_4)": 1,
+      "linkYQCut(C2_ARXA_GGA,Fr_5)": 1,
+      "linkYQCut(C2_ARXA_GGA,Fr_6)": 1,
+      "linkYQCut(C2_ARXA_GGA,Mo_4)": 1,
+      "linkYQCut(C2_ARXA_GGA,Mo_5)": 1,
+      "linkYQCut(C2_ARXA_GGA,Mo_6)": 1,
+      "linkYQCut(C2_ARXA_GGA,Th_4)": 1,
+      "linkYQCut(C2_ARXA_GGA,Th_5)": 1,
+      "linkYQCut(C2_ARXA_GGA,Th_6)": 1,
+      "linkYQCut(C2_ARXA_GGB,Fr_4)": 1,
+      "linkYQCut(C2_ARXA_GGB,Fr_5)": 1,
+      "linkYQCut(C2_ARXA_GGB,Fr_6)": 1,
+      "linkYQCut(C2_ARXA_GGB,Mo_4)": 1,
+      "linkYQCut(C2_ARXA_GGB,Mo_5)": 1,
+      "linkYQCut(C2_ARXA_GGB,Mo_6)": 1,
+      "linkYQCut(C2_ARXA_GGB,Th_4)": 1,
+      "linkYQCut(C2_ARXA_GGB,Th_5)": 1,
+      "linkYQCut(C2_ARXA_GGB,Th_6)": 1,
+      "linkYQCut(C2_PROX_GGA,Fr_4)": 1,
+      "linkYQCut(C2_PROX_GGA,Fr_5)": 1,
+      "linkYQCut(C2_PROX_GGA,Fr_6)": 1,
+      "linkYQCut(C2_PROX_GGA,Mo_4)": 1,
+      "linkYQCut(C2_PROX_GGA,Mo_5)": 1,
+      "linkYQCut(C2_PROX_GGA,Mo_6)": 1,
+      "linkYQCut(C2_PROX_GGA,Th_4)": 1,
+      "linkYQCut(C2_PROX_GGA,Th_5)": 1,
+      "linkYQCut(C2_PROX_GGA,Th_6)": 1,
+      "linkYQCut(C2_PROX_GGB,Fr_4)": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "y(108#1#1,Fr_4)",
+      "y(108#1#1,Fr_5)",
+      "y(108#1#1,Fr_6)",
+      "y(108#1#2,Fr_4)"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "y(108#1#1,Mo_4)",
+          "y(108#1#1,Mo_5)",
+          "y(108#1#1,Mo_6)",
+          "y(108#1#1,Th_4)",
+          "y(108#1#1,Th_5)",
+          "y(108#1#1,Th_6)",
+          "y(108#1#2,Fr_5)",
+          "y(108#1#2,Fr_6)",
+          "y(108#1#2,Mo_4)",
+          "y(108#1#2,Mo_5)",
+          "y(108#1#2,Mo_6)",
+          "y(108#1#2,Th_4)",
+          "y(108#1#2,Th_5)",
+          "y(108#1#2,Th_6)"
+        ],
+        "constraints": [
+          "assignTimes(AssignTimes,108)",
+          "linkYQCut(C2_ARXA_GGA,Fr_5)",
+          "linkYQCut(C2_ARXA_GGA,Fr_6)",
+          "linkYQCut(C2_ARXA_GGA,Mo_4)",
+          "linkYQCut(C2_ARXA_GGA,Mo_5)",
+          "linkYQCut(C2_ARXA_GGA,Mo_6)",
+          "linkYQCut(C2_ARXA_GGA,Th_4)",
+          "linkYQCut(C2_ARXA_GGA,Th_5)",
+          "linkYQCut(C2_ARXA_GGA,Th_6)",
+          "linkYQCut(C2_ARXA_GGB,Fr_5)",
+          "linkYQCut(C2_ARXA_GGB,Fr_6)",
+          "linkYQCut(C2_ARXA_GGB,Mo_4)",
+          "linkYQCut(C2_ARXA_GGB,Mo_5)",
+          "linkYQCut(C2_ARXA_GGB,Mo_6)",
+          "linkYQCut(C2_ARXA_GGB,Th_4)",
+          "linkYQCut(C2_ARXA_GGB,Th_5)",
+          "linkYQCut(C2_ARXA_GGB,Th_6)",
+          "linkYQCut(C2_PROX_GGA,Fr_5)",
+          "linkYQCut(C2_PROX_GGA,Fr_6)",
+          "linkYQCut(C2_PROX_GGA,Mo_4)",
+          "linkYQCut(C2_PROX_GGA,Mo_5)",
+          "linkYQCut(C2_PROX_GGA,Mo_6)",
+          "linkYQCut(C2_PROX_GGA,Th_4)",
+          "linkYQCut(C2_PROX_GGA,Th_5)",
+          "linkYQCut(C2_PROX_GGA,Th_6)",
+          "linkYU(108#1#1)",
+          "linkYU(108#1#2)",
+          "preferTimes(PreferTimesConstraint_T16,108)",
+          "spreadEventsLB(SpreadEvents1,108,Fr)",
+          "spreadEventsLB(SpreadEvents1,108,Mo)",
+          "spreadEventsLB(SpreadEvents1,108,Th)",
+          "spreadEventsUB(SpreadEvents1,108,Fr)",
+          "spreadEventsUB(SpreadEvents1,108,Mo)",
+          "spreadEventsUB(SpreadEvents1,108,Th)",
+          "subeventsNotActive(108#1#1)",
+          "subeventsNotActive(108#1#2)"
+        ]
+      }
+    ]
+  }
+}

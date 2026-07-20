@@ -1,0 +1,264 @@
+{
+  "source_instance": "neos17",
+  "downsampled_instance": "neos17_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 18,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "D0001": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "D0002": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "D0003": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "D0004": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "D0005": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "D0006": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "D0007": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "D0008": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "D0009": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "D0010": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "D0011": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "D0012": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "D0013": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "D0014": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "D0015": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "D0016": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "D0017": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "D0018": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "OBS0001": 1000,
+      "OBS0002": 1000,
+      "OBS0003": 1000,
+      "OBS0004": 1000,
+      "OBS0005": 1000,
+      "OBS0006": 1000,
+      "OBS0007": 1000,
+      "OBS0008": 1000,
+      "OBS0009": 1000,
+      "OBS0010": 1000,
+      "OBS0011": 1000,
+      "OBS0012": 1000,
+      "OBS0013": 1000,
+      "OBS0014": 1000,
+      "OBS0015": 1000,
+      "OBS0016": 1000,
+      "OBS0017": 1000,
+      "OBS0018": 1000
+    },
+    "objective_scale": 1000000,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "D0001",
+      "D0002",
+      "D0003",
+      "D0004"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "D0005"
+        ],
+        "constraints": [
+          "OBS0005"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "D0006"
+        ],
+        "constraints": [
+          "OBS0006"
+        ]
+      },
+      {
+        "id": 2,
+        "variables": [
+          "D0007"
+        ],
+        "constraints": [
+          "OBS0007"
+        ]
+      },
+      {
+        "id": 3,
+        "variables": [
+          "D0008"
+        ],
+        "constraints": [
+          "OBS0008"
+        ]
+      },
+      {
+        "id": 4,
+        "variables": [
+          "D0009"
+        ],
+        "constraints": [
+          "OBS0009"
+        ]
+      },
+      {
+        "id": 5,
+        "variables": [
+          "D0010"
+        ],
+        "constraints": [
+          "OBS0010"
+        ]
+      },
+      {
+        "id": 6,
+        "variables": [
+          "D0011"
+        ],
+        "constraints": [
+          "OBS0011"
+        ]
+      },
+      {
+        "id": 7,
+        "variables": [
+          "D0012"
+        ],
+        "constraints": [
+          "OBS0012"
+        ]
+      },
+      {
+        "id": 8,
+        "variables": [
+          "D0013"
+        ],
+        "constraints": [
+          "OBS0013"
+        ]
+      },
+      {
+        "id": 9,
+        "variables": [
+          "D0014"
+        ],
+        "constraints": [
+          "OBS0014"
+        ]
+      },
+      {
+        "id": 10,
+        "variables": [
+          "D0015"
+        ],
+        "constraints": [
+          "OBS0015"
+        ]
+      },
+      {
+        "id": 11,
+        "variables": [
+          "D0016"
+        ],
+        "constraints": [
+          "OBS0016"
+        ]
+      },
+      {
+        "id": 12,
+        "variables": [
+          "D0017"
+        ],
+        "constraints": [
+          "OBS0017"
+        ]
+      },
+      {
+        "id": 13,
+        "variables": [
+          "D0018"
+        ],
+        "constraints": [
+          "OBS0018"
+        ]
+      }
+    ]
+  }
+}

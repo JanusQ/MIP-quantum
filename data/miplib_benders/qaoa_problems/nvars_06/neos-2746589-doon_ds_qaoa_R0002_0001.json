@@ -1,0 +1,120 @@
+{
+  "name": "neos-2746589-doon_ds_qaoa_R0002_0001",
+  "source_mps": "neos-2746589-doon_ds",
+  "decomposition": "benders",
+  "benders_subproblem_id": 0,
+  "benders_subproblem_variables": [
+    "C0013",
+    "C0014",
+    "C0015",
+    "C0016",
+    "C0017",
+    "C0018",
+    "C0019",
+    "C0020",
+    "C0021",
+    "C0022",
+    "C0023",
+    "C0024",
+    "C0025",
+    "C0026"
+  ],
+  "benders_subproblem_constraints": [
+    "R0001",
+    "R0002",
+    "R0169",
+    "R0173",
+    "R0177",
+    "R0187",
+    "R0188",
+    "R0189",
+    "R0190",
+    "R0191",
+    "R0192",
+    "R0193",
+    "R0194",
+    "R0195",
+    "R0196",
+    "R0471",
+    "R0472",
+    "R0473",
+    "R0474",
+    "R0475",
+    "R0476",
+    "R0495",
+    "R0496",
+    "R0497",
+    "R0498",
+    "R0499",
+    "R0500",
+    "R0501",
+    "R0502"
+  ],
+  "source_rows": [
+    {
+      "name": "R0002",
+      "sense": "E"
+    }
+  ],
+  "variables": [
+    "C0019",
+    "C0020",
+    "C0021",
+    "C0022",
+    "C0023",
+    "C0024"
+  ],
+  "A": [
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "b": [
+    1
+  ],
+  "c": [
+    209,
+    209,
+    209,
+    209,
+    209,
+    209
+  ],
+  "N": 8,
+  "variable_bounds": {
+    "C0019": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0020": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0021": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0022": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0023": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0024": {
+      "lb": 0,
+      "ub": 7
+    }
+  },
+  "encoding": "Exported benchmark variables are normalized experimental variables with domain 0..N-1. Coefficients and row provenance come from the source MIP row.",
+  "candidate_state_space_size": 262144,
+  "feasible_states_in_qaoa_truncation": 6,
+  "feasible_state_count_exact": true,
+  "adapter": "strict Benders subproblem export; variables and source rows are selected only from one benders_blocks.subproblems entry; exported variables use domain 0..N-1; <=/>= rows use one nonnegative row slack each"
+}

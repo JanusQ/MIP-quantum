@@ -1,0 +1,217 @@
+{
+  "source_instance": "30n20b8",
+  "downsampled_instance": "30n20b8_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "x_14_1_100": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_14_1_101": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_14_1_102": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_14_1_103": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_14_1_104": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_14_1_105": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_14_1_106": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_14_1_107": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_14_1_108": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_14_1_125": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_14_1_126": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_14_1_127": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_14_1_128": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_14_1_129": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_14_1_130": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_14_1_131": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_14_1_132": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_14_1_133": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "completion_14": 1,
+      "jobexec_14": 1,
+      "start_14": 1,
+      "rescap_Mechaniker_108": 1,
+      "rescap_Mechaniker_109": 1,
+      "rescap_Mechaniker_110": 1,
+      "rescap_Mechaniker_111": 1,
+      "rescap_Mechaniker_133": 1,
+      "rescap_Mechaniker_134": 1,
+      "rescap_Mechaniker_135": 1,
+      "rescap_Mechaniker_136": 1,
+      "rescap_Mechaniker_107": 1,
+      "rescap_Mechaniker_112": 1,
+      "rescap_Mechaniker_132": 1,
+      "rescap_Mechaniker_137": 1,
+      "rescap_Mechaniker_106": 1,
+      "rescap_Mechaniker_113": 1,
+      "rescap_Mechaniker_131": 1,
+      "rescap_Mechaniker_138": 1,
+      "rescap_Mechaniker_105": 1,
+      "rescap_Mechaniker_114": 1,
+      "rescap_Mechaniker_130": 1,
+      "rescap_Mechaniker_139": 1,
+      "rescap_Mechaniker_104": 1,
+      "rescap_Mechaniker_115": 1,
+      "rescap_Mechaniker_129": 1,
+      "rescap_Mechaniker_140": 1,
+      "rescap_Mechaniker_103": 1,
+      "rescap_Mechaniker_116": 1,
+      "rescap_Mechaniker_128": 1,
+      "rescap_Mechaniker_141": 1,
+      "rescap_Mechaniker_102": 1,
+      "rescap_Mechaniker_117": 1,
+      "rescap_Mechaniker_127": 1,
+      "rescap_Mechaniker_142": 1,
+      "rescap_Mechaniker_101": 1,
+      "rescap_Mechaniker_118": 1,
+      "rescap_Mechaniker_126": 1,
+      "rescap_Mechaniker_143": 1,
+      "rescap_Mechaniker_100": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "x_14_1_100",
+      "x_14_1_101",
+      "x_14_1_102",
+      "x_14_1_103"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "x_14_1_104",
+          "x_14_1_105",
+          "x_14_1_106",
+          "x_14_1_107",
+          "x_14_1_108",
+          "x_14_1_125",
+          "x_14_1_126",
+          "x_14_1_127",
+          "x_14_1_128",
+          "x_14_1_129",
+          "x_14_1_130",
+          "x_14_1_131",
+          "x_14_1_132",
+          "x_14_1_133"
+        ],
+        "constraints": [
+          "completion_14",
+          "jobexec_14",
+          "rescap_Mechaniker_104",
+          "rescap_Mechaniker_105",
+          "rescap_Mechaniker_106",
+          "rescap_Mechaniker_107",
+          "rescap_Mechaniker_108",
+          "rescap_Mechaniker_109",
+          "rescap_Mechaniker_110",
+          "rescap_Mechaniker_111",
+          "rescap_Mechaniker_112",
+          "rescap_Mechaniker_113",
+          "rescap_Mechaniker_114",
+          "rescap_Mechaniker_115",
+          "rescap_Mechaniker_116",
+          "rescap_Mechaniker_117",
+          "rescap_Mechaniker_118",
+          "rescap_Mechaniker_126",
+          "rescap_Mechaniker_127",
+          "rescap_Mechaniker_128",
+          "rescap_Mechaniker_129",
+          "rescap_Mechaniker_130",
+          "rescap_Mechaniker_131",
+          "rescap_Mechaniker_132",
+          "rescap_Mechaniker_133",
+          "rescap_Mechaniker_134",
+          "rescap_Mechaniker_135",
+          "rescap_Mechaniker_136",
+          "rescap_Mechaniker_137",
+          "rescap_Mechaniker_138",
+          "rescap_Mechaniker_139",
+          "rescap_Mechaniker_140",
+          "rescap_Mechaniker_141",
+          "rescap_Mechaniker_142",
+          "rescap_Mechaniker_143",
+          "start_14"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+
+Gurobi 12.0.3 (mac64[arm], gurobi_cl) logging started Thu Jul 16 13:40:05 2026
+
+Set parameter Username
+Set parameter LicenseID to value 2828204
+Set parameter TimeLimit to value 3
+Set parameter LogFile to value "data/processed/50v-10_ds/50v-10_ds.check.log"
+Using license file /Users/ghost/gurobi.lic
+
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 24.6.0 24G517)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read MPS format model from file data/processed/50v-10_ds/50v-10_ds.mps
+Reading time = 0.00 seconds
+50v-10_ds: 3 rows, 18 columns, 18 nonzeros
+
+Using Gurobi shared library /Library/gurobi1203/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M4
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Non-default parameters:
+TimeLimit  3
+
+Optimize a model with 3 rows, 18 columns and 18 nonzeros
+Model fingerprint: 0x2d9a479f
+Variable types: 0 continuous, 18 integer (18 binary)
+Coefficient statistics:
+  Matrix range     [6e+00, 1e+02]
+  Objective range  [2e+03, 3e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 10 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
