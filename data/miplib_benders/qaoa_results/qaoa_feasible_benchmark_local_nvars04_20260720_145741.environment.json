@@ -1,0 +1,17 @@
+{
+  "platform": "macOS-15.7.4-arm64-arm-64bit-Mach-O",
+  "python": "3.13.7",
+  "cpu_count_logical": 10,
+  "cpu_count_physical": 10,
+  "memory_total_gb": 16.0,
+  "python_executable": "/Users/ghost/Downloads/MIP-quantum/.venv-bench/bin/python3",
+  "gurobi_cl": "/usr/local/bin/gurobi_cl",
+  "cplex": "",
+  "scip": "/opt/homebrew/bin/scip",
+  "python_module_numpy": true,
+  "python_module_scipy": true,
+  "python_module_qutip": true,
+  "python_module_sympy": true,
+  "python_module_psutil": true,
+  "nvidia_smi": []
+}

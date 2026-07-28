@@ -21,6 +21,9 @@ data/miplib_benders/
     nvars_04/*.json
     ...
     nvars_10/*.json
+  qaoa_results/
+    *_qaoa.csv
+    qaoa_results_merged_*.csv
   docs/
     benchmark_protocol.md
 ```
@@ -56,6 +59,12 @@ and writes:
 
 ```text
 data/miplib_benders/qaoa_problems
+```
+
+Benchmark result CSVs are stored under:
+
+```text
+data/miplib_benders/qaoa_results
 ```
 
 ## Current Export
