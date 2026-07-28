@@ -11,6 +11,13 @@ Host: xixilabH100
 Path: /home/zhenyusen/Choco-Q-main/data/miplib_benders/chocoq_results
 ```
 
+The run scripts used on H100 are archived in:
+
+```text
+Choco-Q-main/tools/run_chocoq_miplib_binary_batch.py
+Choco-Q-main/tools/run_chocoq_miplib_binary_smoke.py
+```
+
 ## Files
 
 ```text
