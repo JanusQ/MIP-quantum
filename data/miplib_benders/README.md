@@ -24,6 +24,9 @@ data/miplib_benders/
   qaoa_results/
     *_qaoa.csv
     qaoa_results_merged_*.csv
+  chocoq_results/
+    chocoq_cpu_3bit_*.csv
+    *.log
   docs/
     benchmark_protocol.md
 ```
