@@ -1,0 +1,221 @@
+{
+  "source_instance": "hypothyroid-k1",
+  "downsampled_instance": "hypothyroid-k1_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "X_INTRODUCED_9876_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9872_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9866_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9868_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9850_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9918_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9852_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9856_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9858_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9860_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9870_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9917_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9854_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9912_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9910_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9874_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9864_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9862_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 262143,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "p_lin_1000": 1,
+      "p_lin_1001": 1,
+      "p_lin_1006": 1,
+      "p_lin_1007": 1,
+      "p_lin_1012": 1,
+      "p_lin_1013": 1,
+      "p_lin_1014": 1,
+      "p_lin_1015": 1,
+      "p_lin_1022": 1,
+      "p_lin_1023": 1,
+      "p_lin_1024": 1,
+      "p_lin_1025": 1,
+      "p_lin_1026": 1,
+      "p_lin_1027": 1,
+      "p_lin_1028": 1,
+      "p_lin_1029": 1,
+      "p_lin_1030": 1,
+      "p_lin_1031": 1,
+      "p_lin_1032": 1,
+      "p_lin_1033": 1,
+      "p_lin_1034": 1,
+      "p_lin_1035": 1,
+      "p_lin_1036": 1,
+      "p_lin_1037": 1,
+      "p_lin_1038": 1,
+      "p_lin_1039": 1,
+      "p_lin_1046": 1,
+      "p_lin_1047": 1,
+      "p_lin_1054": 1,
+      "p_lin_1055": 1,
+      "p_lin_1056": 1,
+      "p_lin_1057": 1,
+      "p_lin_1062": 1,
+      "p_lin_1063": 1,
+      "p_lin_1064": 1,
+      "p_lin_1065": 1,
+      "p_lin_1066": 1,
+      "p_lin_1067": 1,
+      "p_lin_1068": 1,
+      "p_lin_1069": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "X_INTRODUCED_9850_",
+      "X_INTRODUCED_9852_",
+      "X_INTRODUCED_9854_",
+      "X_INTRODUCED_9856_"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "X_INTRODUCED_9858_",
+          "X_INTRODUCED_9860_",
+          "X_INTRODUCED_9862_",
+          "X_INTRODUCED_9864_",
+          "X_INTRODUCED_9866_",
+          "X_INTRODUCED_9868_",
+          "X_INTRODUCED_9870_",
+          "X_INTRODUCED_9872_",
+          "X_INTRODUCED_9874_",
+          "X_INTRODUCED_9876_",
+          "X_INTRODUCED_9910_",
+          "X_INTRODUCED_9912_",
+          "X_INTRODUCED_9917_",
+          "X_INTRODUCED_9918_"
+        ],
+        "constraints": [
+          "p_lin_1000",
+          "p_lin_1001",
+          "p_lin_1006",
+          "p_lin_1007",
+          "p_lin_1012",
+          "p_lin_1013",
+          "p_lin_1014",
+          "p_lin_1015",
+          "p_lin_1022",
+          "p_lin_1023",
+          "p_lin_1024",
+          "p_lin_1025",
+          "p_lin_1026",
+          "p_lin_1027",
+          "p_lin_1028",
+          "p_lin_1029",
+          "p_lin_1030",
+          "p_lin_1031",
+          "p_lin_1032",
+          "p_lin_1033",
+          "p_lin_1034",
+          "p_lin_1035",
+          "p_lin_1036",
+          "p_lin_1037",
+          "p_lin_1038",
+          "p_lin_1039",
+          "p_lin_1046",
+          "p_lin_1047",
+          "p_lin_1054",
+          "p_lin_1055",
+          "p_lin_1056",
+          "p_lin_1057",
+          "p_lin_1062",
+          "p_lin_1063",
+          "p_lin_1064",
+          "p_lin_1065",
+          "p_lin_1066",
+          "p_lin_1067",
+          "p_lin_1068",
+          "p_lin_1069"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "name": "highschool1-aigio_ds_qaoa_spreadEventsUB_SpreadEvents1_108_Mo_spreadEventsUB_SpreadEvents1_108_Th_subeventsNotActive_108_1_1_0002",
+  "source_mps": "highschool1-aigio_ds",
+  "decomposition": "benders",
+  "benders_subproblem_id": 0,
+  "benders_subproblem_variables": [
+    "y(108#1#1,Mo_4)",
+    "y(108#1#1,Mo_5)",
+    "y(108#1#1,Mo_6)",
+    "y(108#1#1,Th_4)",
+    "y(108#1#1,Th_5)",
+    "y(108#1#1,Th_6)",
+    "y(108#1#2,Fr_5)",
+    "y(108#1#2,Fr_6)",
+    "y(108#1#2,Mo_4)",
+    "y(108#1#2,Mo_5)",
+    "y(108#1#2,Mo_6)",
+    "y(108#1#2,Th_4)",
+    "y(108#1#2,Th_5)",
+    "y(108#1#2,Th_6)"
+  ],
+  "benders_subproblem_constraints": [
+    "assignTimes(AssignTimes,108)",
+    "linkYQCut(C2_ARXA_GGA,Fr_5)",
+    "linkYQCut(C2_ARXA_GGA,Fr_6)",
+    "linkYQCut(C2_ARXA_GGA,Mo_4)",
+    "linkYQCut(C2_ARXA_GGA,Mo_5)",
+    "linkYQCut(C2_ARXA_GGA,Mo_6)",
+    "linkYQCut(C2_ARXA_GGA,Th_4)",
+    "linkYQCut(C2_ARXA_GGA,Th_5)",
+    "linkYQCut(C2_ARXA_GGA,Th_6)",
+    "linkYQCut(C2_ARXA_GGB,Fr_5)",
+    "linkYQCut(C2_ARXA_GGB,Fr_6)",
+    "linkYQCut(C2_ARXA_GGB,Mo_4)",
+    "linkYQCut(C2_ARXA_GGB,Mo_5)",
+    "linkYQCut(C2_ARXA_GGB,Mo_6)",
+    "linkYQCut(C2_ARXA_GGB,Th_4)",
+    "linkYQCut(C2_ARXA_GGB,Th_5)",
+    "linkYQCut(C2_ARXA_GGB,Th_6)",
+    "linkYQCut(C2_PROX_GGA,Fr_5)",
+    "linkYQCut(C2_PROX_GGA,Fr_6)",
+    "linkYQCut(C2_PROX_GGA,Mo_4)",
+    "linkYQCut(C2_PROX_GGA,Mo_5)",
+    "linkYQCut(C2_PROX_GGA,Mo_6)",
+    "linkYQCut(C2_PROX_GGA,Th_4)",
+    "linkYQCut(C2_PROX_GGA,Th_5)",
+    "linkYQCut(C2_PROX_GGA,Th_6)",
+    "linkYU(108#1#1)",
+    "linkYU(108#1#2)",
+    "preferTimes(PreferTimesConstraint_T16,108)",
+    "spreadEventsLB(SpreadEvents1,108,Fr)",
+    "spreadEventsLB(SpreadEvents1,108,Mo)",
+    "spreadEventsLB(SpreadEvents1,108,Th)",
+    "spreadEventsUB(SpreadEvents1,108,Fr)",
+    "spreadEventsUB(SpreadEvents1,108,Mo)",
+    "spreadEventsUB(SpreadEvents1,108,Th)",
+    "subeventsNotActive(108#1#1)",
+    "subeventsNotActive(108#1#2)"
+  ],
+  "source_rows": [
+    {
+      "name": "spreadEventsUB(SpreadEvents1,108,Mo)",
+      "sense": "L"
+    },
+    {
+      "name": "spreadEventsUB(SpreadEvents1,108,Th)",
+      "sense": "L"
+    },
+    {
+      "name": "subeventsNotActive(108#1#1)",
+      "sense": "G"
+    }
+  ],
+  "variables": [
+    "y(108#1#1,Mo_5)",
+    "y(108#1#1,Mo_6)",
+    "y(108#1#1,Th_4)",
+    "y(108#1#1,Th_5)",
+    "y(108#1#1,Th_6)",
+    "y(108#1#2,Mo_4)",
+    "y(108#1#2,Mo_5)",
+    "row_slack_spreadEventsUB_SpreadEvents1_108_Mo",
+    "row_slack_spreadEventsUB_SpreadEvents1_108_Th",
+    "row_slack_subeventsNotActive_108_1_1"
+  ],
+  "A": [
+    [
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "b": [
+    1,
+    1,
+    0
+  ],
+  "c": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    0,
+    0,
+    0
+  ],
+  "N": 8,
+  "variable_bounds": {
+    "y(108#1#1,Mo_5)": {
+      "lb": 0,
+      "ub": 7
+    },
+    "y(108#1#1,Mo_6)": {
+      "lb": 0,
+      "ub": 7
+    },
+    "y(108#1#1,Th_4)": {
+      "lb": 0,
+      "ub": 7
+    },
+    "y(108#1#1,Th_5)": {
+      "lb": 0,
+      "ub": 7
+    },
+    "y(108#1#1,Th_6)": {
+      "lb": 0,
+      "ub": 7
+    },
+    "y(108#1#2,Mo_4)": {
+      "lb": 0,
+      "ub": 7
+    },
+    "y(108#1#2,Mo_5)": {
+      "lb": 0,
+      "ub": 7
+    },
+    "row_slack_spreadEventsUB_SpreadEvents1_108_Mo": {
+      "lb": 0,
+      "ub": 7
+    },
+    "row_slack_spreadEventsUB_SpreadEvents1_108_Th": {
+      "lb": 0,
+      "ub": 7
+    },
+    "row_slack_subeventsNotActive_108_1_1": {
+      "lb": 0,
+      "ub": 7
+    }
+  },
+  "encoding": "Exported benchmark variables are normalized experimental variables with domain 0..N-1. Coefficients and row provenance come from the source MIP row.",
+  "candidate_state_space_size": 1073741824,
+  "feasible_states_in_qaoa_truncation": 20,
+  "feasible_state_count_exact": true,
+  "adapter": "strict Benders subproblem export; variables and source rows are selected only from one benders_blocks.subproblems entry; exported variables use domain 0..N-1; <=/>= rows use one nonnegative row slack each",
+  "slack_variables": [
+    {
+      "name": "row_slack_spreadEventsUB_SpreadEvents1_108_Mo",
+      "source_row": "spreadEventsUB(SpreadEvents1,108,Mo)",
+      "type": "row_slack_for_le"
+    },
+    {
+      "name": "row_slack_spreadEventsUB_SpreadEvents1_108_Th",
+      "source_row": "spreadEventsUB(SpreadEvents1,108,Th)",
+      "type": "row_slack_for_le"
+    },
+    {
+      "name": "row_slack_subeventsNotActive_108_1_1",
+      "source_row": "subeventsNotActive(108#1#1)",
+      "type": "row_slack_for_ge"
+    }
+  ]
+}

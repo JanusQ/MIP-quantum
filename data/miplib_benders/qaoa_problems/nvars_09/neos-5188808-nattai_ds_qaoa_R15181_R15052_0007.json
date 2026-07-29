@@ -1,0 +1,175 @@
+{
+  "name": "neos-5188808-nattai_ds_qaoa_R15181_R15052_0007",
+  "source_mps": "neos-5188808-nattai_ds",
+  "decomposition": "benders",
+  "benders_subproblem_id": 0,
+  "benders_subproblem_variables": [
+    "C14298",
+    "C14299",
+    "C14301",
+    "C14302",
+    "C14303",
+    "C14304",
+    "C14305",
+    "C14306",
+    "C14308",
+    "C14309",
+    "C14310",
+    "C14311",
+    "C14312",
+    "C14313"
+  ],
+  "benders_subproblem_constraints": [
+    "R15052",
+    "R15179",
+    "R15180",
+    "R15181",
+    "R17573",
+    "R17574",
+    "R17575",
+    "R17576",
+    "R17577",
+    "R17578",
+    "R17579",
+    "R17580",
+    "R17581",
+    "R17582",
+    "R17583",
+    "R17584",
+    "R17585",
+    "R17586",
+    "R17587",
+    "R17588",
+    "R17589",
+    "R17590",
+    "R17591",
+    "R17592",
+    "R17593",
+    "R17594",
+    "R17595",
+    "R17596",
+    "R17597",
+    "R17598",
+    "R17599",
+    "R17600",
+    "R17601",
+    "R17602",
+    "R17603",
+    "R17604",
+    "R17605",
+    "R17606",
+    "R17607",
+    "R17608"
+  ],
+  "source_rows": [
+    {
+      "name": "R15181",
+      "sense": "E"
+    },
+    {
+      "name": "R15052",
+      "sense": "L"
+    }
+  ],
+  "variables": [
+    "C14305",
+    "C14306",
+    "C14308",
+    "C14309",
+    "C14310",
+    "C14311",
+    "C14312",
+    "C14313",
+    "row_slack_R15052"
+  ],
+  "A": [
+    [
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      9,
+      9,
+      -27,
+      27,
+      60,
+      82,
+      94,
+      100,
+      1
+    ]
+  ],
+  "b": [
+    1,
+    221
+  ],
+  "c": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    0
+  ],
+  "N": 8,
+  "variable_bounds": {
+    "C14305": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C14306": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C14308": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C14309": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C14310": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C14311": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C14312": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C14313": {
+      "lb": 0,
+      "ub": 7
+    },
+    "row_slack_R15052": {
+      "lb": 0,
+      "ub": 7
+    }
+  },
+  "encoding": "Exported benchmark variables are normalized experimental variables with domain 0..N-1. Coefficients and row provenance come from the source MIP row.",
+  "candidate_state_space_size": 134217728,
+  "feasible_states_in_qaoa_truncation": 3,
+  "feasible_state_count_exact": true,
+  "adapter": "strict Benders subproblem export; variables and source rows are selected only from one benders_blocks.subproblems entry; exported variables use domain 0..N-1; <=/>= rows use one nonnegative row slack each",
+  "slack_variables": [
+    {
+      "name": "row_slack_R15052",
+      "source_row": "R15052",
+      "type": "row_slack_for_le"
+    }
+  ]
+}

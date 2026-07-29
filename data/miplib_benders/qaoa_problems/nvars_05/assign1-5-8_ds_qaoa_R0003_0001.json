@@ -1,0 +1,117 @@
+{
+  "name": "assign1-5-8_ds_qaoa_R0003_0001",
+  "source_mps": "assign1-5-8_ds",
+  "decomposition": "benders",
+  "benders_subproblem_id": 0,
+  "benders_subproblem_variables": [
+    "C0029",
+    "C0030",
+    "C0031",
+    "C0033",
+    "C0034",
+    "C0035",
+    "C0036",
+    "C0038",
+    "C0039",
+    "C0040",
+    "C0041",
+    "C0053",
+    "C0054"
+  ],
+  "benders_subproblem_constraints": [
+    "R0002",
+    "R0003",
+    "R0007",
+    "R0008",
+    "R0012",
+    "R0013",
+    "R0017",
+    "R0018",
+    "R0022",
+    "R0023",
+    "R0027",
+    "R0028",
+    "R0032",
+    "R0033",
+    "R0037",
+    "R0038",
+    "R0042",
+    "R0043",
+    "R0047",
+    "R0048",
+    "R0052",
+    "R0053",
+    "R0057",
+    "R0058",
+    "R0131",
+    "R0132",
+    "R0133"
+  ],
+  "source_rows": [
+    {
+      "name": "R0003",
+      "sense": "G"
+    }
+  ],
+  "variables": [
+    "C0029",
+    "C0034",
+    "C0039",
+    "C0054",
+    "row_slack_R0003"
+  ],
+  "A": [
+    [
+      5,
+      2,
+      2,
+      3,
+      1
+    ]
+  ],
+  "b": [
+    5
+  ],
+  "c": [
+    1,
+    2,
+    3,
+    4,
+    0
+  ],
+  "N": 8,
+  "variable_bounds": {
+    "C0029": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0034": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0039": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C0054": {
+      "lb": 0,
+      "ub": 7
+    },
+    "row_slack_R0003": {
+      "lb": 0,
+      "ub": 7
+    }
+  },
+  "encoding": "Exported benchmark variables are normalized experimental variables with domain 0..N-1. Coefficients and row provenance come from the source MIP row.",
+  "candidate_state_space_size": 32768,
+  "feasible_states_in_qaoa_truncation": 10,
+  "feasible_state_count_exact": true,
+  "adapter": "strict Benders subproblem export; variables and source rows are selected only from one benders_blocks.subproblems entry; exported variables use domain 0..N-1; <=/>= rows use one nonnegative row slack each",
+  "slack_variables": [
+    {
+      "name": "row_slack_R0003",
+      "source_row": "R0003",
+      "type": "row_slack_for_ge"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "name": "neos-4647030-tutaki_ds_qaoa_R7864_0001",
+  "source_mps": "neos-4647030-tutaki_ds",
+  "decomposition": "benders",
+  "benders_subproblem_id": 1,
+  "benders_subproblem_variables": [
+    "C10006",
+    "C10007",
+    "C10008",
+    "C10009",
+    "C10010"
+  ],
+  "benders_subproblem_constraints": [
+    "R5064",
+    "R6464",
+    "R7864"
+  ],
+  "source_rows": [
+    {
+      "name": "R7864",
+      "sense": "L"
+    }
+  ],
+  "variables": [
+    "C10006",
+    "C10007",
+    "C10008",
+    "C10009",
+    "C10010",
+    "row_slack_R7864"
+  ],
+  "A": [
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "b": [
+    1
+  ],
+  "c": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    0
+  ],
+  "N": 8,
+  "variable_bounds": {
+    "C10006": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C10007": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C10008": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C10009": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C10010": {
+      "lb": 0,
+      "ub": 7
+    },
+    "row_slack_R7864": {
+      "lb": 0,
+      "ub": 7
+    }
+  },
+  "encoding": "Exported benchmark variables are normalized experimental variables with domain 0..N-1. Coefficients and row provenance come from the source MIP row.",
+  "candidate_state_space_size": 262144,
+  "feasible_states_in_qaoa_truncation": 6,
+  "feasible_state_count_exact": true,
+  "adapter": "strict Benders subproblem export; variables and source rows are selected only from one benders_blocks.subproblems entry; exported variables use domain 0..N-1; <=/>= rows use one nonnegative row slack each",
+  "slack_variables": [
+    {
+      "name": "row_slack_R7864",
+      "source_row": "R7864",
+      "type": "row_slack_for_le"
+    }
+  ]
+}

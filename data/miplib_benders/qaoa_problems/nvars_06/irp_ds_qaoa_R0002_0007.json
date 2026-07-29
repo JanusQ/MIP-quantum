@@ -1,0 +1,103 @@
+{
+  "name": "irp_ds_qaoa_R0002_0007",
+  "source_mps": "irp_ds",
+  "decomposition": "benders",
+  "benders_subproblem_id": 0,
+  "benders_subproblem_variables": [
+    "C16904",
+    "C16905",
+    "C16906",
+    "C16908",
+    "C16909",
+    "C16910",
+    "C16911",
+    "C16912",
+    "C16913",
+    "C16915",
+    "C16916",
+    "C16917",
+    "C16918",
+    "C16919"
+  ],
+  "benders_subproblem_constraints": [
+    "R0002",
+    "R0003",
+    "R0007",
+    "R0010",
+    "R0015",
+    "R0020",
+    "R0026",
+    "R0030",
+    "R0032",
+    "R0033",
+    "R0037",
+    "R0039"
+  ],
+  "source_rows": [
+    {
+      "name": "R0002",
+      "sense": "E"
+    }
+  ],
+  "variables": [
+    "C16911",
+    "C16912",
+    "C16913",
+    "C16915",
+    "C16916",
+    "C16917"
+  ],
+  "A": [
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "b": [
+    1
+  ],
+  "c": [
+    6340890000,
+    5861380000,
+    5813350000,
+    5989160000,
+    5886900000,
+    6280850000
+  ],
+  "N": 8,
+  "variable_bounds": {
+    "C16911": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C16912": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C16913": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C16915": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C16916": {
+      "lb": 0,
+      "ub": 7
+    },
+    "C16917": {
+      "lb": 0,
+      "ub": 7
+    }
+  },
+  "encoding": "Exported benchmark variables are normalized experimental variables with domain 0..N-1. Coefficients and row provenance come from the source MIP row.",
+  "candidate_state_space_size": 262144,
+  "feasible_states_in_qaoa_truncation": 6,
+  "feasible_state_count_exact": true,
+  "adapter": "strict Benders subproblem export; variables and source rows are selected only from one benders_blocks.subproblems entry; exported variables use domain 0..N-1; <=/>= rows use one nonnegative row slack each"
+}

@@ -1,0 +1,203 @@
+{
+  "source_instance": "cryptanalysiskb128n5obj16",
+  "downsampled_instance": "cryptanalysiskb128n5obj16_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 35,
+  "n_binary": 0,
+  "n_integer": 18,
+  "variable_bounds": {
+    "X_INTRODUCED_2644_": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "X_INTRODUCED_2645_": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "X_INTRODUCED_2646_": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "X_INTRODUCED_2647_": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "X_INTRODUCED_2648_": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "X_INTRODUCED_2649_": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "X_INTRODUCED_2650_": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "X_INTRODUCED_2651_": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "X_INTRODUCED_2652_": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "X_INTRODUCED_2653_": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "X_INTRODUCED_2654_": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "X_INTRODUCED_2655_": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "X_INTRODUCED_2656_": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "X_INTRODUCED_2657_": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "X_INTRODUCED_2658_": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "X_INTRODUCED_2659_": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "X_INTRODUCED_2660_": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    },
+    "X_INTRODUCED_2661_": {
+      "lb": 0,
+      "ub": 4,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 3814697265625,
+  "number_of_feasible_states": null,
+  "feasible_state_count_exact": false,
+  "integerization": {
+    "row_scales": {
+      "p_lin_0": 1,
+      "p_lin_12": 1,
+      "p_lin_15": 1,
+      "p_lin_18": 1,
+      "p_lin_21": 1,
+      "p_lin_24": 1,
+      "p_lin_27": 1,
+      "p_lin_3": 1,
+      "p_lin_30": 1,
+      "p_lin_33": 1,
+      "p_lin_36": 1,
+      "p_lin_39": 1,
+      "p_lin_42": 1,
+      "p_lin_45": 1,
+      "p_lin_48": 1,
+      "p_lin_51": 1,
+      "p_lin_54": 1,
+      "p_lin_6": 1,
+      "p_lin_9": 1,
+      "p_lin_96961": 1,
+      "p_lin_96962": 1,
+      "p_lin_96963": 1,
+      "p_lin_96964": 1,
+      "p_lin_96965": 1,
+      "p_lin_96966": 1,
+      "p_lin_96967": 1,
+      "p_lin_96968": 1,
+      "p_lin_96969": 1,
+      "p_lin_96970": 1,
+      "p_lin_96971": 1,
+      "p_lin_96972": 1,
+      "p_lin_96973": 1,
+      "p_lin_96974": 1,
+      "p_lin_96975": 1,
+      "p_lin_96976": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "X_INTRODUCED_2644_",
+      "X_INTRODUCED_2645_",
+      "X_INTRODUCED_2646_",
+      "X_INTRODUCED_2647_"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "X_INTRODUCED_2648_",
+          "X_INTRODUCED_2649_",
+          "X_INTRODUCED_2650_",
+          "X_INTRODUCED_2651_",
+          "X_INTRODUCED_2652_",
+          "X_INTRODUCED_2653_",
+          "X_INTRODUCED_2654_",
+          "X_INTRODUCED_2655_",
+          "X_INTRODUCED_2656_",
+          "X_INTRODUCED_2657_",
+          "X_INTRODUCED_2658_",
+          "X_INTRODUCED_2659_",
+          "X_INTRODUCED_2660_",
+          "X_INTRODUCED_2661_"
+        ],
+        "constraints": [
+          "p_lin_0",
+          "p_lin_15",
+          "p_lin_18",
+          "p_lin_21",
+          "p_lin_24",
+          "p_lin_27",
+          "p_lin_30",
+          "p_lin_33",
+          "p_lin_36",
+          "p_lin_39",
+          "p_lin_42",
+          "p_lin_45",
+          "p_lin_48",
+          "p_lin_51",
+          "p_lin_54",
+          "p_lin_96965",
+          "p_lin_96966",
+          "p_lin_96967",
+          "p_lin_96968",
+          "p_lin_96969",
+          "p_lin_96970",
+          "p_lin_96971",
+          "p_lin_96972",
+          "p_lin_96973",
+          "p_lin_96974",
+          "p_lin_96975",
+          "p_lin_96976"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "source_instance": "neos8",
+  "downsampled_instance": "neos8_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "C0001": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0002": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0005": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0006": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0009": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0010": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0013": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0014": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0017": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0018": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0019": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0020": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0021": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0022": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0023": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0024": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0025": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C0026": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "R0001": 1,
+      "R0004": 1,
+      "R0065": 1,
+      "R0068": 1,
+      "R0002": 1,
+      "R0003": 1,
+      "R0066": 1,
+      "R0067": 1,
+      "R10000": 1,
+      "R10001": 1,
+      "R10002": 1,
+      "R10003": 1,
+      "R10004": 1,
+      "R10005": 1,
+      "R10006": 1,
+      "R10009": 1,
+      "R10010": 1,
+      "R10013": 1,
+      "R10014": 1,
+      "R10017": 1,
+      "R10021": 1,
+      "R10022": 1,
+      "R10025": 1,
+      "R10026": 1,
+      "R10027": 1,
+      "R10029": 1,
+      "R10030": 1,
+      "R10031": 1,
+      "R10032": 1,
+      "R10033": 1,
+      "R10034": 1,
+      "R10037": 1,
+      "R10038": 1,
+      "R10041": 1,
+      "R10042": 1,
+      "R10045": 1,
+      "R10049": 1,
+      "R10050": 1,
+      "R10053": 1,
+      "R10054": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "C0010",
+      "C0019",
+      "C0020",
+      "C0021"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "C0001",
+          "C0002",
+          "C0005",
+          "C0006",
+          "C0009",
+          "C0013",
+          "C0014",
+          "C0017",
+          "C0018",
+          "C0022",
+          "C0023",
+          "C0024",
+          "C0025",
+          "C0026"
+        ],
+        "constraints": [
+          "R0001",
+          "R0002",
+          "R0003",
+          "R0004",
+          "R0065",
+          "R0066",
+          "R0067",
+          "R0068",
+          "R10002",
+          "R10003",
+          "R10004",
+          "R10005",
+          "R10006",
+          "R10009",
+          "R10010",
+          "R10013",
+          "R10014",
+          "R10017",
+          "R10021",
+          "R10022",
+          "R10025",
+          "R10026",
+          "R10030",
+          "R10031",
+          "R10032",
+          "R10033",
+          "R10034",
+          "R10037",
+          "R10038",
+          "R10041",
+          "R10042",
+          "R10045",
+          "R10049",
+          "R10050",
+          "R10053",
+          "R10054"
+        ]
+      }
+    ]
+  }
+}

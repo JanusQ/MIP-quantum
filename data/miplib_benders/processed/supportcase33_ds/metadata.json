@@ -1,0 +1,229 @@
+{
+  "source_instance": "supportcase33",
+  "downsampled_instance": "supportcase33_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "yc39": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "yc21": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "yc34": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x[c27(1),c0(0),0]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x[c27(1),c0(0),1]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x[c27(1),c1(0),0]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x[c27(1),c1(0),1]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x[c27(1),c10(0),0]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x[c27(1),c10(0),1]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x[c27(1),c11(0),0]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x[c27(1),c11(0),1]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x[c27(1),c12(0),0]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x[c27(1),c12(0),1]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x[c27(1),c13(0),0]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x[c27(1),c13(0),1]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x[c27(1),c14(0),0]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x[c27(1),c14(0),1]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x[c27(1),c15(0),0]": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "capConstr:c27": 1,
+      "delivOnlyOnce:c27(1)": 1,
+      "delivOrder:c27(0)": 1,
+      "delivOrder:c27(1)": 1,
+      "noOverlapCust:c27(0)": 1,
+      "releaseTime:c27(1)": 1,
+      "timeLag:c27(0)": 1,
+      "flowPreserv:c27(1),k0": 1,
+      "flowPreserv:c27(1),k1": 1,
+      "incompatible:c21,c39": 1,
+      "noPartialDeliveries:c0": 1,
+      "noPartialDeliveries:c1": 1,
+      "noPartialDeliveries:c10": 1,
+      "noPartialDeliveries:c11": 1,
+      "noPartialDeliveries:c12": 1,
+      "noPartialDeliveries:c13": 1,
+      "noPartialDeliveries:c14": 1,
+      "capConstr:c21": 1,
+      "capConstr:c34": 1,
+      "capConstr:c39": 1,
+      "deadline:c21(0)": 1,
+      "deadline:c21(1)": 1,
+      "deadline:c34(0)": 1,
+      "deadline:c34(1)": 1,
+      "deadline:c34(2)": 1,
+      "deadline:c39(0)": 1,
+      "deadline:c39(1)": 1,
+      "deadline:c39(2)": 1,
+      "flowPreserv:c0(0),k0": 1,
+      "flowPreserv:c0(0),k1": 1,
+      "flowPreserv:c1(0),k0": 1,
+      "flowPreserv:c1(0),k1": 1,
+      "flowPreserv:c10(0),k0": 1,
+      "flowPreserv:c10(0),k1": 1,
+      "flowPreserv:c11(0),k0": 1,
+      "flowPreserv:c11(0),k1": 1,
+      "flowPreserv:c12(0),k0": 1,
+      "flowPreserv:c12(0),k1": 1,
+      "flowPreserv:c13(0),k0": 1,
+      "flowPreserv:c13(0),k1": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "x[c27(1),c0(0),0]",
+      "x[c27(1),c0(0),1]",
+      "x[c27(1),c1(0),0]",
+      "x[c27(1),c1(0),1]"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "x[c27(1),c10(0),0]",
+          "x[c27(1),c10(0),1]",
+          "x[c27(1),c11(0),0]",
+          "x[c27(1),c11(0),1]",
+          "x[c27(1),c12(0),0]",
+          "x[c27(1),c12(0),1]",
+          "x[c27(1),c13(0),0]",
+          "x[c27(1),c13(0),1]",
+          "x[c27(1),c14(0),0]",
+          "x[c27(1),c14(0),1]",
+          "x[c27(1),c15(0),0]"
+        ],
+        "constraints": [
+          "capConstr:c27",
+          "delivOnlyOnce:c27(1)",
+          "delivOrder:c27(0)",
+          "delivOrder:c27(1)",
+          "flowPreserv:c10(0),k0",
+          "flowPreserv:c10(0),k1",
+          "flowPreserv:c11(0),k0",
+          "flowPreserv:c11(0),k1",
+          "flowPreserv:c12(0),k0",
+          "flowPreserv:c12(0),k1",
+          "flowPreserv:c13(0),k0",
+          "flowPreserv:c13(0),k1",
+          "flowPreserv:c27(1),k0",
+          "flowPreserv:c27(1),k1",
+          "noOverlapCust:c27(0)",
+          "noPartialDeliveries:c10",
+          "noPartialDeliveries:c11",
+          "noPartialDeliveries:c12",
+          "noPartialDeliveries:c13",
+          "noPartialDeliveries:c14",
+          "releaseTime:c27(1)",
+          "timeLag:c27(0)"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "yc21",
+          "yc39"
+        ],
+        "constraints": [
+          "capConstr:c21",
+          "capConstr:c39",
+          "deadline:c21(0)",
+          "deadline:c21(1)",
+          "deadline:c39(0)",
+          "deadline:c39(1)",
+          "deadline:c39(2)",
+          "incompatible:c21,c39"
+        ]
+      },
+      {
+        "id": 2,
+        "variables": [
+          "yc34"
+        ],
+        "constraints": [
+          "capConstr:c34",
+          "deadline:c34(0)",
+          "deadline:c34(1)",
+          "deadline:c34(2)"
+        ]
+      }
+    ]
+  }
+}

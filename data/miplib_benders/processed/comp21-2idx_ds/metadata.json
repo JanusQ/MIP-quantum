@@ -1,0 +1,264 @@
+{
+  "source_instance": "comp21-2idx",
+  "downsampled_instance": "comp21-2idx_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 18,
+  "n_binary": 0,
+  "n_integer": 18,
+  "variable_bounds": {
+    "DaysBelowVioc0519": {
+      "lb": 0,
+      "ub": 3,
+      "type": "I"
+    },
+    "DaysBelowVioc0935": {
+      "lb": 0,
+      "ub": 3,
+      "type": "I"
+    },
+    "DaysBelowVioc0006": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "DaysBelowVioc0011": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "DaysBelowVioc0018": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "DaysBelowVioc0026": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "DaysBelowVioc0027": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "DaysBelowVioc0028": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "DaysBelowVioc0041": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "DaysBelowVioc0046": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "DaysBelowVioc0049": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "DaysBelowVioc0051": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "DaysBelowVioc0059": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "DaysBelowVioc0064": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "DaysBelowVioc0065": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "DaysBelowVioc0073": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "DaysBelowVioc0085": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "DaysBelowVioc0091": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 688747536,
+  "number_of_feasible_states": null,
+  "feasible_state_count_exact": false,
+  "integerization": {
+    "row_scales": {
+      "MinimumDaysBelowc0006": 1,
+      "MinimumDaysBelowc0011": 1,
+      "MinimumDaysBelowc0018": 1,
+      "MinimumDaysBelowc0026": 1,
+      "MinimumDaysBelowc0027": 1,
+      "MinimumDaysBelowc0028": 1,
+      "MinimumDaysBelowc0041": 1,
+      "MinimumDaysBelowc0046": 1,
+      "MinimumDaysBelowc0049": 1,
+      "MinimumDaysBelowc0051": 1,
+      "MinimumDaysBelowc0059": 1,
+      "MinimumDaysBelowc0064": 1,
+      "MinimumDaysBelowc0065": 1,
+      "MinimumDaysBelowc0073": 1,
+      "MinimumDaysBelowc0085": 1,
+      "MinimumDaysBelowc0091": 1,
+      "MinimumDaysBelowc0519": 1,
+      "MinimumDaysBelowc0935": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "DaysBelowVioc0006",
+      "DaysBelowVioc0011",
+      "DaysBelowVioc0018",
+      "DaysBelowVioc0026"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "DaysBelowVioc0027"
+        ],
+        "constraints": [
+          "MinimumDaysBelowc0027"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "DaysBelowVioc0028"
+        ],
+        "constraints": [
+          "MinimumDaysBelowc0028"
+        ]
+      },
+      {
+        "id": 2,
+        "variables": [
+          "DaysBelowVioc0041"
+        ],
+        "constraints": [
+          "MinimumDaysBelowc0041"
+        ]
+      },
+      {
+        "id": 3,
+        "variables": [
+          "DaysBelowVioc0046"
+        ],
+        "constraints": [
+          "MinimumDaysBelowc0046"
+        ]
+      },
+      {
+        "id": 4,
+        "variables": [
+          "DaysBelowVioc0049"
+        ],
+        "constraints": [
+          "MinimumDaysBelowc0049"
+        ]
+      },
+      {
+        "id": 5,
+        "variables": [
+          "DaysBelowVioc0051"
+        ],
+        "constraints": [
+          "MinimumDaysBelowc0051"
+        ]
+      },
+      {
+        "id": 6,
+        "variables": [
+          "DaysBelowVioc0059"
+        ],
+        "constraints": [
+          "MinimumDaysBelowc0059"
+        ]
+      },
+      {
+        "id": 7,
+        "variables": [
+          "DaysBelowVioc0064"
+        ],
+        "constraints": [
+          "MinimumDaysBelowc0064"
+        ]
+      },
+      {
+        "id": 8,
+        "variables": [
+          "DaysBelowVioc0065"
+        ],
+        "constraints": [
+          "MinimumDaysBelowc0065"
+        ]
+      },
+      {
+        "id": 9,
+        "variables": [
+          "DaysBelowVioc0073"
+        ],
+        "constraints": [
+          "MinimumDaysBelowc0073"
+        ]
+      },
+      {
+        "id": 10,
+        "variables": [
+          "DaysBelowVioc0085"
+        ],
+        "constraints": [
+          "MinimumDaysBelowc0085"
+        ]
+      },
+      {
+        "id": 11,
+        "variables": [
+          "DaysBelowVioc0091"
+        ],
+        "constraints": [
+          "MinimumDaysBelowc0091"
+        ]
+      },
+      {
+        "id": 12,
+        "variables": [
+          "DaysBelowVioc0519"
+        ],
+        "constraints": [
+          "MinimumDaysBelowc0519"
+        ]
+      },
+      {
+        "id": 13,
+        "variables": [
+          "DaysBelowVioc0935"
+        ],
+        "constraints": [
+          "MinimumDaysBelowc0935"
+        ]
+      }
+    ]
+  }
+}

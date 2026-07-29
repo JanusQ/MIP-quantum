@@ -1,0 +1,217 @@
+{
+  "source_instance": "reblock115",
+  "downsampled_instance": "reblock115_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "X_49_1": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_49_2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_49_3": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_49_4": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_49_5": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_49_6": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_49_7": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_49_8": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_49_0": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_80_1": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_80_2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_80_3": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_80_4": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_80_5": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_80_6": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_80_7": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_80_8": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_21_1": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "CAP_0_2": 1,
+      "CAP_1_2": 1,
+      "CAP_0_1": 1,
+      "CAP_0_3": 1,
+      "CAP_0_4": 1,
+      "CAP_0_5": 1,
+      "CAP_0_6": 1,
+      "CAP_0_7": 1,
+      "CAP_0_8": 1,
+      "CAP_1_1": 1,
+      "CAP_1_3": 1,
+      "CAP_1_4": 1,
+      "CAP_1_5": 1,
+      "CAP_1_6": 1,
+      "CAP_1_7": 1,
+      "CAP_1_8": 1,
+      "CAP_0_9": 1,
+      "CAP_1_9": 1,
+      "ORD_49_0": 1,
+      "ORD_49_1": 1,
+      "ORD_49_2": 1,
+      "ORD_49_3": 1,
+      "ORD_49_4": 1,
+      "ORD_49_5": 1,
+      "ORD_49_6": 1,
+      "ORD_49_7": 1,
+      "ORD_80_1": 1,
+      "ORD_80_2": 1,
+      "ORD_80_3": 1,
+      "ORD_80_4": 1,
+      "ORD_80_5": 1,
+      "ORD_80_6": 1,
+      "ORD_80_7": 1,
+      "CAP_0_0": 1,
+      "CAP_1_0": 1,
+      "ORD_21_0": 1,
+      "ORD_21_1": 1,
+      "ORD_49_8": 1,
+      "ORD_80_0": 1,
+      "ORD_80_8": 1
+    },
+    "objective_scale": 1000000,
+    "max_abs_approx_error": 4.4700573198497295e-07
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "X_21_1",
+      "X_49_1",
+      "X_49_2",
+      "X_49_3"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "X_49_0",
+          "X_49_4",
+          "X_49_5",
+          "X_49_6",
+          "X_49_7",
+          "X_49_8",
+          "X_80_1",
+          "X_80_2",
+          "X_80_3",
+          "X_80_4",
+          "X_80_5",
+          "X_80_6",
+          "X_80_7",
+          "X_80_8"
+        ],
+        "constraints": [
+          "CAP_0_0",
+          "CAP_0_1",
+          "CAP_0_2",
+          "CAP_0_3",
+          "CAP_0_4",
+          "CAP_0_5",
+          "CAP_0_6",
+          "CAP_0_7",
+          "CAP_0_8",
+          "CAP_0_9",
+          "CAP_1_0",
+          "CAP_1_1",
+          "CAP_1_2",
+          "CAP_1_3",
+          "CAP_1_4",
+          "CAP_1_5",
+          "CAP_1_6",
+          "CAP_1_7",
+          "CAP_1_8",
+          "CAP_1_9",
+          "ORD_49_0",
+          "ORD_49_3",
+          "ORD_49_4",
+          "ORD_49_5",
+          "ORD_49_6",
+          "ORD_49_7",
+          "ORD_49_8",
+          "ORD_80_0",
+          "ORD_80_1",
+          "ORD_80_2",
+          "ORD_80_3",
+          "ORD_80_4",
+          "ORD_80_5",
+          "ORD_80_6",
+          "ORD_80_7",
+          "ORD_80_8"
+        ]
+      }
+    ]
+  }
+}

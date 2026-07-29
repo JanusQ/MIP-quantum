@@ -1,0 +1,221 @@
+{
+  "source_instance": "roll3000",
+  "downsampled_instance": "roll3000_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 0,
+  "n_integer": 18,
+  "variable_bounds": {
+    "x269": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "x267": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "x268": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "x703": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "x499": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "x266": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "x375": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "x463": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "x702": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "x327": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "x498": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "x429": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "x462": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "x461": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "x265": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "x326": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "x373": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    },
+    "x374": {
+      "lb": 0,
+      "ub": 2,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 387420489,
+  "number_of_feasible_states": null,
+  "feasible_state_count_exact": false,
+  "integerization": {
+    "row_scales": {
+      "c5": 1,
+      "c1924": 1,
+      "c1925": 1,
+      "c1932": 1,
+      "c1933": 1,
+      "c1939": 1,
+      "c1940": 1,
+      "c1945": 1,
+      "c1946": 1,
+      "c1947": 1,
+      "c1953": 1,
+      "c1954": 1,
+      "c1955": 1,
+      "c1960": 1,
+      "c1961": 1,
+      "c1962": 1,
+      "c1967": 1,
+      "c1968": 1,
+      "c1969": 1,
+      "c1974": 1,
+      "c1975": 1,
+      "c1976": 1,
+      "c1980": 1,
+      "c1981": 1,
+      "c1982": 1,
+      "c1986": 1,
+      "c1987": 1,
+      "c1988": 1,
+      "c1992": 1,
+      "c1993": 1,
+      "c1998": 1,
+      "c1999": 1,
+      "c1938": 1,
+      "c1994": 1,
+      "c1959": 1,
+      "c2008": 1,
+      "c1844": 1,
+      "c1845": 1,
+      "c1852": 1,
+      "c1853": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "x267",
+      "x327",
+      "x461",
+      "x463"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "x265",
+          "x266",
+          "x268",
+          "x269",
+          "x326",
+          "x373",
+          "x374",
+          "x375",
+          "x429",
+          "x462",
+          "x498",
+          "x499",
+          "x702",
+          "x703"
+        ],
+        "constraints": [
+          "c1844",
+          "c1845",
+          "c1852",
+          "c1853",
+          "c1924",
+          "c1925",
+          "c1932",
+          "c1933",
+          "c1938",
+          "c1939",
+          "c1940",
+          "c1945",
+          "c1946",
+          "c1947",
+          "c1953",
+          "c1954",
+          "c1955",
+          "c1959",
+          "c1960",
+          "c1961",
+          "c1962",
+          "c1967",
+          "c1968",
+          "c1969",
+          "c1974",
+          "c1975",
+          "c1976",
+          "c1980",
+          "c1981",
+          "c1982",
+          "c1986",
+          "c1987",
+          "c1988",
+          "c1992",
+          "c1993",
+          "c1994",
+          "c1998",
+          "c1999",
+          "c2008",
+          "c5"
+        ]
+      }
+    ]
+  }
+}

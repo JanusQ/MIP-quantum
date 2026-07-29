@@ -1,0 +1,255 @@
+{
+  "source_instance": "neos-4722843-widden",
+  "downsampled_instance": "neos-4722843-widden_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "C17316": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C17318": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C17320": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C17328": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C17322": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C17324": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C17326": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C17330": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C17332": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C17334": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C17336": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C17338": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C17317": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C17315": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C17327": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C17319": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C17333": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C17321": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 576,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "R112997": 1,
+      "R112998": 1,
+      "R112999": 1,
+      "R113000": 1,
+      "R113175": 1,
+      "R113179": 1,
+      "R113185": 1,
+      "R113189": 1,
+      "R113195": 1,
+      "R113199": 1,
+      "R113205": 1,
+      "R113209": 1,
+      "R113522": 1,
+      "R113526": 1,
+      "R113532": 1,
+      "R113536": 1,
+      "R113542": 1,
+      "R113543": 1,
+      "R113544": 1,
+      "R113545": 1,
+      "R113548": 1,
+      "R113551": 1,
+      "R8274": 1,
+      "R8275": 1,
+      "R9116": 1,
+      "R9117": 1,
+      "R100000": 1,
+      "R100002": 1,
+      "R100004": 1,
+      "R100006": 1,
+      "R100008": 1,
+      "R100010": 1,
+      "R100012": 1,
+      "R100014": 1,
+      "R100016": 1,
+      "R100018": 1,
+      "R100020": 1,
+      "R100022": 1,
+      "R100024": 1,
+      "R100026": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "C17315",
+      "C17316",
+      "C17317",
+      "C17326"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "C17318",
+          "C17327",
+          "C17328"
+        ],
+        "constraints": [
+          "R112999",
+          "R113000",
+          "R113179",
+          "R113189",
+          "R113199",
+          "R113209",
+          "R113526",
+          "R113536",
+          "R113543",
+          "R113548",
+          "R8275",
+          "R9117"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "C17319",
+          "C17320"
+        ],
+        "constraints": [
+          "R112997",
+          "R112998",
+          "R113175",
+          "R113185",
+          "R113195",
+          "R113205",
+          "R113522",
+          "R113532",
+          "R113544"
+        ]
+      },
+      {
+        "id": 2,
+        "variables": [
+          "C17321",
+          "C17322"
+        ],
+        "constraints": [
+          "R113545"
+        ]
+      },
+      {
+        "id": 3,
+        "variables": [
+          "C17324"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 4,
+        "variables": [
+          "C17330"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 5,
+        "variables": [
+          "C17332"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 6,
+        "variables": [
+          "C17333",
+          "C17334"
+        ],
+        "constraints": [
+          "R113551"
+        ]
+      },
+      {
+        "id": 7,
+        "variables": [
+          "C17336"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 8,
+        "variables": [
+          "C17338"
+        ],
+        "constraints": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "source_instance": "gfd-schedulen180f7d50m30k18",
+  "downsampled_instance": "gfd-schedulen180f7d50m30k18_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 0,
+  "n_integer": 18,
+  "variable_bounds": {
+    "X_INTRODUCED_187_": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "X_INTRODUCED_200_": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "X_INTRODUCED_210_": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "X_INTRODUCED_220_": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "X_INTRODUCED_233_": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "X_INTRODUCED_234_": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "X_INTRODUCED_237_": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "X_INTRODUCED_282_": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "X_INTRODUCED_305_": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "X_INTRODUCED_319_": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "X_INTRODUCED_342_": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "X_INTRODUCED_346_": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "X_INTRODUCED_181_": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "X_INTRODUCED_182_": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "X_INTRODUCED_183_": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "X_INTRODUCED_184_": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "X_INTRODUCED_185_": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    },
+    "X_INTRODUCED_188_": {
+      "lb": 0,
+      "ub": 7,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 18014398509481984,
+  "number_of_feasible_states": null,
+  "feasible_state_count_exact": false,
+  "integerization": {
+    "row_scales": {
+      "p_lin_136366": 1,
+      "p_lin_136367": 1,
+      "p_lin_136368": 1,
+      "p_lin_136369": 1,
+      "p_lin_136381": 1,
+      "p_lin_136382": 1,
+      "p_lin_136383": 1,
+      "p_lin_136384": 1,
+      "p_lin_136396": 1,
+      "p_lin_136397": 1,
+      "p_lin_136398": 1,
+      "p_lin_136399": 1,
+      "p_lin_136411": 1,
+      "p_lin_136412": 1,
+      "p_lin_136413": 1,
+      "p_lin_136414": 1,
+      "p_lin_136441": 1,
+      "p_lin_136442": 1,
+      "p_lin_136443": 1,
+      "p_lin_136444": 1,
+      "p_lin_136456": 1,
+      "p_lin_136457": 1,
+      "p_lin_136458": 1,
+      "p_lin_136459": 1,
+      "p_lin_136636": 1,
+      "p_lin_136637": 1,
+      "p_lin_136638": 1,
+      "p_lin_136639": 1,
+      "p_lin_136786": 1,
+      "p_lin_136787": 1,
+      "p_lin_136788": 1,
+      "p_lin_136789": 1,
+      "p_lin_136936": 1,
+      "p_lin_136937": 1,
+      "p_lin_136938": 1,
+      "p_lin_136939": 1,
+      "p_lin_137131": 1,
+      "p_lin_137132": 1,
+      "p_lin_137133": 1,
+      "p_lin_137134": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "X_INTRODUCED_181_",
+      "X_INTRODUCED_182_",
+      "X_INTRODUCED_183_",
+      "X_INTRODUCED_184_"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "X_INTRODUCED_185_"
+        ],
+        "constraints": [
+          "p_lin_136411",
+          "p_lin_136412",
+          "p_lin_136413",
+          "p_lin_136414"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "X_INTRODUCED_187_"
+        ],
+        "constraints": [
+          "p_lin_136441",
+          "p_lin_136442",
+          "p_lin_136443",
+          "p_lin_136444"
+        ]
+      },
+      {
+        "id": 2,
+        "variables": [
+          "X_INTRODUCED_188_"
+        ],
+        "constraints": [
+          "p_lin_136456",
+          "p_lin_136457",
+          "p_lin_136458",
+          "p_lin_136459"
+        ]
+      },
+      {
+        "id": 3,
+        "variables": [
+          "X_INTRODUCED_200_"
+        ],
+        "constraints": [
+          "p_lin_136636",
+          "p_lin_136637",
+          "p_lin_136638",
+          "p_lin_136639"
+        ]
+      },
+      {
+        "id": 4,
+        "variables": [
+          "X_INTRODUCED_210_"
+        ],
+        "constraints": [
+          "p_lin_136786",
+          "p_lin_136787",
+          "p_lin_136788",
+          "p_lin_136789"
+        ]
+      },
+      {
+        "id": 5,
+        "variables": [
+          "X_INTRODUCED_220_"
+        ],
+        "constraints": [
+          "p_lin_136936",
+          "p_lin_136937",
+          "p_lin_136938",
+          "p_lin_136939"
+        ]
+      },
+      {
+        "id": 6,
+        "variables": [
+          "X_INTRODUCED_233_"
+        ],
+        "constraints": [
+          "p_lin_137131",
+          "p_lin_137132",
+          "p_lin_137133",
+          "p_lin_137134"
+        ]
+      },
+      {
+        "id": 7,
+        "variables": [
+          "X_INTRODUCED_234_"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 8,
+        "variables": [
+          "X_INTRODUCED_237_"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 9,
+        "variables": [
+          "X_INTRODUCED_282_"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 10,
+        "variables": [
+          "X_INTRODUCED_305_"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 11,
+        "variables": [
+          "X_INTRODUCED_319_"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 12,
+        "variables": [
+          "X_INTRODUCED_342_"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 13,
+        "variables": [
+          "X_INTRODUCED_346_"
+        ],
+        "constraints": []
+      }
+    ]
+  }
+}

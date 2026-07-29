@@ -1,0 +1,19 @@
+{
+  "platform": "Linux-6.8.0-52-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "cpu_count_logical": 256,
+  "cpu_count_physical": 128,
+  "memory_total_gb": 1511.564,
+  "python_executable": "/home/zhenyusen/MIP-quantum/.venv-classical-a100/bin/python3",
+  "gurobi_cl": "",
+  "cplex": "",
+  "scip": "",
+  "python_module_numpy": true,
+  "python_module_scipy": true,
+  "python_module_qutip": true,
+  "python_module_sympy": true,
+  "python_module_psutil": true,
+  "nvidia_smi": [
+    "NVIDIA A100 80GB PCIe, 81920 MiB, 570.195.03"
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "source_instance": "rocII-5-11",
+  "downsampled_instance": "rocII-5-11_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "P#0#10": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "P#0#9": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "P#1#10": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "P#0#8": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "P#1#9": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "P#2#10": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "P#0#7": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "P#1#8": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "P#2#9": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "P#3#10": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "P#0#6": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "P#1#7": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "P#2#8": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "P#3#9": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "P#4#10": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "P#0#5": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "P#1#6": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "P#2#7": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "Party_Adj_As@dcc": 1,
+      "Party_Adj_Ch@dcd": 8,
+      "Party_Adj_Ch@dce": 8,
+      "Party_Adj_Ch@de2": 8,
+      "Party_Adj_Ch@dcf": 8,
+      "Party_Adj_Ch@de1": 8,
+      "Party_Adj_Ch@ddf": 8,
+      "Party_Adj_Ch@de0": 8,
+      "Party_Adj_Ch@dd0": 8,
+      "Party_Adj_Ch@dde": 8,
+      "Party_Adj_Ch@dd1": 8,
+      "Party_Adj_Ch@ddd": 8,
+      "break_dista@6596": 8,
+      "break_dista@6597": 8,
+      "break_dista@6598": 8,
+      "break_dista@6599": 8,
+      "break_dista@659a": 8,
+      "break_dista@659b": 8,
+      "break_dista@659c": 8,
+      "break_dista@659d": 8,
+      "break_dista@659e": 8,
+      "break_dista@659f": 8,
+      "break_dista@65a0": 8,
+      "break_dista@65a1": 8,
+      "break_dista@65a2": 8,
+      "break_dista@65a3": 8,
+      "break_dista@65a4": 8,
+      "break_dista@65a5": 8,
+      "break_dista@65a6": 8,
+      "break_dista@65a7": 8,
+      "break_dista@65a8": 8,
+      "break_dista@65a9": 8,
+      "break_dista@65aa": 8,
+      "break_dista@65ab": 8,
+      "break_dista@65ac": 8,
+      "break_dista@65ad": 8,
+      "break_dista@65ae": 8,
+      "break_dista@65af": 8,
+      "break_dista@65b0": 8,
+      "break_dista@65b1": 8
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 9.999999999732445e-07
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "P#0#10",
+      "P#0#5",
+      "P#0#6",
+      "P#0#7"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "P#0#8",
+          "P#0#9",
+          "P#1#10",
+          "P#1#6",
+          "P#1#7",
+          "P#1#8",
+          "P#1#9",
+          "P#2#10",
+          "P#2#7",
+          "P#2#8",
+          "P#2#9",
+          "P#3#10",
+          "P#3#9",
+          "P#4#10"
+        ],
+        "constraints": [
+          "Party_Adj_As@dcc",
+          "Party_Adj_Ch@dcd",
+          "Party_Adj_Ch@dce",
+          "Party_Adj_Ch@dcf",
+          "Party_Adj_Ch@dd0",
+          "Party_Adj_Ch@dd1",
+          "Party_Adj_Ch@dde",
+          "Party_Adj_Ch@ddf",
+          "Party_Adj_Ch@de0",
+          "Party_Adj_Ch@de1",
+          "Party_Adj_Ch@de2"
+        ]
+      }
+    ]
+  }
+}

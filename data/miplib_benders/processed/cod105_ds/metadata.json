@@ -1,0 +1,228 @@
+{
+  "source_instance": "cod105",
+  "downsampled_instance": "cod105_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "x1": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x10": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x100": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x1000": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x1001": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x1002": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x1003": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x1004": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x1005": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x1006": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x1007": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x1008": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x1009": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x101": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x1010": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x1011": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x1012": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x1013": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "c1013": 1,
+      "c1024": 1,
+      "c1008": 1,
+      "c1009": 1,
+      "c1010": 1,
+      "c1011": 1,
+      "c1012": 1,
+      "c1005": 1,
+      "c1006": 1,
+      "c1007": 1,
+      "c1023": 1,
+      "c1000": 1,
+      "c1001": 1,
+      "c1002": 1,
+      "c1003": 1,
+      "c1004": 1,
+      "c997": 1,
+      "c998": 1,
+      "c999": 1,
+      "c1022": 1,
+      "c830": 1,
+      "c834": 1,
+      "c835": 1,
+      "c839": 1,
+      "c840": 1,
+      "c841": 1,
+      "c845": 1,
+      "c846": 1,
+      "c847": 1,
+      "c848": 1,
+      "c3": 1,
+      "c5": 1,
+      "c824": 1,
+      "c825": 1,
+      "c826": 1,
+      "c827": 1,
+      "c828": 1,
+      "c829": 1,
+      "c831": 1,
+      "c832": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "x1000",
+      "x1001",
+      "x1008",
+      "x1013"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "x1",
+          "x10",
+          "x100",
+          "x101"
+        ],
+        "constraints": [
+          "c3",
+          "c5"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "x1002",
+          "x1003",
+          "x1004",
+          "x1005",
+          "x1006",
+          "x1007",
+          "x1009",
+          "x1010",
+          "x1011",
+          "x1012"
+        ],
+        "constraints": [
+          "c1000",
+          "c1001",
+          "c1002",
+          "c1003",
+          "c1004",
+          "c1005",
+          "c1006",
+          "c1007",
+          "c1008",
+          "c1009",
+          "c1010",
+          "c1011",
+          "c1012",
+          "c1013",
+          "c1022",
+          "c1023",
+          "c1024",
+          "c824",
+          "c825",
+          "c826",
+          "c827",
+          "c828",
+          "c829",
+          "c830",
+          "c831",
+          "c832",
+          "c834",
+          "c835",
+          "c839",
+          "c840",
+          "c841",
+          "c845",
+          "c846",
+          "c847",
+          "c848",
+          "c997",
+          "c998",
+          "c999"
+        ]
+      }
+    ]
+  }
+}

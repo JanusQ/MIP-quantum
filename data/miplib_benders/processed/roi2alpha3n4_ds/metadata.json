@@ -1,0 +1,216 @@
+{
+  "source_instance": "roi2alpha3n4",
+  "downsampled_instance": "roi2alpha3n4_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 35,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "z_148_153": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_148_155": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_148_260": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_148_261": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_148_262": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_148_263": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_148_264": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_148_265": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_148_317": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_148_318": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_148_374": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_148_375": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_148_376": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_148_377": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_148_378": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_148_379": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_148_620": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "z_148_621": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 262144,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "sdef_10091": 1000000,
+      "sdef_10129": 1000000,
+      "sdef_10155": 1000000,
+      "sdef_10156": 1000000,
+      "sdef_10180": 1000000,
+      "sdef_10321": 1000000,
+      "sdef_10322": 1000000,
+      "sdef_10415": 1000000,
+      "sdef_10483": 1000000,
+      "sdef_10497": 1000000,
+      "sdef_10498": 1000000,
+      "sdef_10499": 1000000,
+      "sdef_10501": 1000000,
+      "sdef_10549": 1000000,
+      "sdef_10550": 1000000,
+      "sdef_10551": 1000000,
+      "sdef_10552": 1000000,
+      "sdef_10578": 1000000,
+      "sdef_10613": 1000000,
+      "sdef_10614": 1000000,
+      "sdef_10652": 1,
+      "sdef_10817": 1000000,
+      "sdef_10836": 1000000,
+      "sdef_10837": 1000000,
+      "sdef_10853": 1000000,
+      "sdef_10886": 1,
+      "sdef_10887": 1,
+      "sdef_10927": 1000000,
+      "sdef_11033": 1,
+      "sdef_11098": 1000000,
+      "sdef_11167": 1000000,
+      "sdef_11269": 1,
+      "sdef_11376": 1000000,
+      "sdef_11503": 1000000,
+      "sdef_11552": 77000,
+      "sdef_11733": 1000000,
+      "sdef_1241": 1000000,
+      "sdef_1242": 1000000,
+      "sdef_1243": 1000000,
+      "sdef_1244": 1000000
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.000464802
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "z_148_260",
+      "z_148_261",
+      "z_148_262",
+      "z_148_263"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "z_148_153",
+          "z_148_155",
+          "z_148_264",
+          "z_148_265",
+          "z_148_317",
+          "z_148_318",
+          "z_148_374",
+          "z_148_375",
+          "z_148_376",
+          "z_148_377",
+          "z_148_378",
+          "z_148_379",
+          "z_148_620",
+          "z_148_621"
+        ],
+        "constraints": [
+          "sdef_10091",
+          "sdef_10129",
+          "sdef_10155",
+          "sdef_10156",
+          "sdef_10180",
+          "sdef_10321",
+          "sdef_10322",
+          "sdef_10415",
+          "sdef_10483",
+          "sdef_10497",
+          "sdef_10498",
+          "sdef_10499",
+          "sdef_10501",
+          "sdef_10549",
+          "sdef_10550",
+          "sdef_10551",
+          "sdef_10552",
+          "sdef_10578",
+          "sdef_10613",
+          "sdef_10614",
+          "sdef_10817",
+          "sdef_10836",
+          "sdef_10837",
+          "sdef_10853",
+          "sdef_10927",
+          "sdef_11098",
+          "sdef_11167",
+          "sdef_11376",
+          "sdef_11503",
+          "sdef_11552",
+          "sdef_11733",
+          "sdef_1241",
+          "sdef_1242",
+          "sdef_1243",
+          "sdef_1244"
+        ]
+      }
+    ]
+  }
+}

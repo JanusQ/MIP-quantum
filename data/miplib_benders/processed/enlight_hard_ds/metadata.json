@@ -1,0 +1,214 @@
+{
+  "source_instance": "enlight_hard",
+  "downsampled_instance": "enlight_hard_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 39,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "x#2#2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#2#3": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#2#4": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#2#5": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#2#6": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#2#7": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#2#8": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#2#9": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#3#2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#3#3": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#3#4": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#3#5": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#3#6": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#3#7": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#3#8": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#3#9": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#4#2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x#4#3": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "inner_area_10": 1,
+      "inner_area_11": 1,
+      "inner_area_12": 1,
+      "inner_area_13": 1,
+      "inner_area_14": 1,
+      "inner_area_15": 1,
+      "inner_area_2": 1,
+      "inner_area_3": 1,
+      "inner_area_4": 1,
+      "inner_area_5": 1,
+      "inner_area_6": 1,
+      "inner_area_7": 1,
+      "inner_area_9": 1,
+      "inner_area_1": 1,
+      "inner_area_16": 1,
+      "inner_area_17": 1,
+      "inner_area_18": 1,
+      "inner_area_8": 1,
+      "inner_area_19": 1,
+      "inner_area_20": 1,
+      "inner_area_21": 1,
+      "inner_area_22": 1,
+      "inner_area_23": 1,
+      "inner_area_24": 1,
+      "inner_area_25": 1,
+      "inner_area_26": 1,
+      "left_border_1": 1,
+      "left_border_2": 1,
+      "left_border_3": 1,
+      "right_border_1": 1,
+      "right_border_2": 1,
+      "upper_border_1": 1,
+      "upper_border_2": 1,
+      "upper_border_3": 1,
+      "upper_border_4": 1,
+      "upper_border_5": 1,
+      "upper_border_6": 1,
+      "upper_border_7": 1,
+      "upper_border_8": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "x#2#2",
+      "x#2#3",
+      "x#2#4",
+      "x#2#5"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "x#2#6",
+          "x#2#7",
+          "x#2#8",
+          "x#2#9",
+          "x#3#2",
+          "x#3#3",
+          "x#3#4",
+          "x#3#5",
+          "x#3#6",
+          "x#3#7",
+          "x#3#8",
+          "x#3#9",
+          "x#4#2",
+          "x#4#3"
+        ],
+        "constraints": [
+          "inner_area_1",
+          "inner_area_10",
+          "inner_area_11",
+          "inner_area_12",
+          "inner_area_13",
+          "inner_area_14",
+          "inner_area_15",
+          "inner_area_16",
+          "inner_area_17",
+          "inner_area_18",
+          "inner_area_19",
+          "inner_area_2",
+          "inner_area_20",
+          "inner_area_21",
+          "inner_area_22",
+          "inner_area_23",
+          "inner_area_24",
+          "inner_area_25",
+          "inner_area_26",
+          "inner_area_3",
+          "inner_area_4",
+          "inner_area_5",
+          "inner_area_6",
+          "inner_area_7",
+          "inner_area_8",
+          "inner_area_9",
+          "left_border_2",
+          "left_border_3",
+          "right_border_1",
+          "right_border_2",
+          "upper_border_5",
+          "upper_border_6",
+          "upper_border_7",
+          "upper_border_8"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "source_instance": "irish-electricity",
+  "downsampled_instance": "irish-electricity_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "v_29_94": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "v_30_94": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "v_29_93": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "v_29_95": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "v_30_93": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "v_30_95": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "v_29_92": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "v_30_92": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "v_29_91": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "v_30_91": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "v_29_90": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "v_30_90": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "v_29_89": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "v_30_89": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "v_29_88": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "v_30_88": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "v_29_87": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    },
+    "v_30_87": {
+      "lb": 0,
+      "ub": 1,
+      "type": "B"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "MinDownFinal_29": 1,
+      "MinDownFinal_29_1": 1,
+      "MinDownFinal_29_2": 1,
+      "MinDownFinal_29_3": 1,
+      "MinDownFinal_29_4": 1,
+      "MinDownFinal_29_5": 1,
+      "MinDownFinal_29_6": 1,
+      "MinDownFinal_30": 1,
+      "MinDownFinal_30_1": 1,
+      "MinDownFinal_30_2": 1,
+      "MinDownFinal_30_3": 1,
+      "MinDownFinal_30_4": 1,
+      "MinDownFinal_30_5": 1,
+      "MinDownFinal_30_6": 1,
+      "MinDownMid_29_79": 1,
+      "MinDownMid_29_80": 1,
+      "MinDownMid_30_79": 1,
+      "MinDownMid_30_80": 1,
+      "Up_ConsecOnEnd_29": 1,
+      "Up_ConsecOnEnd_29_1": 1,
+      "Up_ConsecOnEnd_29_10": 1,
+      "Up_ConsecOnEnd_29_11": 1,
+      "Up_ConsecOnEnd_29_12": 1,
+      "Up_ConsecOnEnd_29_13": 1,
+      "Up_ConsecOnEnd_29_14": 1,
+      "Up_ConsecOnEnd_29_15": 1,
+      "Up_ConsecOnEnd_29_16": 1,
+      "Up_ConsecOnEnd_29_17": 1,
+      "Up_ConsecOnEnd_29_18": 1,
+      "Up_ConsecOnEnd_29_19": 1,
+      "Up_ConsecOnEnd_29_2": 1,
+      "Up_ConsecOnEnd_29_20": 1,
+      "Up_ConsecOnEnd_29_21": 1,
+      "Up_ConsecOnEnd_29_22": 1,
+      "Up_ConsecOnEnd_29_23": 1,
+      "Up_ConsecOnEnd_29_24": 1,
+      "Up_ConsecOnEnd_29_25": 1,
+      "Up_ConsecOnEnd_29_26": 1,
+      "Up_ConsecOnEnd_29_27": 1,
+      "Up_ConsecOnEnd_29_28": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "v_29_87",
+      "v_29_88",
+      "v_29_89",
+      "v_29_90"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "v_29_91",
+          "v_29_92",
+          "v_29_93",
+          "v_29_94",
+          "v_29_95"
+        ],
+        "constraints": [
+          "MinDownFinal_29",
+          "MinDownFinal_29_1",
+          "MinDownFinal_29_2",
+          "MinDownFinal_29_3",
+          "MinDownFinal_29_4",
+          "MinDownFinal_29_5",
+          "MinDownFinal_29_6",
+          "MinDownMid_29_79",
+          "MinDownMid_29_80",
+          "Up_ConsecOnEnd_29",
+          "Up_ConsecOnEnd_29_1",
+          "Up_ConsecOnEnd_29_10",
+          "Up_ConsecOnEnd_29_11",
+          "Up_ConsecOnEnd_29_12",
+          "Up_ConsecOnEnd_29_13",
+          "Up_ConsecOnEnd_29_14",
+          "Up_ConsecOnEnd_29_15",
+          "Up_ConsecOnEnd_29_16",
+          "Up_ConsecOnEnd_29_17",
+          "Up_ConsecOnEnd_29_18",
+          "Up_ConsecOnEnd_29_19",
+          "Up_ConsecOnEnd_29_2",
+          "Up_ConsecOnEnd_29_20",
+          "Up_ConsecOnEnd_29_21",
+          "Up_ConsecOnEnd_29_22",
+          "Up_ConsecOnEnd_29_23",
+          "Up_ConsecOnEnd_29_24",
+          "Up_ConsecOnEnd_29_25",
+          "Up_ConsecOnEnd_29_26",
+          "Up_ConsecOnEnd_29_27",
+          "Up_ConsecOnEnd_29_28"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "v_30_87",
+          "v_30_88",
+          "v_30_89",
+          "v_30_90",
+          "v_30_91",
+          "v_30_92",
+          "v_30_93",
+          "v_30_94",
+          "v_30_95"
+        ],
+        "constraints": [
+          "MinDownFinal_30",
+          "MinDownFinal_30_1",
+          "MinDownFinal_30_2",
+          "MinDownFinal_30_3",
+          "MinDownFinal_30_4",
+          "MinDownFinal_30_5",
+          "MinDownFinal_30_6",
+          "MinDownMid_30_79",
+          "MinDownMid_30_80"
+        ]
+      }
+    ]
+  }
+}

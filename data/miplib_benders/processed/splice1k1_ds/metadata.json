@@ -1,0 +1,221 @@
+{
+  "source_instance": "splice1k1",
+  "downsampled_instance": "splice1k1_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "X_INTRODUCED_9863_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9868_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9917_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9938_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_10007_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_10030_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_10125_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_10035_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9990_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9992_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9991_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9997_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9996_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9987_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9985_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_9986_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_10002_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "X_INTRODUCED_10001_": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 262143,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "p_lin_1148": 1,
+      "p_lin_1149": 1,
+      "p_lin_1158": 1,
+      "p_lin_1159": 1,
+      "p_lin_1358": 1,
+      "p_lin_1359": 1,
+      "p_lin_1446": 1,
+      "p_lin_1447": 1,
+      "p_lin_1452": 1,
+      "p_lin_1453": 1,
+      "p_lin_1458": 1,
+      "p_lin_1459": 1,
+      "p_lin_1548": 1,
+      "p_lin_1549": 1,
+      "p_lin_1566": 1,
+      "p_lin_1567": 1,
+      "p_lin_1568": 1,
+      "p_lin_1569": 1,
+      "p_lin_1622": 1,
+      "p_lin_1623": 1,
+      "p_lin_1738": 1,
+      "p_lin_1739": 1,
+      "p_lin_2018": 1,
+      "p_lin_2019": 1,
+      "p_lin_2064": 1,
+      "p_lin_2065": 1,
+      "p_lin_2240": 1,
+      "p_lin_2241": 1,
+      "p_lin_2326": 1,
+      "p_lin_2327": 1,
+      "p_lin_2420": 1,
+      "p_lin_2421": 1,
+      "p_lin_2436": 1,
+      "p_lin_2437": 1,
+      "p_lin_2578": 1,
+      "p_lin_2579": 1,
+      "p_lin_2656": 1,
+      "p_lin_2657": 1,
+      "p_lin_2708": 1,
+      "p_lin_2709": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "X_INTRODUCED_10001_",
+      "X_INTRODUCED_10002_",
+      "X_INTRODUCED_10007_",
+      "X_INTRODUCED_10030_"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "X_INTRODUCED_10035_",
+          "X_INTRODUCED_10125_",
+          "X_INTRODUCED_9863_",
+          "X_INTRODUCED_9868_",
+          "X_INTRODUCED_9917_",
+          "X_INTRODUCED_9938_",
+          "X_INTRODUCED_9985_",
+          "X_INTRODUCED_9986_",
+          "X_INTRODUCED_9987_",
+          "X_INTRODUCED_9990_",
+          "X_INTRODUCED_9991_",
+          "X_INTRODUCED_9992_",
+          "X_INTRODUCED_9996_",
+          "X_INTRODUCED_9997_"
+        ],
+        "constraints": [
+          "p_lin_1148",
+          "p_lin_1149",
+          "p_lin_1158",
+          "p_lin_1159",
+          "p_lin_1358",
+          "p_lin_1359",
+          "p_lin_1446",
+          "p_lin_1447",
+          "p_lin_1452",
+          "p_lin_1453",
+          "p_lin_1458",
+          "p_lin_1459",
+          "p_lin_1548",
+          "p_lin_1549",
+          "p_lin_1566",
+          "p_lin_1567",
+          "p_lin_1568",
+          "p_lin_1569",
+          "p_lin_1622",
+          "p_lin_1623",
+          "p_lin_1738",
+          "p_lin_1739",
+          "p_lin_2018",
+          "p_lin_2019",
+          "p_lin_2064",
+          "p_lin_2065",
+          "p_lin_2240",
+          "p_lin_2241",
+          "p_lin_2326",
+          "p_lin_2327",
+          "p_lin_2420",
+          "p_lin_2421",
+          "p_lin_2436",
+          "p_lin_2437",
+          "p_lin_2578",
+          "p_lin_2579",
+          "p_lin_2656",
+          "p_lin_2657",
+          "p_lin_2708",
+          "p_lin_2709"
+        ]
+      }
+    ]
+  }
+}

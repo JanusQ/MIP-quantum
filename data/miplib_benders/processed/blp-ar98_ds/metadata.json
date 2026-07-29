@@ -1,0 +1,191 @@
+{
+  "source_instance": "blp-ar98",
+  "downsampled_instance": "blp-ar98_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 25,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "x(Hlm.Ztmv.1.1.0)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Hlm.Ztmv.1.1.1)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Hlm.Ztmv.1.1.2)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Hlm.Ztmv.1.1.3)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Hlm.Ztmv.1.1.4)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Hlm.Ztmv.1.1.5)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Hlm.Ztmv.1.1.6)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Hlm.Ztmv.1.1.7)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Hlm.Ztmv.1.1.8)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Hlm.Ztmv.1.2.0)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Hlm.Ztmv.1.2.1)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Hlm.Ztmv.1.2.2)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Hlm.Ztmv.1.2.3)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Hlm.Ztmv.1.2.4)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Hlm.Ztmv.1.2.5)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Hlm.Ztmv.1.2.6)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Hlm.Ztmv.1.2.7)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x(Hlm.Ztmv.1.2.8)": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "defblpfreq(AcBklA)": 1,
+      "defblpfreq(AcDvdA)": 1,
+      "defblpfreq(AsdAsdmA)": 1,
+      "defblpfreq(AsdAssA)": 1,
+      "defblpfreq(AsdmDvdA)": 1,
+      "defblpfreq(AssHlmA)": 1,
+      "defblpfreq(BklWdA)": 1,
+      "defblpfreq(GdGdgA)": 1,
+      "defblpfreq(GdGvcA)": 1,
+      "defblpfreq(GdgWdA)": 1,
+      "defblpfreq(GvcLaaA)": 1,
+      "defblpfreq(LaaLdvA)": 1,
+      "defblpfreq(LdvZtmvA)": 1,
+      "defblpobj": 1000000,
+      "defblpreq(AcDvdA)": 1,
+      "defblpreq(AsdAsdmA)": 1,
+      "defblpreq(AsdAssA)": 1,
+      "defblpreq(AsdmDvdA)": 1,
+      "defblpreq(AssHlmA)": 1,
+      "defblpreq(BklWdA)": 1,
+      "defblpreq(GdGvcA)": 1,
+      "defblpreq(GdgWdA)": 1,
+      "defblpreq(GvcLaaA)": 1,
+      "defblpreq(LdvZtmvA)": 1,
+      "oneblpline(Hlm.Ztmv.1)": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "x(Hlm.Ztmv.1.1.0)",
+      "x(Hlm.Ztmv.1.1.1)",
+      "x(Hlm.Ztmv.1.1.2)",
+      "x(Hlm.Ztmv.1.1.3)"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "x(Hlm.Ztmv.1.1.4)",
+          "x(Hlm.Ztmv.1.1.5)",
+          "x(Hlm.Ztmv.1.1.6)",
+          "x(Hlm.Ztmv.1.1.7)",
+          "x(Hlm.Ztmv.1.1.8)",
+          "x(Hlm.Ztmv.1.2.0)",
+          "x(Hlm.Ztmv.1.2.1)",
+          "x(Hlm.Ztmv.1.2.2)",
+          "x(Hlm.Ztmv.1.2.3)",
+          "x(Hlm.Ztmv.1.2.4)",
+          "x(Hlm.Ztmv.1.2.5)",
+          "x(Hlm.Ztmv.1.2.6)",
+          "x(Hlm.Ztmv.1.2.7)",
+          "x(Hlm.Ztmv.1.2.8)"
+        ],
+        "constraints": [
+          "defblpfreq(AcBklA)",
+          "defblpfreq(AcDvdA)",
+          "defblpfreq(AsdAsdmA)",
+          "defblpfreq(AsdAssA)",
+          "defblpfreq(AsdmDvdA)",
+          "defblpfreq(AssHlmA)",
+          "defblpfreq(BklWdA)",
+          "defblpfreq(GdGdgA)",
+          "defblpfreq(GdGvcA)",
+          "defblpfreq(GdgWdA)",
+          "defblpfreq(GvcLaaA)",
+          "defblpfreq(LaaLdvA)",
+          "defblpfreq(LdvZtmvA)",
+          "defblpobj",
+          "defblpreq(AcDvdA)",
+          "defblpreq(AsdAsdmA)",
+          "defblpreq(AsdAssA)",
+          "defblpreq(AsdmDvdA)",
+          "defblpreq(AssHlmA)",
+          "defblpreq(BklWdA)",
+          "defblpreq(GdGvcA)",
+          "defblpreq(GdgWdA)",
+          "defblpreq(GvcLaaA)",
+          "defblpreq(LdvZtmvA)",
+          "oneblpline(Hlm.Ztmv.1)"
+        ]
+      }
+    ]
+  }
+}

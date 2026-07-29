@@ -1,0 +1,149 @@
+{
+  "source_instance": "markshare_4_0",
+  "downsampled_instance": "markshare_4_0_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 4,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "x1": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x10": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x11": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x12": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x13": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x14": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x15": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x16": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x17": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x18": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x19": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x20": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x21": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x22": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x23": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x24": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x25": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "C1_": 1,
+      "C2_": 1,
+      "C3_": 1,
+      "C4_": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "x1",
+      "x10",
+      "x11",
+      "x12"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "x13",
+          "x14",
+          "x15",
+          "x16",
+          "x17",
+          "x18",
+          "x19",
+          "x2",
+          "x20",
+          "x21",
+          "x22",
+          "x23",
+          "x24",
+          "x25"
+        ],
+        "constraints": [
+          "C1_",
+          "C2_",
+          "C3_",
+          "C4_"
+        ]
+      }
+    ]
+  }
+}

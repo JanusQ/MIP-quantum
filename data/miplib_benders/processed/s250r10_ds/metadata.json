@@ -1,0 +1,211 @@
+{
+  "source_instance": "s250r10",
+  "downsampled_instance": "s250r10_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "A8_131": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "A8_109": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "A8_119": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "A8_94": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "A8_110": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "A8_58": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "A8_59": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "A8_60": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "A11_L2O0D2586T164": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "A11_L2O0D2587T184": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "A11_L2O0D2588T232": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "A11_L2O0D2589T280": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "A11_L2O0D2596T164": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "A11_L2O0D2597T184": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "A11_L2O0D2598T232": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "A11_L2O0D2599T280": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "A11_L2O0D2601T164": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "A11_L2O0D2602T184": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 8,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "c517": 1,
+      "c518": 1,
+      "c152": 1,
+      "c179": 1,
+      "c324": 1,
+      "c448": 1,
+      "c432": 1,
+      "c7417": 1,
+      "c7437": 1,
+      "c185": 1,
+      "c7491": 1,
+      "c7545": 1,
+      "c339": 1,
+      "c340": 1,
+      "c341": 1,
+      "c342": 1,
+      "c343": 1,
+      "c344": 1,
+      "c345": 1,
+      "c346": 1,
+      "c347": 1,
+      "c348": 1,
+      "c349": 1,
+      "c350": 1,
+      "c351": 1,
+      "c352": 1,
+      "c353": 1,
+      "c354": 1,
+      "c355": 1,
+      "c356": 1,
+      "c357": 1,
+      "c358": 1,
+      "c359": 1,
+      "c393": 1,
+      "c394": 1,
+      "c395": 1,
+      "c396": 1,
+      "c397": 1,
+      "c398": 1,
+      "c399": 1
+    },
+    "objective_scale": 1000,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "A8_58",
+      "A8_59",
+      "A8_60",
+      "A8_94"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "A11_L2O0D2586T164",
+          "A11_L2O0D2587T184",
+          "A11_L2O0D2588T232",
+          "A11_L2O0D2589T280",
+          "A11_L2O0D2596T164",
+          "A11_L2O0D2597T184",
+          "A11_L2O0D2598T232",
+          "A11_L2O0D2599T280",
+          "A11_L2O0D2601T164",
+          "A11_L2O0D2602T184",
+          "A8_110"
+        ],
+        "constraints": [
+          "c152",
+          "c179",
+          "c185",
+          "c324",
+          "c432",
+          "c448",
+          "c517",
+          "c518",
+          "c7417",
+          "c7437",
+          "c7491",
+          "c7545"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "A8_109"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 2,
+        "variables": [
+          "A8_119"
+        ],
+        "constraints": []
+      },
+      {
+        "id": 3,
+        "variables": [
+          "A8_131"
+        ],
+        "constraints": []
+      }
+    ]
+  }
+}

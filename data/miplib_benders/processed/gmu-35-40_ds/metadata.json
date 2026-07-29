@@ -1,0 +1,221 @@
+{
+  "source_instance": "gmu-35-40",
+  "downsampled_instance": "gmu-35-40_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "x137_2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x137_3": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x137_4": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x137_5": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x169_4": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x169_5": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x193_2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x193_3": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x193_4": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x193_5": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x100_4": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x100_5": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x135_4": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x135_5": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x142_2": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x142_3": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x142_4": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x142_5": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "_EAge_32": 1000000,
+      "AA_52": 1,
+      "AA_53": 1,
+      "AA_23": 1,
+      "Sawti_H4": 1000000,
+      "Sawti_H5": 1000000,
+      "_EAge_31": 1000000,
+      "AA_27": 1,
+      "AA_54": 1,
+      "AA_85": 1,
+      "AA_89": 1,
+      "Adj_140": 1,
+      "Adj_141": 1,
+      "Adj_238": 1,
+      "Adj_239": 1,
+      "Adj_250": 1,
+      "Adj_251": 1,
+      "_EAge_22": 1000000,
+      "Adj_136": 1,
+      "Adj_137": 1,
+      "Adj_144": 1,
+      "Adj_145": 1,
+      "Adj_152": 1,
+      "Adj_153": 1,
+      "Adj_156": 1,
+      "Adj_157": 1,
+      "Adj_242": 1,
+      "Adj_243": 1,
+      "Adj_246": 1,
+      "Adj_247": 1,
+      "Sawti_H2": 1000000,
+      "Sawti_H3": 1000000,
+      "AA_55": 1,
+      "AA_7": 1,
+      "AA_78": 1,
+      "AA_9": 1,
+      "Adj_128": 1,
+      "Adj_129": 1,
+      "Adj_138": 1,
+      "Adj_139": 1
+    },
+    "objective_scale": 1000000,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "x137_4",
+      "x137_5",
+      "x169_4",
+      "x169_5"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "x100_4",
+          "x100_5",
+          "x135_4",
+          "x135_5",
+          "x137_2",
+          "x137_3",
+          "x142_2",
+          "x142_3",
+          "x142_4",
+          "x142_5",
+          "x193_2",
+          "x193_3",
+          "x193_4",
+          "x193_5"
+        ],
+        "constraints": [
+          "AA_23",
+          "AA_27",
+          "AA_52",
+          "AA_53",
+          "AA_54",
+          "AA_55",
+          "AA_7",
+          "AA_78",
+          "AA_85",
+          "AA_89",
+          "AA_9",
+          "Adj_128",
+          "Adj_129",
+          "Adj_136",
+          "Adj_137",
+          "Adj_138",
+          "Adj_139",
+          "Adj_140",
+          "Adj_141",
+          "Adj_144",
+          "Adj_145",
+          "Adj_152",
+          "Adj_153",
+          "Adj_156",
+          "Adj_157",
+          "Adj_238",
+          "Adj_239",
+          "Adj_242",
+          "Adj_243",
+          "Adj_246",
+          "Adj_247",
+          "Adj_250",
+          "Adj_251",
+          "Sawti_H2",
+          "Sawti_H3",
+          "Sawti_H4",
+          "Sawti_H5",
+          "_EAge_22",
+          "_EAge_31",
+          "_EAge_32"
+        ]
+      }
+    ]
+  }
+}

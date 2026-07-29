@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv*/
+data/miplib_benders/raw/
+data/miplib_benders/qaoa_runs/
+data/miplib_benders/classical_results/
+data/miplib_benders/qaoa_results/qaoa_results_merged.csv
+gurobi.log

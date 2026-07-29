@@ -1,0 +1,221 @@
+{
+  "source_instance": "var-smallemery-m6j6",
+  "downsampled_instance": "var-smallemery-m6j6_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 40,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "x_extraccion#1,000": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_extraccion#1,001": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_extraccion#1,002": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_extraccion#1,003": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_extraccion#1,004": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_extraccion#1,005": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_extraccion#1,006": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_extraccion#1,011": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_extraccion#1,012": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_extraccion#1,013": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_extraccion#1,014": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_extraccion#1,015": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_extraccion#1,016": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_extraccion#1,017": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_extraccion#1,018": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_extraccion#1,019": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_extraccion#1,020": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "x_extraccion#1,021": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "id1": 1,
+      "id11": 1,
+      "id12": 1,
+      "id13": 1,
+      "id16": 1,
+      "id17": 1,
+      "id18": 1,
+      "id2": 1,
+      "id2775": 1,
+      "id2776": 1,
+      "id2777": 1,
+      "id3": 1,
+      "id32": 1,
+      "id33": 1,
+      "id34": 1,
+      "id5514": 1,
+      "id5516": 1,
+      "id5702": 1,
+      "id5732": 1,
+      "id5733": 1,
+      "id5734": 1,
+      "id5735": 1,
+      "id5736": 1,
+      "id5737": 1,
+      "id5738": 1,
+      "id5739": 1,
+      "id5740": 1,
+      "id5741": 1,
+      "id5742": 1,
+      "id5743": 1,
+      "id5744": 1,
+      "id5745": 1,
+      "id5746": 1,
+      "id5747": 1,
+      "id5748": 1,
+      "id5749": 1,
+      "id5750": 1,
+      "id5751": 1,
+      "id5752": 1,
+      "id5753": 1
+    },
+    "objective_scale": 1,
+    "max_abs_approx_error": 0.0
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "x_extraccion#1,000",
+      "x_extraccion#1,001",
+      "x_extraccion#1,002",
+      "x_extraccion#1,003"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "x_extraccion#1,004",
+          "x_extraccion#1,005",
+          "x_extraccion#1,006",
+          "x_extraccion#1,011",
+          "x_extraccion#1,012",
+          "x_extraccion#1,013",
+          "x_extraccion#1,014",
+          "x_extraccion#1,015",
+          "x_extraccion#1,016",
+          "x_extraccion#1,017",
+          "x_extraccion#1,018",
+          "x_extraccion#1,019",
+          "x_extraccion#1,020",
+          "x_extraccion#1,021"
+        ],
+        "constraints": [
+          "id1",
+          "id11",
+          "id12",
+          "id13",
+          "id16",
+          "id17",
+          "id18",
+          "id2",
+          "id2775",
+          "id2776",
+          "id2777",
+          "id3",
+          "id32",
+          "id33",
+          "id34",
+          "id5514",
+          "id5516",
+          "id5702",
+          "id5732",
+          "id5733",
+          "id5734",
+          "id5735",
+          "id5736",
+          "id5737",
+          "id5738",
+          "id5739",
+          "id5740",
+          "id5741",
+          "id5742",
+          "id5743",
+          "id5744",
+          "id5745",
+          "id5746",
+          "id5747",
+          "id5748",
+          "id5749",
+          "id5750",
+          "id5751",
+          "id5752",
+          "id5753"
+        ]
+      }
+    ]
+  }
+}

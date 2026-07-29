@@ -1,0 +1,256 @@
+{
+  "source_instance": "binkar10_1",
+  "downsampled_instance": "binkar10_1_ds",
+  "procedure": "finite-domain integer variable subset; all unselected variables fixed to 0; retain constraints with selected nonzero coefficients; row-wise rational approximation and integer scaling",
+  "n_variables": 18,
+  "n_constraints": 28,
+  "n_binary": 18,
+  "n_integer": 18,
+  "variable_bounds": {
+    "C2129": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C2130": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C2131": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C2132": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C2133": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C2134": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C2135": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C2136": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C2137": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C2138": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C2139": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C2140": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C2141": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C2142": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C2143": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C2144": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C2145": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    },
+    "C2146": {
+      "lb": 0,
+      "ub": 1,
+      "type": "I"
+    }
+  },
+  "candidate_state_space_size": 262144,
+  "number_of_feasible_states": 1,
+  "feasible_state_count_exact": true,
+  "integerization": {
+    "row_scales": {
+      "R0101": 50,
+      "R0102": 50,
+      "R0103": 50,
+      "R0104": 50,
+      "R0105": 50,
+      "R0106": 50,
+      "R0107": 50,
+      "R0108": 50,
+      "R0109": 50,
+      "R0110": 50,
+      "R0111": 1,
+      "R0112": 1,
+      "R0113": 1,
+      "R0114": 1,
+      "R0115": 1,
+      "R0116": 1,
+      "R0117": 1,
+      "R0118": 1,
+      "R0119": 1,
+      "R0120": 1,
+      "R0121": 1,
+      "R0122": 1,
+      "R0123": 1,
+      "R0124": 1,
+      "R0125": 1,
+      "R0126": 1,
+      "R0127": 1,
+      "R0128": 1
+    },
+    "objective_scale": 25,
+    "max_abs_approx_error": 4.0000000041118255e-06
+  },
+  "benders_blocks": {
+    "master_variables": [
+      "C2129",
+      "C2130",
+      "C2131",
+      "C2132"
+    ],
+    "subproblems": [
+      {
+        "id": 0,
+        "variables": [
+          "C2133",
+          "C2143"
+        ],
+        "constraints": [
+          "R0105",
+          "R0115",
+          "R0125"
+        ]
+      },
+      {
+        "id": 1,
+        "variables": [
+          "C2134",
+          "C2144"
+        ],
+        "constraints": [
+          "R0106",
+          "R0116",
+          "R0126"
+        ]
+      },
+      {
+        "id": 2,
+        "variables": [
+          "C2135",
+          "C2145"
+        ],
+        "constraints": [
+          "R0107",
+          "R0117",
+          "R0127"
+        ]
+      },
+      {
+        "id": 3,
+        "variables": [
+          "C2136",
+          "C2146"
+        ],
+        "constraints": [
+          "R0108",
+          "R0118",
+          "R0128"
+        ]
+      },
+      {
+        "id": 4,
+        "variables": [
+          "C2137"
+        ],
+        "constraints": [
+          "R0109",
+          "R0119"
+        ]
+      },
+      {
+        "id": 5,
+        "variables": [
+          "C2138"
+        ],
+        "constraints": [
+          "R0110",
+          "R0120"
+        ]
+      },
+      {
+        "id": 6,
+        "variables": [
+          "C2139"
+        ],
+        "constraints": [
+          "R0101",
+          "R0121"
+        ]
+      },
+      {
+        "id": 7,
+        "variables": [
+          "C2140"
+        ],
+        "constraints": [
+          "R0102",
+          "R0122"
+        ]
+      },
+      {
+        "id": 8,
+        "variables": [
+          "C2141"
+        ],
+        "constraints": [
+          "R0103",
+          "R0123"
+        ]
+      },
+      {
+        "id": 9,
+        "variables": [
+          "C2142"
+        ],
+        "constraints": [
+          "R0104",
+          "R0124"
+        ]
+      }
+    ]
+  }
+}
